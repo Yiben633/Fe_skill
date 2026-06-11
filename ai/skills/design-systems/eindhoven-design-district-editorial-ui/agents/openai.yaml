@@ -1,0 +1,4 @@
+interface:
+  display_name: "Eindhoven Design District Editorial UI"
+  short_description: "Build Eindhoven Design District-style cultural editorial pages."
+  default_prompt: "Create an Eindhoven Design District-style editorial cultural website with a compact fixed nav, burger/search overlay, 12-column responsive grid, electric blue and pink theme colors, animated hover underline links, oversized typographic hero, side reveal images, colored project story panels, type-row article links, route/facts cards, footer CTA, and minimal Dutch design visual language."

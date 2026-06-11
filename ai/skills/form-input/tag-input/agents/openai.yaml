@@ -1,0 +1,3 @@
+display_name: Tag Input
+short_description: Hướng dẫn tag input, token input và creatable chips.
+default_prompt: Dùng tag-input để thiết kế và implement nhập tag này.

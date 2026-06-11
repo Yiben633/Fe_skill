@@ -1,0 +1,4 @@
+interface:
+  display_name: "Westlake Architectural Products UI"
+  short_description: "Build Westlake-style product pages."
+  default_prompt: "Create a Westlake/Eldorado Stone-style architectural product page with warm gray surfaces, thin Museo-style headings, navy CTAs, brand header, mega menu image cards, product filters, stone veneer cards, loading overlay, and soft footer."

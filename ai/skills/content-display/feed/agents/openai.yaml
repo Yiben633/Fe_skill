@@ -1,0 +1,3 @@
+display_name: Feed
+short_description: Hướng dẫn activity feed, realtime stream và infinite feed.
+default_prompt: Dùng feed để thiết kế và implement feed này.

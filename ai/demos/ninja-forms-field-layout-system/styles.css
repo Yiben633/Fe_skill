@@ -1,0 +1,580 @@
+:root {
+  --nf-bg: #f4f0ea;
+  --nf-panel: #ffffff;
+  --nf-text: #1d252d;
+  --nf-muted: #68727d;
+  --nf-line: #d9dfe5;
+  --nf-line-strong: #aeb7c2;
+  --nf-primary: #007acc;
+  --nf-primary-dark: #005d9c;
+  --nf-danger: #d61f1f;
+  --nf-focus: rgba(0, 122, 204, .2);
+  --nf-radius: 10px;
+  --nf-shadow: 0 20px 60px rgba(29, 37, 45, .08);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--nf-text);
+  background:
+    linear-gradient(135deg, rgba(0, 122, 204, .08), transparent 34%),
+    var(--nf-bg);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.demo-shell {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 56px 0;
+}
+
+.intro {
+  max-width: 720px;
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--nf-primary);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.intro h1 {
+  margin: 0;
+  font-size: clamp(38px, 7vw, 72px);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.intro p:not(.eyebrow) {
+  color: var(--nf-muted);
+  font-size: 18px;
+}
+
+.ninja-forms-form-wrap *,
+.ninja-forms-form-wrap *::after,
+.ninja-forms-form-wrap *::before {
+  box-sizing: border-box;
+}
+
+.nf-response-msg {
+  display: none;
+}
+
+.form-panel {
+  margin-bottom: 20px;
+  padding: 24px;
+  border: 1px solid var(--nf-line);
+  border-radius: var(--nf-radius);
+  background: rgba(255, 255, 255, .9);
+  box-shadow: var(--nf-shadow);
+}
+
+.panel-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--nf-line);
+}
+
+.panel-heading h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.panel-heading span {
+  color: var(--nf-muted);
+  font-size: 13px;
+}
+
+.nf-field-container,
+#ninja_forms_required_items {
+  clear: both;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.nf-field-container::after,
+#ninja_forms_required_items::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.nf-field-container:last-child {
+  margin-bottom: 0;
+}
+
+.field-wrap {
+  display: flex;
+}
+
+.field-wrap > label,
+.nf-field-label label,
+.nf-field-label .nf-label-span {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+.field-wrap > div input,
+.field-wrap textarea,
+.field-wrap select,
+.field-wrap .pikaday__container,
+.field-wrap .pikaday__display {
+  width: 100%;
+}
+
+.field-wrap > div input[type="checkbox"],
+.field-wrap > div input[type="radio"] {
+  width: auto;
+}
+
+.field-wrap input,
+.field-wrap select,
+.field-wrap textarea {
+  min-height: 44px;
+  padding: 10px 12px;
+  color: var(--nf-text);
+  border: 1px solid var(--nf-line-strong);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.field-wrap textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.field-wrap input:focus,
+.field-wrap select:focus,
+.field-wrap textarea:focus,
+.ql-editor:focus {
+  border-color: var(--nf-primary);
+  box-shadow: 0 0 0 4px var(--nf-focus);
+  outline: none;
+}
+
+.nf-field-label {
+  order: 5;
+}
+
+.nf-field-description {
+  width: 100%;
+  order: 10;
+  color: var(--nf-muted);
+  font-size: 13px;
+}
+
+.nf-field-description p:last-child {
+  margin: 0;
+}
+
+.nf-field-element {
+  position: relative;
+  order: 15;
+}
+
+.nf-after-field {
+  width: 100%;
+  order: 20;
+}
+
+.nf-error-msg {
+  display: inline-block;
+  margin-top: 8px;
+  color: var(--nf-danger);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.has-error input {
+  border-color: var(--nf-danger);
+}
+
+.label-above .field-wrap,
+.label-below .field-wrap {
+  flex-flow: wrap;
+  flex-direction: column;
+}
+
+.label-above .nf-field-label {
+  margin-bottom: 10px;
+}
+
+.label-above .nf-field-description {
+  margin-bottom: 8px;
+}
+
+.label-above .nf-field-element,
+.label-below .nf-field-element {
+  width: 100%;
+  margin: 0;
+}
+
+.label-below .nf-field-label {
+  order: 15;
+  margin-top: 10px;
+}
+
+.label-below .nf-field-element {
+  order: 5;
+}
+
+.label-hidden .field-wrap {
+  flex-wrap: wrap;
+}
+
+.label-hidden .nf-field-label {
+  width: 100%;
+  height: 0;
+  margin: 0 !important;
+  visibility: hidden;
+}
+
+.label-hidden .nf-field-description {
+  width: 100%;
+  order: 20;
+  margin-top: 8px;
+}
+
+.label-hidden .nf-field-element {
+  width: 100%;
+}
+
+.label-left .field-wrap,
+.label-right .field-wrap {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.label-left .nf-field-label,
+.label-right .nf-field-label {
+  display: flex;
+  align-items: center;
+  width: 35%;
+}
+
+.label-left .nf-field-label {
+  order: 5;
+  padding-right: 2%;
+  text-align: right;
+}
+
+.label-left .nf-field-label label {
+  width: 100%;
+}
+
+.label-left .nf-field-element {
+  order: 10;
+  display: inline-block;
+  width: 65%;
+}
+
+.label-left .nf-field-description,
+.label-left .nf-after-field {
+  margin-left: 35%;
+}
+
+.label-right .nf-field-element {
+  order: 5;
+  display: inline-block;
+  width: 65%;
+}
+
+.label-right .nf-field-label {
+  order: 10;
+  padding-left: 2%;
+}
+
+.label-right .nf-field-description {
+  order: 15;
+  margin-right: 35%;
+}
+
+.label-left .textarea-wrap .nf-field-label,
+.label-left .listradio-wrap .nf-field-label,
+.label-left .listcheckbox-wrap .nf-field-label,
+.label-right .textarea-wrap .nf-field-label,
+.label-right .listradio-wrap .nf-field-label,
+.label-right .listcheckbox-wrap .nf-field-label {
+  align-items: flex-start;
+  padding-top: 8px;
+}
+
+.list-radio-wrap .nf-field-element ul,
+.list-radio-wrap .nf-field-element li,
+.list-checkbox-wrap .nf-field-element ul,
+.list-checkbox-wrap .nf-field-element li,
+.list-image-wrap .nf-field-element ul,
+.list-image-wrap .nf-field-element li {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.list-radio-wrap .nf-field-element li,
+.list-checkbox-wrap .nf-field-element li,
+.list-image-wrap .nf-field-element li {
+  min-height: 32px;
+  margin: 0 0 5px !important;
+  padding-left: 10px;
+  text-indent: initial !important;
+}
+
+.list-radio-wrap .nf-field-element li input,
+.list-checkbox-wrap .nf-field-element li input,
+.list-image-wrap .nf-field-element li input {
+  float: left;
+  width: auto !important;
+  margin-top: .25em;
+  margin-right: 5px;
+}
+
+.list-radio-wrap .nf-field-element li label,
+.list-checkbox-wrap .nf-field-element li label,
+.list-image-wrap .nf-field-element li label {
+  display: block;
+  width: auto;
+  margin-left: 1.5em;
+}
+
+.nf-form-wrap .ql-toolbar.ql-snow {
+  padding: 8px 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px 8px 0 0;
+  background-color: #f9f9f9;
+}
+
+.nf-form-wrap .ql-toolbar.ql-snow::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.nf-form-wrap .ql-container.ql-snow {
+  border: 1px solid #ccc;
+  border-top: 0;
+  border-radius: 0 0 8px 8px;
+}
+
+.nf-form-wrap .ql-editor {
+  min-height: 150px;
+  padding: 14px;
+  background: #fff;
+}
+
+.nf-form-wrap .ql-editor p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.nf-form-wrap .ql-toolbar button {
+  min-width: 28px;
+  min-height: 28px;
+  width: auto;
+  height: auto;
+  margin-right: 2px;
+  padding: 4px 8px;
+  color: #444;
+  cursor: pointer;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.nf-form-wrap .ql-toolbar button:hover,
+.nf-form-wrap .ql-toolbar button.ql-active,
+.nf-form-wrap .ql-toolbar button:focus-visible {
+  background: #e6e6e6;
+  border-color: #adadad;
+  outline: none;
+}
+
+.nf-repeater-fieldsets fieldset {
+  margin-bottom: 1em;
+  padding: 18px;
+  border: 1px dashed var(--nf-line-strong);
+  border-radius: 8px;
+}
+
+.nf-repeater-fieldsets legend {
+  padding: 0 8px;
+  color: var(--nf-muted);
+  font-weight: 700;
+}
+
+.nf-remove-fieldset {
+  float: right;
+  margin-top: -1em;
+  padding: .1em .4em;
+  color: red;
+  font-size: 1.5em;
+  background-color: transparent;
+  border: thin solid red;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nf-remove-fieldset:focus-visible {
+  outline: 3px solid rgba(214, 31, 31, .25);
+}
+
+.repeater-container .nf-field-description {
+  margin-top: .5em;
+}
+
+.repeater-container .nf-field-description p {
+  font-size: 120%;
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 24px;
+  border: 1px solid var(--nf-line);
+  border-radius: var(--nf-radius);
+  background: rgba(255, 255, 255, .9);
+}
+
+.submit-button,
+.ghost-button {
+  min-height: 46px;
+  padding: 0 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit-button {
+  color: #fff;
+  background: var(--nf-primary);
+  border: 1px solid var(--nf-primary);
+}
+
+.submit-button:hover {
+  background: var(--nf-primary-dark);
+}
+
+.ghost-button {
+  color: var(--nf-primary);
+  background: transparent;
+  border: 1px solid var(--nf-primary);
+}
+
+.spinner-slot {
+  min-width: 64px;
+  min-height: 48px;
+}
+
+.spinner-slot[hidden] {
+  display: none;
+}
+
+.nf-loading-spinner {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 4px auto;
+  background-color: rgba(208, 208, 208, .5);
+  border-radius: 100%;
+  animation: nf-scaleout 1s infinite ease-in-out;
+}
+
+@keyframes nf-scaleout {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.nf-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  border: 0;
+  opacity: 0;
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .demo-shell {
+    width: min(100% - 20px, 1120px);
+    padding: 32px 0;
+  }
+
+  .form-panel {
+    padding: 18px;
+  }
+
+  .panel-heading {
+    display: block;
+  }
+
+  .label-left .field-wrap,
+  .label-right .field-wrap {
+    flex-direction: column;
+  }
+
+  .label-left .nf-field-label,
+  .label-right .nf-field-label,
+  .label-left .nf-field-element,
+  .label-right .nf-field-element,
+  .label-left .nf-field-description,
+  .label-right .nf-field-description,
+  .label-left .nf-after-field,
+  .label-right .nf-after-field {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .label-left .nf-field-label,
+  .label-right .nf-field-label {
+    margin-bottom: 10px;
+  }
+}

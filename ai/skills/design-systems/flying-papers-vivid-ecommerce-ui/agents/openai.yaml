@@ -1,0 +1,4 @@
+interface:
+  display_name: "Flying Papers Vivid Ecommerce UI"
+  short_description: "Build Flying Papers-style ecommerce pages."
+  default_prompt: "Create a Flying Papers-style vivid ecommerce page for a colorful rolling papers/community brand with Degular/Obviously-inspired variable display typography, Bergen Mono utility labels, soft-pink/red/off-white/magenta/yellow/green color schemes, animated masked menu text, peeking illustrated mascot header, legal-age banner, category product blocks for cones/rolls/grinders/tips/papers, oversized scenario sections with stretched variable fonts, illustrated animation placeholders, roundup CTA, promo cards, affiliate/referral banners, and playful shop buttons."

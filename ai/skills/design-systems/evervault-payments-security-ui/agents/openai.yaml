@@ -1,0 +1,4 @@
+interface:
+  display_name: "Evervault Payments Security UI"
+  short_description: "Build Evervault-style security UIs."
+  default_prompt: "Create an Evervault-style secure payments landing page with gradient hero, SDK orbit visual, glass nav, payment cards, modal overlay, and compliance footer."

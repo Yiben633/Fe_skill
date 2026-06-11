@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OpenAI Platform Layout Demo</title>
+    <link rel="stylesheet" href="platform-layout.css">
+  </head>
+  <body>
+    <header class="global-header">
+      <a class="wordmark" href="#">OpenAI</a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#">Business</a>
+        <a class="active" href="#">API Platform</a>
+        <a href="#">Developers</a>
+        <a href="#">Resources</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#">Log in</a>
+        <a class="pill-cta" href="#">Contact sales</a>
+      </div>
+    </header>
+
+    <main class="document-shell">
+      <aside class="side-nav" aria-label="API sections">
+        <p>API Platform</p>
+        <a class="current" href="#overview">Overview</a>
+        <a href="#models">Models</a>
+        <a href="#tools">Tools</a>
+        <a href="#quickstart">Quickstart</a>
+        <a href="#safety">Safety</a>
+        <a href="#pricing">Pricing</a>
+      </aside>
+
+      <section class="doc-content">
+        <section class="platform-hero" id="overview">
+          <p class="eyebrow">API Platform</p>
+          <h1>Build intelligent products on a calm technical foundation.</h1>
+          <p class="lead">A reusable OpenAI-style shell with sticky side navigation, compact product cards, technical code panels, business CTAs, and a structured mega footer.</p>
+          <div class="hero-actions">
+            <a class="primary" href="#quickstart">Start building</a>
+            <a class="secondary external" href="#">Read docs</a>
+          </div>
+        </section>
+
+        <section class="card-grid" id="models" aria-labelledby="models-title">
+          <div class="section-heading">
+            <p class="eyebrow">Models</p>
+            <h2 id="models-title">Choose the right capability.</h2>
+          </div>
+          <article class="product-card">
+            <span class="chip">Reasoning</span>
+            <h3>Complex work</h3>
+            <p>Use deeper reasoning for planning, coding, research, and multi-step automation.</p>
+          </article>
+          <article class="product-card">
+            <span class="chip">Realtime</span>
+            <h3>Live interaction</h3>
+            <p>Create low-latency voice, agent, and multimodal experiences.</p>
+          </article>
+          <article class="product-card">
+            <span class="chip">Vision</span>
+            <h3>Visual input</h3>
+            <p>Analyze images, screenshots, diagrams, and interface states.</p>
+          </article>
+        </section>
+
+        <section class="split-section" id="quickstart">
+          <div>
+            <p class="eyebrow">Quickstart</p>
+            <h2>Keep developer surfaces dense, clear, and scannable.</h2>
+            <p>Pair short explanatory text with a quiet code block. Let the code surface scroll horizontally with a thin scrollbar instead of wrapping awkwardly.</p>
+          </div>
+          <pre class="code-panel thin-scrollbar"><code>import OpenAI from "openai";
+
+const client = new OpenAI();
+const response = await client.responses.create({
+  model: "gpt-5.1",
+  input: "Summarize the customer feedback."
+});
+
+console.log(response.output_text);</code></pre>
+        </section>
+
+        <section class="proof-strip" id="safety">
+          <div>
+            <strong>200px</strong>
+            <span>sticky nav rail</span>
+          </div>
+          <div>
+            <strong>68rem</strong>
+            <span>content rhythm</span>
+          </div>
+          <div>
+            <strong>250ms</strong>
+            <span>link transitions</span>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <section class="prefooter">
+      <p class="eyebrow">Ready to build</p>
+      <h2>Try the platform shell in your next product page.</h2>
+      <a class="primary" href="#">Get started</a>
+    </section>
+
+    <footer class="mega-footer">
+      <div class="footer-grid">
+        <div>
+          <span class="footer-heading">Products</span>
+          <a href="#">ChatGPT</a>
+          <a href="#">ChatGPT Enterprise</a>
+          <a href="#">Codex</a>
+          <a href="#">Release Notes</a>
+        </div>
+        <div>
+          <span class="footer-heading">API Platform</span>
+          <a href="#">Overview</a>
+          <a class="external" href="#">API Log In</a>
+          <a class="external" href="#">Docs</a>
+        </div>
+        <div>
+          <span class="footer-heading">Business</span>
+          <a href="#">Solutions</a>
+          <a href="#">Resources</a>
+          <a href="#">Contact Sales</a>
+        </div>
+        <div>
+          <span class="footer-heading">Company</span>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">News</a>
+        </div>
+        <div>
+          <span class="footer-heading">Terms & Policies</span>
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Other Policies</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="social-row" aria-label="Social links">
+          <a href="#" aria-label="X">X</a>
+          <a href="#" aria-label="YouTube">Y</a>
+          <a href="#" aria-label="GitHub">G</a>
+          <a href="#" aria-label="LinkedIn">L</a>
+        </div>
+        <span>OpenAI demo 2015-2026</span>
+        <button class="locale-button" type="button">English <span>United States</span></button>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duchy Nursery Garden Centre UI Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#content" class="c-skip-link">Skip to main content</a>
+
+  <header class="c-header">
+    <div class="c-header__main">
+      <div class="c-header__left">
+        <button class="c-header__burger c-burger" type="button" aria-label="Open menu"><span></span></button>
+        <a class="c-action" href="#">Shop online</a>
+      </div>
+      <div class="c-header__center">
+        <a class="c-header__logo" href="#">Duchy of Cornwall Nursery</a>
+      </div>
+      <div class="c-header__right">
+        <a class="c-action c-action--alt" href="#">Contact</a>
+        <div class="c-social" aria-label="Social media">
+          <a class="c-social__profile" href="#"><span class="u-assistive">Facebook</span>Fb</a>
+          <a class="c-social__profile" href="#"><span class="u-assistive">Instagram</span>Ig</a>
+          <a class="c-social__profile" href="#"><span class="u-assistive">Pinterest</span>Pi</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="c-navigation is-fixed" aria-label="Main">
+      <a class="c-navigation__shield" href="#"><span class="u-assistive">Home</span></a>
+      <a class="c-navigation__link js-mega-nav-trigger" href="#">Visit</a>
+      <a class="c-navigation__link" href="#">Explore</a>
+      <a class="c-navigation__link" href="#">Stay</a>
+      <a class="c-navigation__link" href="#">Eat and Drink</a>
+      <a class="c-navigation__link" href="#">Events</a>
+      <a class="c-navigation__link" href="#">Gift Cards</a>
+      <a class="c-navigation__link" href="#">Journal</a>
+    </nav>
+
+    <div class="c-mega-nav" id="megaNav">
+      <div class="c-mega-nav__a">
+        <ul class="c-mega-nav__list">
+          <li><a class="c-mega-nav__link" href="#">Opening Times and Directions</a></li>
+          <li><a class="c-mega-nav__link" href="#">The Shop</a></li>
+          <li><a class="c-mega-nav__link" href="#">The Glasshouse</a></li>
+          <li><a class="c-mega-nav__link" href="#">Plant Leaflets</a></li>
+          <li><a class="c-mega-nav__link" href="#">Loyalty Membership</a></li>
+        </ul>
+      </div>
+      <div class="c-mega-nav__b c-mega-nav__image">
+        <div class="o-image botanical-image botanical-image--visit"></div>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="c-hero">
+      <div class="c-hero__media botanical-hero"></div>
+      <div class="c-hero__panel">
+        <p class="kicker">Cornwall plant nursery</p>
+        <h1 class="display-heading">Plants, food and days out in the garden.</h1>
+        <p>Browse seasonal plants, visit the cafe, explore the grounds, and find quiet inspiration for home and garden.</p>
+        <div class="hero-actions">
+          <a class="cta" href="#">Shop online</a>
+          <a class="cta cta--light" href="#">Plan your visit</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-band">
+      <p class="kicker">Welcome to the nursery</p>
+      <h2 class="display-heading">One of Cornwall's best-loved places for plants, food, gifts and garden walks.</h2>
+    </section>
+
+    <section class="c-cross-sell-grid" aria-label="Nursery highlights">
+      <article class="c-cross-sell o-faux-block-link">
+        <div class="c-cross-sell__image botanical-image botanical-image--shop"></div>
+        <div class="c-cross-sell__body">
+          <h3><a class="o-faux-block-link__target" href="#">Shop Plants</a></h3>
+          <p class="c-cross-sell__copy">Seasonal plants, pots, tools, gifts and homewares selected for garden life.</p>
+        </div>
+      </article>
+      <article class="c-cross-sell o-faux-block-link">
+        <div class="c-cross-sell__image botanical-image botanical-image--cafe"></div>
+        <div class="c-cross-sell__body">
+          <h3><a class="o-faux-block-link__target" href="#">Eat and Drink</a></h3>
+          <p class="c-cross-sell__copy">Book a table in the Orangery or drop in for coffee, cakes and lunch.</p>
+        </div>
+      </article>
+      <article class="c-cross-sell o-faux-block-link">
+        <div class="c-cross-sell__image botanical-image botanical-image--events"></div>
+        <div class="c-cross-sell__body">
+          <h3><a class="o-faux-block-link__target" href="#">Events</a></h3>
+          <p class="c-cross-sell__copy">Workshops, garden evenings, feasts and seasonal gatherings at the nursery.</p>
+        </div>
+      </article>
+      <article class="c-cross-sell o-faux-block-link">
+        <div class="c-cross-sell__image botanical-image botanical-image--visit"></div>
+        <div class="c-cross-sell__body">
+          <h3><a class="o-faux-block-link__target" href="#">Opening Times</a></h3>
+          <p class="c-cross-sell__copy">Easy to find, accessible for all, with free parking and garden walks.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="callout-band">
+      <div class="callout-band__image botanical-image botanical-image--delivery"></div>
+      <div class="callout-band__copy">
+        <span class="callout-illustration">Delivery</span>
+        <p class="kicker">Duchy delivery service</p>
+        <h2 class="display-heading">Larger plants and awkward items delivered with care.</h2>
+        <p>Ask the retail or plants team about local delivery for bigger nursery purchases.</p>
+        <a class="cta" href="#">Find out more</a>
+      </div>
+    </section>
+
+    <section class="journal-strip">
+      <p class="kicker">Journal</p>
+      <h2 class="display-heading">Seasonal inspiration from the nursery.</h2>
+      <div class="journal-cards">
+        <a class="journal-card botanical-image botanical-image--spring" href="#"><span>Springtime lookbook</span></a>
+        <a class="journal-card botanical-image botanical-image--loyalty" href="#"><span>Loyalty membership</span></a>
+        <a class="journal-card botanical-image botanical-image--glasshouse" href="#"><span>The Glasshouse</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="c-footer">
+    <div class="c-footer__grid">
+      <div>
+        <a class="c-header__logo" href="#">Duchy of Cornwall Nursery</a>
+        <p><strong>Duchy of Cornwall Nursery</strong><br>Lostwithiel, Cornwall PL22 0HW</p>
+        <p><a href="#">enquiries@example.co.uk</a></p>
+      </div>
+      <nav aria-label="Footer">
+        <h3>Visit</h3>
+        <a href="#">Opening Times and Directions</a>
+        <a href="#">Private Events</a>
+        <a href="#">FAQs</a>
+        <a href="#">About Us</a>
+      </nav>
+      <nav aria-label="Shop">
+        <h3>Shop</h3>
+        <a href="#">Plants</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Home and Garden</a>
+        <a href="#">Delivery</a>
+      </nav>
+      <div>
+        <h3>Follow</h3>
+        <div class="c-social">
+          <a class="c-social__profile" href="#">Fb</a>
+          <a class="c-social__profile" href="#">Ig</a>
+          <a class="c-social__profile" href="#">Pi</a>
+        </div>
+      </div>
+    </div>
+    <div class="c-footer__bottom">Duchy of Cornwall Nursery 2026</div>
+  </footer>
+
+  <div class="cookie-underlay" id="cookieUnderlay"></div>
+  <section class="cookie-dialog" id="cookieDialog" role="dialog" aria-modal="true" aria-labelledby="cookieTitle">
+    <header class="cookie-dialog__header">
+      <strong id="cookieTitle">This website uses cookies</strong>
+    </header>
+    <div class="cookie-tabs" role="tablist" aria-label="Cookie settings">
+      <button aria-selected="true" type="button">Consent</button>
+      <button aria-selected="false" type="button">Details</button>
+      <button aria-selected="false" type="button">About</button>
+    </div>
+    <div class="cookie-dialog__body">
+      <p>We use cookies to make the site work, improve your experience and understand what visitors enjoy. You can allow all cookies or deny optional cookies.</p>
+      <a href="#">Read our privacy policy</a>
+    </div>
+    <footer class="cookie-dialog__footer">
+      <button class="cookie-button cookie-button--light" type="button" id="denyCookies">Deny</button>
+      <button class="cookie-button" type="button" id="allowCookies">Allow all</button>
+    </footer>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

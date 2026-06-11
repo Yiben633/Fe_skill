@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kamaboko Room 3D Portfolio UI"
+  short_description: "Pastel 3D room portfolio scrollytelling."
+  default_prompt: "Create a Kamaboko Room-style personal portfolio with Montserrat and Noto Sans JP typography, cream/pink/blue/green/navy theme tokens, light/dark theme toggle, fixed full-screen WebGL or canvas room background, loading progress bar, character-by-character hero typography, split Japanese and English title blocks, scroll-down cue, long scrollytelling margins, side-aware section background panels with mini scrollbars, section hero labels like about me/my works/contact/finally with decorative dots, numbered sections, soft pastel content panels, clone-text hover links with upward arrow icons, custom slim scrollbar, and responsive mobile spacing."

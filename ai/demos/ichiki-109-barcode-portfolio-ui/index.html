@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>1:09 Barcode Portfolio UI Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Libre+Barcode+128&display=swap">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="outer-frame" aria-hidden="true"></div>
+
+    <div class="right-top">
+      <div class="theme-toggle" aria-label="Theme">
+        <button type="button" data-theme-button="light" aria-label="Light mode"></button>
+        <button type="button" data-theme-button="dark" aria-label="Dark mode"></button>
+      </div>
+      <p class="clock">1<span>:</span>09</p>
+    </div>
+
+    <button class="hamburger" type="button" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <a href="#home">home</a>
+      <a href="#works">Works</a>
+      <a href="#profile">Profile</a>
+      <a href="#contact">Contact</a>
+      <span class="barcode">menu</span>
+    </nav>
+
+    <div class="scroll-shell" data-scroll-shell>
+      <header class="site-header">
+        <a class="logo" href="#home" aria-label="1:09 home">
+          <span>1:09</span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <a class="is-active" href="#home">home</a>
+          <a href="#works">Works</a>
+          <a href="#profile">Profile</a>
+          <a href="#contact">Contact</a>
+          <i aria-hidden="true"></i>
+        </nav>
+        <div class="sns">
+          <a class="pill-link" data-invert="true" href="#">Twitter <span>-></span></a>
+          <a class="pill-link" data-invert="true" href="#">Instagram <span>-></span></a>
+        </div>
+      </header>
+
+      <main id="swup">
+        <section class="hero page-pad" id="home">
+          <div class="grid-bg" aria-hidden="true"></div>
+          <div class="hero-copy">
+            <div class="mono-heading">
+              <h1>1:09<br>illustration<br>portfolio</h1>
+              <span class="barcode" aria-hidden="true">portfolio</span>
+            </div>
+            <div class="hero-links">
+              <a class="pill-link" data-invert="true" href="#">Twitter <span>-></span></a>
+              <a class="pill-link" data-invert="true" href="#">BOOTH <span>-></span></a>
+            </div>
+          </div>
+
+          <div class="dialog-stack" aria-hidden="true">
+            <article class="dialog-box hero-window w1">
+              <div class="dialog-titlebar"><span>meme.webp</span><span class="dialog-close"></span></div>
+              <div class="dialog-body art-window art-a"></div>
+            </article>
+            <article class="dialog-box hero-window w2">
+              <div class="dialog-titlebar"><span>profile.jpg</span><span class="dialog-close"></span></div>
+              <div class="dialog-body art-window art-b"></div>
+            </article>
+            <article class="dialog-box hero-window w3">
+              <div class="dialog-titlebar"><span>grid.canvas</span><span class="dialog-close"></span></div>
+              <div class="dialog-body canvas-preview"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section page-pad" id="works">
+          <div class="section-heading">
+            <div class="mono-heading">
+              <h2>Works</h2>
+              <span class="barcode" aria-hidden="true">myWorks</span>
+            </div>
+            <p class="count" data-count>(6 Works)</p>
+          </div>
+
+          <div class="filter-panel">
+            <p>(Filter)</p>
+            <div class="filter-row">
+              <button class="filter-chip is-active" type="button" data-filter="all">all</button>
+              <button class="filter-chip" type="button" data-filter="commission">commission</button>
+              <button class="filter-chip" type="button" data-filter="original">original</button>
+              <button class="filter-chip" type="button" data-filter="event">event</button>
+            </div>
+          </div>
+
+          <div class="works-grid">
+            <article class="work-card" data-kind="original">
+              <div class="thumb t1"></div>
+              <h3>meme illustration</h3>
+              <p>original / illustration</p>
+            </article>
+            <article class="work-card is-offset" data-kind="commission">
+              <div class="thumb t2"></div>
+              <h3>Ikebukuro emotions</h3>
+              <p>commission / event</p>
+            </article>
+            <article class="work-card" data-kind="event">
+              <div class="thumb t3"></div>
+              <h3>Y2K nui-ten</h3>
+              <p>original / event</p>
+            </article>
+            <article class="work-card" data-kind="original">
+              <div class="thumb t4"></div>
+              <h3>beads key ring</h3>
+              <p>original / goods</p>
+            </article>
+            <article class="work-card is-offset" data-kind="commission">
+              <div class="thumb t5"></div>
+              <h3>Chase!</h3>
+              <p>commission / mv</p>
+            </article>
+            <article class="work-card" data-kind="event">
+              <div class="thumb t6"></div>
+              <h3>vaporwave show</h3>
+              <p>original / event</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section split page-pad" id="profile">
+          <div>
+            <div class="mono-heading">
+              <h2>Profile</h2>
+              <span class="barcode" aria-hidden="true">profile</span>
+            </div>
+            <p class="text-block">Illustrator / designer profile pages in this system combine short mono text, bordered subsections, dashed cross decorations, grid canvases, and small sticker-like media windows.</p>
+            <a class="pill-link" href="#">more <span>-></span></a>
+          </div>
+          <div class="profile-deco">
+            <div class="dashed-cross" aria-hidden="true"></div>
+            <article class="dialog-box profile-window">
+              <div class="dialog-titlebar"><span>profile.jpg</span><span class="dialog-close"></span></div>
+              <div class="dialog-body portrait"></div>
+            </article>
+            <span class="sticker s1">109</span>
+            <span class="sticker s2">meme</span>
+          </div>
+        </section>
+
+        <section class="section split page-pad" id="contact">
+          <div>
+            <div class="mono-heading">
+              <h2>Contact</h2>
+              <span class="barcode" aria-hidden="true">contact</span>
+            </div>
+            <p class="text-block">Contact layouts use plain labels, full-width bordered fields, a compact submit pill, and barcode labels as quiet ornaments.</p>
+          </div>
+          <form class="contact-form">
+            <label>Name<input type="text" placeholder="meme chan"></label>
+            <label>Email<input type="email" placeholder="info@example.com"></label>
+            <label>Message<textarea placeholder="write your request"></textarea></label>
+            <button class="pill-link" data-invert="true" type="button">send <span>-></span></button>
+            <span class="barcode" aria-hidden="true">contact</span>
+          </form>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="grid-bg mini" aria-hidden="true"></div>
+        <nav>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">BOOTH</a>
+        </nav>
+        <div>
+          <span class="barcode" aria-hidden="true">footer</span>
+          <p>(c) 1:09 style study</p>
+        </div>
+      </footer>
+    </div>
+
+    <div class="custom-scrollbar" aria-hidden="true"><span></span></div>
+    <script src="script.js"></script>
+  </body>
+</html>

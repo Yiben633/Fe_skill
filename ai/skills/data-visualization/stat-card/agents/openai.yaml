@@ -1,0 +1,3 @@
+display_name: Stat Card
+short_description: Hướng dẫn KPI card, metric card, trend và dashboard stats.
+default_prompt: Dùng stat-card để thiết kế và implement nhóm metric này.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Healthy Together Public Health SaaS UI"
+  short_description: "Build Healthy Together-style SaaS pages."
+  default_prompt: "Create a Healthy Together-style public health SaaS website for government, education, or enterprise programs with navy and breeze blue branding, cream/lavender/mint backgrounds, sticky Webflow-style navigation, mega dropdown panels, smooth scroll reveal motion, large outcome-focused hero copy, waveform/video-inspired background visuals, government partner brag bar, rounded primary buttons, public-service solution cards, benefits carousel, Comet/Luna-style product panels, accessibility-forward CTAs, and dense but warm health technology layouts."

@@ -1,0 +1,19 @@
+name: asana-human-agent-workflow-ui
+version: 1.0.0
+description: Agent instructions for building Asana-style human-agent workflow marketing interfaces.
+instructions: |
+  Use the asana-human-agent-workflow-ui skill when the user asks for Asana-inspired SaaS marketing pages, AI work management sections, TWK Lausanne typography, sticky product navs, three-P feature grids, productivity charts, or Qualified-style messenger embeds.
+
+  Implementation priorities:
+    - Use a 56px sticky header with optional announcement bar.
+    - Use TWK Lausanne style typography with Helvetica fallbacks and Japanese Hiragino fallback.
+    - Build feature sections with a 12-column grid: large left navigation and right visualization panels.
+    - Use coral, purple, blue, and mint accents on mostly white or off-white surfaces.
+    - Include chart-like proof components, task cards, badge clusters, circular metrics, and workflow visuals.
+    - Keep embedded messenger CSS accessible and state-driven.
+
+  Avoid:
+    - Heavy one-color gradients as the main page language.
+    - Decorative cards that do not carry product information.
+    - Large hero text inside a card.
+    - Messenger iframes without a keyboard-visible skip link.

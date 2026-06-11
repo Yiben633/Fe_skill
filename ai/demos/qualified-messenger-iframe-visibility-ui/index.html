@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Qualified Messenger Iframe Visibility UI Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a id="q-messenger-frame-skip-link" href="#after-q-messenger">Skip messenger</a>
+
+    <main class="page-shell">
+      <section class="hero">
+        <p class="eyebrow">DOM visibility API pattern</p>
+        <h1>Resilient messenger iframe states for hostile host pages.</h1>
+        <p class="lede">This demo recreates the Qualified-style fixed iframe system: zero-size idle frame, maximized desktop chat, mobile full screen, embedded flow, pointer-events disabling, skip link focus, and high z-index layering.</p>
+      </section>
+
+      <section class="control-panel" aria-label="Messenger state controls">
+        <div>
+          <p class="eyebrow">State manager</p>
+          <h2>Toggle iframe classes</h2>
+        </div>
+        <div class="button-grid">
+          <button type="button" class="state-button is-active" data-state="idle">Idle</button>
+          <button type="button" class="state-button" data-state="maximized">Maximized</button>
+          <button type="button" class="state-button" data-state="mobile">Mobile</button>
+          <button type="button" class="state-button" data-state="fullHeight">Full height</button>
+          <button type="button" class="state-button" data-state="fullscreen">Full screen</button>
+          <button type="button" class="state-button" data-state="disabled">Disabled pointer</button>
+        </div>
+      </section>
+
+      <section class="embedded-demo">
+        <div class="embedded-copy">
+          <p class="eyebrow">Embedded mode</p>
+          <h2>Same frame contract, normal document flow.</h2>
+          <p>Embedded widgets should reset position, fill the container, restore pointer events, and drop z-index to zero.</p>
+          <button type="button" class="state-button embedded-toggle" data-state="embedded">Preview embedded</button>
+        </div>
+        <div class="embedded-slot" id="embedded-slot" aria-label="Embedded frame preview">
+          <div class="fake-embedded-frame">
+            <strong>Embedded messenger slot</strong>
+            <span>height: 100%; width: 100%; z-index: 0</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="notes">
+        <article>
+          <h3>Skip link</h3>
+          <p>Press Tab from the top of the page. The hidden skip link becomes fixed at the top-left and sits above every layer.</p>
+        </article>
+        <article>
+          <h3>Layering</h3>
+          <p>The iframe reserves z-index 2147483642 by default and 2147483647 in full screen mode.</p>
+        </article>
+        <article>
+          <h3>Visibility</h3>
+          <p>The frame stays display block, visible, and content-visible even when its box is zero-sized.</p>
+        </article>
+      </section>
+
+      <span id="after-q-messenger" tabindex="-1"></span>
+    </main>
+
+    <iframe
+      id="q-messenger-frame"
+      class="qlfd-not-mobile qlfd-demo-frame"
+      title="Qualified Messenger"
+      allow="camera;microphone"
+      srcdoc="<html><body style='margin:0;font-family:Inter,Arial,sans-serif;background:#111827;color:#fff;display:grid;place-items:center;height:100vh;'><div style='width:min(84%,360px);'><p style='font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#a7f3d0;'>Qualified Messenger</p><h1 style='font-size:28px;line-height:1.05;margin:0 0 12px;'>Iframe content</h1><p style='color:#cbd5e1;line-height:1.5;'>This iframe is local srcdoc content for the offline demo.</p></div></body></html>">
+    </iframe>
+
+    <div id="qualified-multimodal-host" tabindex="-1" style="--qualified-multimodal-host-z-index-when-messenger-full-screen: 2147483646;">
+      <div class="host-pill">multimodal host</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

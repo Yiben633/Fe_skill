@@ -1,0 +1,4 @@
+interface:
+  display_name: "Yoshito Illustration Portfolio UI"
+  short_description: "Dreamy pale-blue illustrator portfolio layouts."
+  default_prompt: "Create a Yoshito-style illustration portfolio with a pale blue fixed header, Termina UI type, Norman Variable display titles, M PLUS 1 Japanese fallback, metallic heart and ring accents, star separators, pill arrow tags, floating artwork blocks, works/gallery/profile sections, and a 12-column works grid."

@@ -1,0 +1,657 @@
+@font-face {
+  font-family: "Clash Display";
+  src: url("//cdn.fontshare.com/wf/2GQIT54GKQY3JRFTSHS4ARTRNRQISSAA/3CIP5EBHRRHE5FVQU3VFROPUERNDSTDF/JTSL5QESUXATU47LCPUNHZQBDDIWDOSW.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash Display";
+  src: url("//cdn.fontshare.com/wf/BFBSY7LX5W2U2EROCLVVTQP4VS7S4PC3/IIUX4FGTMD2LK2VWD3RVTAS4SSMUN7B5/53RZKGODFYDW3QHTIL7IPOWTBCSUEZK7.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #000;
+  color: hsla(0, 0%, 100%, .8);
+  font-size: clamp(12px, 1.1vw, 16px);
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  color: hsla(0, 0%, 100%, .8);
+  background: #000;
+  font-family: Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo, Arial, sans-serif;
+  overscroll-behavior: none;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+
+ul,
+ol,
+p,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.webgl-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.marquee {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  overflow: hidden;
+  opacity: .8;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+.marquee-inner {
+  display: flex;
+  width: fit-content;
+  animation: marquee 18s linear infinite;
+}
+
+.marquee-inner span {
+  display: block;
+  width: fit-content;
+  padding-right: 20px;
+  font-family: "Clash Display", sans-serif;
+  font-size: 24rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.model {
+  position: fixed;
+  top: 1.5625rem;
+  left: calc(50% - 36.875rem);
+  z-index: 1;
+  width: 59.75rem;
+  filter: brightness(.76);
+  pointer-events: none;
+}
+
+.model-body {
+  width: 100%;
+  aspect-ratio: 7 / 8.6;
+  border-radius: 48% 52% 42% 58%;
+  background:
+    radial-gradient(circle at 48% 24%, hsla(0,0%,100%,.65) 0 8%, transparent 9%),
+    linear-gradient(170deg, hsla(0,0%,100%,.26), hsla(0,0%,100%,.02) 52%),
+    linear-gradient(90deg, transparent 0 34%, hsla(0,0%,100%,.22) 34% 42%, transparent 42%);
+}
+
+.page-body {
+  position: relative;
+  z-index: 2;
+  padding: 26.75rem 0 17.25rem;
+  overflow: hidden;
+}
+
+.page-inner {
+  max-width: 72.5rem;
+  margin: 0 auto;
+}
+
+.page-content {
+  width: 26.25rem;
+  margin-left: auto;
+}
+
+.profile {
+  font-size: .875rem;
+  line-height: 2;
+}
+
+.profile h1,
+.award h2,
+.sns h2 {
+  font-family: "Clash Display", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.profile-ja {
+  margin-top: 1.625rem;
+}
+
+.profile-ja p + p,
+.profile-en p + p {
+  margin-top: 1.25rem;
+}
+
+.profile-en {
+  margin-top: 6.25rem;
+  font-family: "Clash Display", sans-serif;
+}
+
+.award,
+.sns {
+  margin-top: 6.25rem;
+}
+
+.award-logos {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  margin-top: 1.875rem;
+  filter: opacity(.5);
+}
+
+.award-logos span {
+  display: grid;
+  place-items: center;
+  min-width: 6.5rem;
+  height: 2.75rem;
+  border: 1px solid hsla(0, 0%, 100%, .45);
+  font-family: "Clash Display", sans-serif;
+  font-weight: 700;
+}
+
+.award-list {
+  margin-top: 2.25rem;
+  font-family: "Clash Display", sans-serif;
+  font-size: .875rem;
+  font-weight: 500;
+}
+
+.award-list li,
+.sns-list li {
+  position: relative;
+  min-height: 2.5625rem;
+  border-top: .0625rem solid hsla(0, 0%, 100%, .4);
+}
+
+.award-list li:last-of-type,
+.sns-list li:last-of-type {
+  border-bottom: .0625rem solid hsla(0, 0%, 100%, .4);
+}
+
+.award-list li {
+  display: flex;
+  align-items: center;
+}
+
+.award-list span {
+  width: 2.5rem;
+}
+
+.award-list strong {
+  margin-left: 1.25rem;
+  font-weight: 500;
+}
+
+.sns-list {
+  margin-top: 2.5rem;
+}
+
+.sns-list a,
+.menu-list a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.sns-list strong {
+  margin-left: 1.25rem;
+  font-family: "Clash Display", sans-serif;
+  font-size: .875rem;
+  font-weight: 500;
+}
+
+.mini-knob {
+  position: relative;
+  flex: 0 0 auto;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: #000;
+  box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .4);
+}
+
+.mini-knob::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 8%;
+  height: 18%;
+  transform: translateX(-50%);
+  background: hsla(0, 0%, 100%, .9);
+}
+
+.mini-knob span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-140deg);
+  transition: transform .6s cubic-bezier(.22, 1, .36, 1);
+}
+
+a:hover .mini-knob span {
+  transform: rotate(140deg);
+}
+
+.jacket {
+  position: absolute;
+  z-index: -1;
+  width: 12.5rem;
+  height: 12.5rem;
+  transition: transform .35s ease-out;
+}
+
+.jacket span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid hsla(0, 0%, 100%, .25);
+  background:
+    linear-gradient(135deg, hsla(0,0%,100%,.95), hsla(0,0%,100%,.12)),
+    repeating-linear-gradient(45deg, transparent 0 1rem, hsla(0,0%,100%,.18) 1rem 2rem);
+}
+
+.jacket[data-index="0"] {
+  top: 55rem;
+  left: calc(50% - 13.75rem);
+}
+
+.jacket[data-index="1"] {
+  top: 57.5rem;
+  left: calc(50% + 15rem);
+}
+
+.jacket[data-index="2"] {
+  top: 81.25rem;
+  left: calc(50% - 20rem);
+}
+
+.jacket[data-index="3"] {
+  top: 97.5rem;
+  left: calc(50% + 6.25rem);
+}
+
+.jacket[data-index="4"] {
+  top: 131.25rem;
+  left: calc(50% - 21.25rem);
+}
+
+.jacket[data-index="5"] {
+  top: 140.625rem;
+  left: calc(50% + 10rem);
+}
+
+.jacket[data-index="1"] span,
+.jacket[data-index="4"] span {
+  background:
+    radial-gradient(circle at 50% 50%, #fff 0 14%, transparent 15%),
+    linear-gradient(135deg, #202020, #707070);
+}
+
+.jacket[data-index="2"] span,
+.jacket[data-index="5"] span {
+  background:
+    linear-gradient(90deg, #fff 0 33%, #111 33% 66%, #777 66%),
+    linear-gradient(#333, #000);
+}
+
+.global-nav {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 30;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2.5rem 2.5rem;
+  pointer-events: none;
+}
+
+.global-nav > * {
+  pointer-events: auto;
+}
+
+.global-nav::before {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: -1;
+  height: 18.75rem;
+  background-image: linear-gradient(0deg, #000 0, rgba(0,0,0,.738) 19%, rgba(0,0,0,.278) 56.5%, transparent);
+  pointer-events: none;
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+  width: 4.125rem;
+  height: 8rem;
+  border: 1px solid hsla(0, 0%, 100%, .7);
+  font-family: "Clash Display", sans-serif;
+  font-weight: 700;
+  line-height: .9;
+  text-align: center;
+  writing-mode: vertical-rl;
+}
+
+.nav-paging {
+  display: grid;
+  grid-template-columns: 5rem 5rem;
+  gap: 1.25rem;
+  width: 11.25rem;
+}
+
+.nav-paging a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.75rem;
+}
+
+.nav-paging span {
+  position: absolute;
+  inset: 0;
+  border: .125rem solid #fff;
+  border-radius: .625rem;
+  mask-image: linear-gradient(180deg, #000 3%, transparent 70%);
+}
+
+.nav-paging b {
+  position: relative;
+  font-family: "Clash Display", sans-serif;
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+.global-button {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 5rem;
+  height: 5rem;
+}
+
+.button-frame {
+  position: absolute;
+  inset: 0;
+  border: .125rem solid #fff;
+  border-radius: 50%;
+  animation: slow-spin 12s linear infinite;
+}
+
+.button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play {
+  width: .875rem;
+  height: 1rem;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  background: #fff;
+}
+
+.slash {
+  width: .125rem;
+  height: .875rem;
+  margin: 0 .4375rem;
+  background: #fff;
+  opacity: .2;
+  transform: rotate(10deg);
+}
+
+.pause {
+  display: flex;
+  gap: .25rem;
+}
+
+.pause::before,
+.pause::after {
+  content: "";
+  width: .1875rem;
+  height: .875rem;
+  background: #fff;
+}
+
+.global-button[aria-expanded="true"] .play {
+  opacity: .2;
+}
+
+.global-button[aria-expanded="true"] .pause {
+  opacity: .2;
+}
+
+.global-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 25;
+  visibility: hidden;
+  padding: 6rem 2.5rem 8rem;
+  background: rgba(0, 0, 0, .96);
+  opacity: 0;
+  transition: opacity .25s linear, visibility .25s;
+}
+
+.global-menu.is-open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu-inner {
+  max-width: 46rem;
+  margin: 0 auto;
+}
+
+.menu-inner h2 {
+  font-family: "Clash Display", sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.menu-list {
+  margin-top: 3rem;
+}
+
+.menu-list li {
+  border-top: 1px solid hsla(0, 0%, 100%, .35);
+}
+
+.menu-list li:last-child {
+  border-bottom: 1px solid hsla(0, 0%, 100%, .35);
+}
+
+.menu-list a {
+  min-height: 5rem;
+}
+
+.menu-list strong {
+  margin-left: 1.25rem;
+  font-family: "Clash Display", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.menu-list small {
+  margin-left: auto;
+  color: hsla(0, 0%, 100%, .55);
+}
+
+.menu-sns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  margin-top: 2.5rem;
+  font-family: "Clash Display", sans-serif;
+}
+
+@keyframes marquee {
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes slow-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+
+  .marquee {
+    top: .625rem;
+  }
+
+  .marquee-inner span {
+    font-size: 35rem;
+  }
+
+  .model {
+    top: 7.625rem;
+    left: -28.375rem;
+    width: 79.25rem;
+  }
+
+  .page-body {
+    padding: 66.5rem 0 21.4375rem;
+  }
+
+  .page-inner {
+    padding-left: 10.625rem;
+  }
+
+  .page-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .profile {
+    padding-right: 5rem;
+    font-size: 1.75rem;
+  }
+
+  .profile h1,
+  .award h2,
+  .sns h2 {
+    font-size: 2.25rem;
+  }
+
+  .profile-ja {
+    margin-top: 3rem;
+  }
+
+  .profile-en {
+    margin-top: 8.25rem;
+    font-size: 1.375rem;
+  }
+
+  .award,
+  .sns {
+    margin-top: 8.25rem;
+  }
+
+  .award-list {
+    font-size: 1.375rem;
+  }
+
+  .award-list li {
+    display: block;
+    min-height: auto;
+    padding: 1.75rem 0 1.375rem;
+  }
+
+  .award-list span {
+    width: auto;
+  }
+
+  .award-list strong {
+    display: block;
+    margin: .625rem 0 0;
+  }
+
+  .sns-list strong {
+    font-size: 1.75rem;
+  }
+
+  .mini-knob {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  .global-nav {
+    padding: 0 1.875rem 2.25rem 2.5rem;
+  }
+
+  .global-nav::before {
+    height: 25rem;
+  }
+
+  .logo {
+    width: 5.6875rem;
+    height: 10rem;
+  }
+
+  .nav-paging {
+    grid-template-columns: 7.5rem 7.5rem;
+    gap: .625rem;
+    width: 15.625rem;
+  }
+
+  .nav-paging a {
+    height: 5rem;
+  }
+
+  .nav-paging b {
+    font-size: 1.5rem;
+  }
+
+  .jacket {
+    width: 11.25rem;
+    height: 11.25rem;
+  }
+}

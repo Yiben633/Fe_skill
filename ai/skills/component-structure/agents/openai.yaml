@@ -1,0 +1,3 @@
+display_name: Cấu Trúc Component
+short_description: Hướng dẫn cây file và ranh giới component cho frontend app.
+default_prompt: Dùng component-structure để sắp xếp project frontend này.

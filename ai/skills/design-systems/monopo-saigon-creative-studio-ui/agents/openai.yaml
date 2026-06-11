@@ -1,0 +1,4 @@
+interface:
+  display_name: "Monopo Saigon Creative Studio UI"
+  short_description: "Build expressive Roobert-based creative studio pages."
+  default_prompt: "Create a monopo Saigon-style creative studio homepage with Roobert/Raleway typography, dark editorial hero, Locomotive Scroll data-scroll hooks, large manifesto copy with italic letters, gradient pill buttons, arrow buttons, video showreel banner with a circular play cursor, rotated parallax image tile rows, team member accordion cards with roles/names/details/social links, light contact footer with offices and social links, back-to-top button, and an optional compact auth/newsletter modal with bouncy entrance animation."

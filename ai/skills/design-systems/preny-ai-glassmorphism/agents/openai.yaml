@@ -1,0 +1,4 @@
+interface:
+  display_name: "Preny AI Glassmorphism"
+  short_description: "Build Preny-style AI chatbot pages."
+  default_prompt: "Create a bright Preny-style AI chatbot SaaS landing page with glass header, gradient text, glow borders, CRM cards, chat preview, shimmer banners, and pricing/support sections."

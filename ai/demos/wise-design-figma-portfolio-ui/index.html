@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wise Design Figma Portfolio UI Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="bypass-link"><a href="#main">Skip to portfolio</a></div>
+
+    <header class="wise-topbar">
+      <div class="wise-topbar__inner">
+        <a href="#" class="wise-mark" aria-label="Wise Design home">W</a>
+        <nav class="wise-segmented" aria-label="Sections">
+          <a class="is-active" href="#main">Inspiration</a>
+          <a href="#direction">Direction</a>
+        </nav>
+        <button class="wise-icon-button" type="button" aria-label="pause-carousel" id="pause-toggle">
+          <span class="pause-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main" class="portfolio-shell" data-page-overflowx="hidden">
+      <section class="wise-carousel" id="carousel" aria-label="Wise Design selected work">
+        <article class="wise-asset is-active is-wide" tabindex="0" data-asset-title="Wise Business Illustrations" data-asset-description="Distinctive styling for business customers: grown-up, but never boring.">
+          <div class="wise-asset__media"><span class="visual visual-a"></span></div>
+        </article>
+        <article class="wise-asset is-square" tabindex="0" data-asset-title="Brand Illustration" data-asset-description="A secure passkey concept rendered as a simple 3D-inspired icon system.">
+          <div class="wise-asset__media"><span class="visual visual-b"></span></div>
+        </article>
+        <article class="wise-asset" tabindex="0" data-asset-title="NASDAQ Listing" data-asset-description="Campaign direction, OOH moments, and launch assets for a major market move.">
+          <div class="wise-asset__media"><span class="visual visual-c"></span></div>
+        </article>
+        <article class="wise-asset is-wide" tabindex="0" data-asset-title="Account Hero Demo" data-asset-description="A clear current-account demo using cards, jars, and motion-led product storytelling.">
+          <div class="wise-asset__media"><span class="visual visual-d"></span></div>
+        </article>
+        <article class="wise-asset is-square" tabindex="0" data-asset-title="Prompts and critical banners" data-asset-description="Flexible in-product communication patterns with a global product feel.">
+          <div class="wise-asset__media"><span class="visual visual-e"></span></div>
+        </article>
+        <article class="wise-asset" tabindex="0" data-asset-title="Wise Platform Treasury" data-asset-description="Financial command centre illustration for safeguarding global liquidity.">
+          <div class="wise-asset__media"><span class="visual visual-f"></span></div>
+        </article>
+      </section>
+
+      <section id="direction" class="direction-panel" aria-label="Direction notes">
+        <h1>Designed by Wise</h1>
+        <p>Small controls, confident motion, rounded media capsules, and useful metadata keep the portfolio precise.</p>
+      </section>
+    </main>
+
+    <aside class="wise-bottom-left" aria-live="polite">
+      <div class="vertical-text-rotator">
+        <div class="vertical-text-rotator__track vertical-text-rotator__track--moving">
+          <div class="vertical-text-rotator__item">Designed by Wise</div>
+          <div class="vertical-text-rotator__item">Design direction</div>
+        </div>
+      </div>
+      <p class="asset-title" id="asset-title">Wise Business Illustrations</p>
+      <p class="asset-description" id="asset-description">Distinctive styling for business customers: grown-up, but never boring.</p>
+    </aside>
+
+    <aside class="wise-bottom-right">
+      <a href="#">Instagram</a>
+      <a href="#">Careers</a>
+    </aside>
+
+    <div class="wise-scrubber" id="scrubber" role="slider" aria-label="Portfolio progress" aria-valuemin="1" aria-valuemax="6" aria-valuenow="1" tabindex="0">
+      <div class="wise-scrubber__thumb"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

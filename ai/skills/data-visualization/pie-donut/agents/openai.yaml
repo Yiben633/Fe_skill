@@ -1,0 +1,3 @@
+display_name: Pie Donut
+short_description: Hướng dẫn pie/donut chart và part-to-whole data.
+default_prompt: Dùng pie-donut để thiết kế và implement chart tỷ trọng này.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Wope SEO Research AI UI"
+  short_description: "Build Wope-style AI SEO pages."
+  default_prompt: "Create a Wope-style AI SEO research landing page with dark cosmic purple background, Rebond Grotesque-like bold headline typography, Inter-like body text, glowing pill buttons, conic animated borders, star particle fields, Qwik-style header with resources dropdown and mobile overlay, hero copy for a new era of SEO research, product demo video modal, domain trial input with glowing border, research dashboard cards for keyword insights, backlink analysis and rank tracking, predictive insights CTA, magical-border footer contact card, and compact accordion footer links."

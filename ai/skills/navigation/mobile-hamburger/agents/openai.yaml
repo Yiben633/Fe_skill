@@ -1,0 +1,3 @@
+display_name: Mobile Hamburger
+short_description: Hướng dẫn hamburger menu, drawer và focus handling.
+default_prompt: Dùng mobile-hamburger để implement menu mobile này.

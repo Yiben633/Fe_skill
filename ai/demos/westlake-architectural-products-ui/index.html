@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Westlake Architectural Products UI Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="loading-circle" id="loadingOverlay" hidden>
+    <span class="lds-dual-ring" aria-label="Loading"></span>
+  </div>
+
+  <header class="site-header">
+    <div class="header__utilities">
+      <div class="utility-links">
+        <a href="#">For professionals</a>
+        <a href="#">Find a dealer</a>
+        <a href="#">Request samples</a>
+      </div>
+      <div class="utility-links utility-links--right">
+        <a href="#">Favorites</a>
+        <a href="#">English</a>
+      </div>
+    </div>
+
+    <div class="header__main">
+      <a class="brand" href="#" aria-label="Eldorado Stone home">
+        <span class="brand__mark"></span>
+        <span>Eldorado Stone</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a class="nav-link nav-link--products" href="#">Products</a>
+        <a class="nav-link" href="#">Inspiration</a>
+        <a class="nav-link" href="#">Resources</a>
+        <a class="nav-link" href="#">Professionals</a>
+      </nav>
+      <div class="header-actions">
+        <button class="button button--icon" aria-label="Search">S</button>
+        <button class="button button--icon" aria-label="Account">A</button>
+      </div>
+    </div>
+
+    <div class="menu-dropdown" aria-label="Product categories">
+      <a class="card-styled card-styled--menu" href="#">
+        <span class="card-styled__image stone-warm"></span>
+        <span class="card-styled__title">Stone and Brick</span>
+      </a>
+      <a class="card-styled card-styled--menu" href="#">
+        <span class="card-styled__image stone-cool"></span>
+        <span class="card-styled__title">Accents and Accessories</span>
+      </a>
+      <a class="card-styled card-styled--menu" href="#">
+        <span class="card-styled__image stone-brick"></span>
+        <span class="card-styled__title">Outdoor Living</span>
+      </a>
+      <div class="menu-feature">
+        <p class="eyebrow">Product navigator</p>
+        <h2>Compare profiles, colors, and sample options.</h2>
+        <a class="button button--primary" href="#">Explore all products</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">Architectural stone veneer</p>
+        <h1>Authentic textures for homes with permanence.</h1>
+        <p>Build a refined product catalog with warm surfaces, navy calls to action, image-led navigation, and stone-inspired product cards.</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#products">Browse products</a>
+          <button class="button button--secondary" id="showLoading">Show loading</button>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="stone-wall">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-band" aria-label="Category cards">
+      <a class="category-card" href="#">
+        <span class="category-card__media stone-warm"></span>
+        <span>Stone veneer</span>
+      </a>
+      <a class="category-card" href="#">
+        <span class="category-card__media stone-cool"></span>
+        <span>Architectural accents</span>
+      </a>
+      <a class="category-card" href="#">
+        <span class="category-card__media stone-brick"></span>
+        <span>Outdoor rooms</span>
+      </a>
+    </section>
+
+    <section class="navigator" id="products">
+      <div class="section-heading">
+        <p class="eyebrow">Product navigator</p>
+        <h2>Find the right profile for the project.</h2>
+      </div>
+      <div class="filter-bar">
+        <label class="search-control">
+          <span>Search</span>
+          <input type="search" placeholder="Stone, brick, color, profile">
+        </label>
+        <button class="pill" aria-pressed="true">All</button>
+        <button class="pill" aria-pressed="false">Warm gray</button>
+        <button class="pill" aria-pressed="false">Linear</button>
+        <button class="pill" aria-pressed="false">Brick</button>
+        <label class="select-control">
+          <span>Material</span>
+          <select>
+            <option>All materials</option>
+            <option>Stone veneer</option>
+            <option>Brick veneer</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <button class="favorite" aria-label="Save Cliffstone Whitebark">+</button>
+          <div class="product-card__media stone-cool"></div>
+          <div class="product-card__body">
+            <p class="eyebrow">Stone veneer</p>
+            <h3>Cliffstone Whitebark</h3>
+            <p>Linear stone with soft cream, tan, and charcoal movement.</p>
+            <a class="button button--secondary" href="#">Order sample</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <button class="favorite" aria-label="Save LedgeCut Sage">+</button>
+          <div class="product-card__media stone-warm"></div>
+          <div class="product-card__body">
+            <p class="eyebrow">Stone veneer</p>
+            <h3>LedgeCut Sage</h3>
+            <p>Layered profile with warm mineral variation and narrow joints.</p>
+            <a class="button button--secondary" href="#">Order sample</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <button class="favorite" aria-label="Save European Ledge">+</button>
+          <div class="product-card__media stone-earth"></div>
+          <div class="product-card__body">
+            <p class="eyebrow">Architectural stone</p>
+            <h3>European Ledge</h3>
+            <p>Long, refined shapes for fireplaces, entries, and exterior walls.</p>
+            <a class="button button--secondary" href="#">Order sample</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <button class="favorite" aria-label="Save TundraBrick Ashland">+</button>
+          <div class="product-card__media stone-brick"></div>
+          <div class="product-card__body">
+            <p class="eyebrow">Brick veneer</p>
+            <h3>TundraBrick Ashland</h3>
+            <p>Weathered brick texture with ash, clay, and ivory tones.</p>
+            <a class="button button--secondary" href="#">Order sample</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="inspiration">
+      <div class="section-heading">
+        <p class="eyebrow">Inspiration</p>
+        <h2>Product stories built around finished spaces.</h2>
+      </div>
+      <div class="inspiration-grid">
+        <a class="inspiration-card stone-room-one" href="#">
+          <span>Modern hearth walls</span>
+        </a>
+        <a class="inspiration-card stone-room-two" href="#">
+          <span>Outdoor living facades</span>
+        </a>
+        <a class="inspiration-card stone-room-three" href="#">
+          <span>Soft neutral exteriors</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <a class="brand" href="#">
+          <span class="brand__mark"></span>
+          <span>Eldorado Stone</span>
+        </a>
+        <p>Warm product navigation for architectural materials, samples, and inspiration.</p>
+      </div>
+      <div>
+        <h3>Products</h3>
+        <a href="#">Stone veneer</a>
+        <a href="#">Brick veneer</a>
+        <a href="#">Accessories</a>
+      </div>
+      <div>
+        <h3>Resources</h3>
+        <a href="#">Installation</a>
+        <a href="#">Catalogs</a>
+        <a href="#">Dealer locator</a>
+      </div>
+      <div>
+        <h3>Professionals</h3>
+        <a href="#">Architect tools</a>
+        <a href="#">Sample program</a>
+        <a href="#">Contact sales</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

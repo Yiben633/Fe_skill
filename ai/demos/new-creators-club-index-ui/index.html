@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NEW Creators Club Index UI</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="global-header">
+      <div class="header-top">
+        <div class="news">
+          <h2>News :</h2>
+          <div class="news-body">
+            <p>JAGDA New Designer Award 2024 | Shunta Sakamoto</p>
+          </div>
+        </div>
+        <button class="theme-button" type="button" aria-label="toggle color theme"></button>
+      </div>
+
+      <div class="header-body">
+        <div class="logo-area">
+          <a class="logo" href="#" aria-label="new home">
+            <span>NEW</span>
+          </a>
+        </div>
+        <div class="monitor" aria-hidden="true">
+          <canvas id="monitor-canvas" width="900" height="110"></canvas>
+        </div>
+        <div class="header-links">
+          <a href="#">info</a>
+          <a href="#">instagram</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-index">
+      <section class="filter-header" data-visible="true">
+        <ul class="filter-radios" aria-label="content filter">
+          <li><button class="filter-tab is-current" data-filter="all" type="button">all</button></li>
+          <li><button class="filter-tab" data-filter="works" type="button">works</button></li>
+          <li><button class="filter-tab" data-filter="member" type="button">member</button></li>
+        </ul>
+        <button class="search-toggle" type="button" data-open="true" aria-label="toggle search system">
+          <span></span>
+        </button>
+      </section>
+
+      <section class="filter-search" data-search>
+        <div class="filter-left">
+          <h2>Search System</h2>
+          <ul class="type-list">
+            <li data-current="true"><button type="button">Katakana</button></li>
+            <li><button type="button">Alphabet</button></li>
+            <li><button type="button">Tag</button></li>
+            <li><button type="button">Year</button></li>
+            <li><button type="button">Beat</button></li>
+          </ul>
+          <button class="clear-button" type="button">clear</button>
+        </div>
+
+        <div class="filter-right">
+          <ul class="mode-list">
+            <li data-current="true"><button type="button">Search Mode</button></li>
+            <li><button type="button">Sequencer Mode</button></li>
+          </ul>
+
+          <div class="square-grid" aria-label="character filters">
+            <button type="button">A</button>
+            <button type="button">K</button>
+            <button type="button">S</button>
+            <button type="button">T</button>
+            <button type="button">N</button>
+            <button type="button">H</button>
+            <button type="button">M</button>
+            <button type="button">Y</button>
+            <button type="button">R</button>
+            <button type="button">W</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="sort-row">
+        <h1>Index</h1>
+        <ul>
+          <li><button type="button">newest</button></li>
+          <li><button type="button">alphabet</button></li>
+          <li><button type="button">year</button></li>
+        </ul>
+      </section>
+
+      <section class="card-list" data-filtered="true">
+        <article class="card-work" data-type="works">
+          <a href="#">
+            <span class="card-work-image art-a" data-border="true"></span>
+            <span class="card-work-title">Canere Poster</span>
+          </a>
+          <ul class="tag-capsule">
+            <li>Graphic</li>
+            <li>Illustration</li>
+            <li>2022</li>
+          </ul>
+          <div class="tag-char" data-not-scale="false">
+            <span>C</span>
+            <span>K</span>
+          </div>
+        </article>
+
+        <article class="card-work" data-type="works">
+          <a href="#">
+            <span class="card-work-image art-b"></span>
+            <span class="card-work-title">Share Place Mitaka</span>
+          </a>
+          <ul class="tag-capsule">
+            <li>Logo</li>
+            <li>Motion</li>
+            <li>2020</li>
+          </ul>
+          <div class="tag-char" data-not-scale="false">
+            <span>S</span>
+            <span>M</span>
+          </div>
+        </article>
+
+        <article class="card-work" data-type="works">
+          <a href="#">
+            <span class="card-work-image art-c" data-border="true"></span>
+            <span class="card-work-title">Riet Garden Mitaka</span>
+          </a>
+          <ul class="tag-capsule">
+            <li>Brand</li>
+            <li>Logo</li>
+            <li>2019</li>
+          </ul>
+          <div class="tag-char" data-not-scale="false">
+            <span>R</span>
+          </div>
+        </article>
+
+        <article class="card-member" data-type="member">
+          <span class="name-ja">Creator Director</span>
+          <span class="name-en">Toi Yamada</span>
+          <p class="member-description">
+            Creative director and producer working across identity, digital,
+            product development, and club projects.
+          </p>
+          <p class="member-accounts">@neeeewjp</p>
+          <div class="tag-char" data-not-scale="false">
+            <span>Y</span>
+            <span>T</span>
+          </div>
+        </article>
+
+        <article class="card-member" data-type="member">
+          <span class="name-ja">Graphic Designer</span>
+          <span class="name-en">Shunta Sakamoto</span>
+          <p class="member-description">
+            Art director and graphic designer exploring playful systems,
+            awards, and graphic tools.
+          </p>
+          <p class="member-accounts">@sakamotoapp</p>
+          <div class="tag-char" data-not-scale="false">
+            <span>S</span>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

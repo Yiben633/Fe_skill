@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evervault Payments Security UI Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="banner">Series B secured. Build flexible payments security with encrypted workflows.</div>
+
+    <nav class="ev-nav" aria-label="Main">
+      <ul class="ev-nav-list">
+        <li><a class="ev-nav-link" href="#"><span>Home</span></a></li>
+        <li><a class="ev-nav-link" href="#products"><span>Products</span></a></li>
+        <li><a class="ev-nav-link" href="#demo"><span>Demo</span></a></li>
+        <li><a class="ev-nav-link" href="#compliance"><span>Compliance</span></a></li>
+        <li><button class="ev-nav-link nav-button" type="button" data-open-drawer><span>Contact</span></button></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="hero-gradient">
+          <div class="orbit-wrap" aria-hidden="true">
+            <div class="orbit-container rotate-slow">
+              <div class="orbit-ring outer"><span class="planet">JS</span></div>
+            </div>
+            <div class="orbit-container rotate-medium">
+              <div class="orbit-ring middle"><span class="planet">API</span></div>
+            </div>
+            <div class="orbit-container rotate-fast">
+              <div class="orbit-ring inner"><span class="planet">PCI</span></div>
+            </div>
+          </div>
+
+          <div class="hero-content">
+            <span class="eyebrow">Flexible payments security</span>
+            <h1>Secure payment data without losing control.</h1>
+            <p>Build compliant card, wallet, and PSP workflows with encrypted building blocks that fit your stack.</p>
+            <div class="hero-actions">
+              <button class="button primary" type="button" data-open-modal>Open secure checkout</button>
+              <button class="button secondary" type="button" data-open-drawer>Book a demo</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="section product-grid">
+        <article class="feature-card card-stack-card">
+          <span class="icon-box">01</span>
+          <h2>Card Collection</h2>
+          <p>Collect card data in secure components while keeping the payment experience native.</p>
+          <div class="card-stack" aria-hidden="true">
+            <div class="payment-card"><span class="chip"></span><strong>EV 1849</strong></div>
+            <div class="payment-card"><span class="chip"></span><strong>PCI SAFE</strong></div>
+            <div class="payment-card"><span class="chip"></span><strong>TOKEN</strong></div>
+          </div>
+        </article>
+
+        <article class="feature-card psp-card">
+          <span class="icon-box">02</span>
+          <h2>Multi-PSP Routing</h2>
+          <p>Route securely between providers, vaults, and token networks without exposing sensitive payloads.</p>
+          <div class="psp-visual" aria-hidden="true">
+            <span class="pulse-ring"></span>
+            <span class="pulse-ring"></span>
+            <span class="pulse-ring"></span>
+            <div class="mini-card"></div>
+            <div class="service stripe">S</div>
+            <div class="service plaid">P</div>
+            <div class="service adyen">A</div>
+          </div>
+        </article>
+
+        <article class="feature-card terminal-card">
+          <span class="icon-box">03</span>
+          <h2>Encrypted Requests</h2>
+          <p>Pass encrypted payloads through services and keep secrets out of logs and infrastructure.</p>
+          <div class="terminal" aria-hidden="true">
+            <pre>encrypt.card("4242 **** **** 4242")
+relay.to("processor")
+status: tokenized<span class="cursor"></span></pre>
+          </div>
+        </article>
+      </section>
+
+      <div class="divider"><span></span></div>
+
+      <section id="demo" class="section cta-section">
+        <div class="cta-gradient">
+          <span class="eyebrow">Composable workflows</span>
+          <h2>Enhance customer experience and maximize revenue with your payments.</h2>
+          <p>Use flexible building blocks to build secure and compliant payment workflows.</p>
+          <div class="cta-cards">
+            <a class="cta-card" href="#">
+              <span class="icon-box">D</span>
+              <strong>Read the docs</strong>
+              <span>SDKs, card components, relay, and wallet guides.</span>
+            </a>
+            <button class="cta-card" type="button" data-open-modal>
+              <span class="icon-box">C</span>
+              <strong>Try checkout</strong>
+              <span>Launch a demo modal with secure payment fields.</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="compliance" class="section compliance">
+        <h2>Compliance-ready foundations</h2>
+        <div class="badge-row">
+          <div class="compliance-badge"><strong>PCI</strong><span>Level 1</span></div>
+          <div class="compliance-badge"><strong>SOC 2</strong><span>Type II</span></div>
+          <div class="compliance-badge"><strong>HIPAA</strong><span>ePHI</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">EV</div>
+        <ul>
+          <li><h3>Products</h3></li>
+          <li><a href="#">Relay</a></li>
+          <li><a href="#">Card Collection</a></li>
+          <li><a href="#">Network Tokens</a></li>
+        </ul>
+        <ul>
+          <li><h3>Solutions</h3></li>
+          <li><a href="#">Multi-PSP</a></li>
+          <li><a href="#">Card Issuing</a></li>
+          <li><a href="#">Wallet Management</a></li>
+        </ul>
+        <ul>
+          <li><h3>Resources</h3></li>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Guides</a></li>
+          <li><a href="#">Papers</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>2026 Evervault-style demo. Fake payment fields only.</p>
+        <a class="status" href="#">All systems normal</a>
+      </div>
+    </footer>
+
+    <div class="overlay" data-modal hidden>
+      <div class="overlay-window" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
+        <button class="overlay-close" type="button" data-close-modal>Close</button>
+        <div class="checkout">
+          <span class="brand">EV Secure Checkout</span>
+          <h2 id="checkout-title">Encrypted card collection</h2>
+          <form ev-component="card" ev-fields="number expiry cvc">
+            <label class="field" ev-name="number">Card number<input value="4242 4242 4242 4242" aria-label="Card number"></label>
+            <label class="field" ev-name="expiry">Expiry<input value="12 / 30" aria-label="Expiry"></label>
+            <label class="field" ev-name="cvc">CVC<input value="123" aria-label="CVC"></label>
+          </form>
+          <button class="pay-button" type="button"><span class="spinner"></span> Tokenize card</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="drawer-overlay" data-drawer hidden></div>
+    <aside class="sales-drawer" data-drawer-panel hidden aria-label="Sales form">
+      <button class="drawer-close" type="button" data-close-drawer>&times;</button>
+      <h2>Book a demo</h2>
+      <p>Tell us what you are building and we will map the secure payments workflow.</p>
+      <form class="sales-form">
+        <label>Name<input placeholder="Ada Lovelace"></label>
+        <label>Work email<input placeholder="ada@company.com"></label>
+        <label>Use case<textarea placeholder="Multi-PSP routing, card collection, tokenization..."></textarea></label>
+        <button class="button brand" type="button">Send request</button>
+      </form>
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>

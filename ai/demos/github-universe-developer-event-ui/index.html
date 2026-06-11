@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en" class="html-root">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GitHub Universe Developer Event UI Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="page">
+      <nav class="site-nav" aria-label="Universe navigation">
+        <div class="nav-inner">
+          <a class="brand" href="#" aria-label="GitHub Universe home">
+            <span class="mark">GH</span>
+            <span>UNIVERSE'26</span>
+          </a>
+          <div class="nav-links">
+            <a class="nav-link" href="#agenda">Agenda</a>
+            <a class="nav-link" href="#tickets">Passes</a>
+            <a class="nav-link" href="#arcade">Arcade</a>
+          </div>
+          <div class="nav-actions">
+            <a class="nav-link nav-secondary" href="#">Sign in</a>
+            <a class="nav-link nav-primary" href="#tickets">Get passes</a>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <section class="section-content section-content-no-padding hero" id="start">
+          <div class="hero-visual" aria-hidden="true">
+            <canvas id="mona-canvas"></canvas>
+            <div class="mona-head">
+              <div class="eye left"></div>
+              <div class="eye right"></div>
+              <div class="mouth"></div>
+            </div>
+            <div class="ticker">git commit -m "worlds-fair-of-software/"</div>
+          </div>
+
+          <div class="hero-copy">
+            <p class="mono-label">Oct 28-29 / San Francisco + Online</p>
+            <h1 class="narrow-heading hero-title">Join the world's fair of software.</h1>
+            <p class="hero-description">
+              A developer event interface with GitHub-flavored borders, Mona Sans type,
+              playful code details, and practical registration flows.
+            </p>
+            <div class="hero-buttons">
+              <a class="button button-primary" href="#tickets">Get passes <span>-></span></a>
+              <button class="button" type="button" data-open-arcade>Play arcade <span>-></span></button>
+            </div>
+          </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section class="section-content agenda" id="agenda">
+          <div class="section-heading">
+            <p class="mono-label">schedule.json</p>
+            <h2 class="narrow-heading">Two days of ship energy.</h2>
+          </div>
+
+          <div class="agenda-list">
+            <article class="agenda-day">
+              <div>
+                <span class="agenda-time">Day 01 / 09:00</span>
+                <h3>Keynote and product drops</h3>
+              </div>
+              <p>Open the event with roadmap sessions, live demos, and behind-the-scenes engineering stories.</p>
+            </article>
+            <article class="agenda-day">
+              <div>
+                <span class="agenda-time">Day 01 / 13:30</span>
+                <h3>AI pair programming labs</h3>
+              </div>
+              <p>Hands-on workshops for building, reviewing, and deploying software with modern developer tooling.</p>
+            </article>
+            <article class="agenda-day">
+              <div>
+                <span class="agenda-time">Day 02 / 10:15</span>
+                <h3>Open source maintainer fair</h3>
+              </div>
+              <p>Meet maintainers, explore sponsor booths, and discover projects that move the ecosystem forward.</p>
+            </article>
+          </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section class="section-content section-content-no-padding tickets" id="tickets">
+          <div class="tickets-intro">
+            <p class="mono-label">passes.lock</p>
+            <h2 class="narrow-heading">Pick your adventure.</h2>
+          </div>
+
+          <div class="ticket-tabs" role="tablist" aria-label="Ticket types">
+            <button class="ticket-tab is-selected" type="button" role="tab" aria-selected="true" data-ticket="in-person">In person</button>
+            <button class="ticket-tab" type="button" role="tab" aria-selected="false" data-ticket="virtual">Virtual</button>
+          </div>
+
+          <div class="ticket-panel" data-panel="in-person">
+            <div class="price-card">
+              <p class="mono-label">full access</p>
+              <h3>Universe Pass</h3>
+              <p class="price">$1499 <span>USD</span></p>
+              <ul>
+                <li>Keynotes and breakout sessions</li>
+                <li>Hands-on labs and arcade night</li>
+                <li>Community reception</li>
+              </ul>
+              <a class="button button-primary" href="#">Register <span>-></span></a>
+            </div>
+            <div class="ticket-art" aria-hidden="true">
+              <div class="ticket-grid"></div>
+              <span>{ }</span>
+            </div>
+          </div>
+
+          <div class="ticket-panel" data-panel="virtual" hidden>
+            <div class="price-card">
+              <p class="mono-label">stream access</p>
+              <h3>Online Pass</h3>
+              <p class="price">$0 <span>USD</span></p>
+              <ul>
+                <li>Live keynote stream</li>
+                <li>Selected technical sessions</li>
+                <li>Community chat</li>
+              </ul>
+              <a class="button button-primary" href="#">Save seat <span>-></span></a>
+            </div>
+            <div class="ticket-art virtual-art" aria-hidden="true">
+              <div class="ticket-grid"></div>
+              <span>&lt;/&gt;</span>
+            </div>
+          </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section class="section-content cta" id="arcade">
+          <div class="footer-visual" aria-hidden="true">
+            <div class="block block-blue"></div>
+            <div class="block block-purple"></div>
+            <div class="block block-pink"></div>
+            <div class="block block-green"></div>
+          </div>
+          <div class="cta-copy">
+            <p class="mono-label">echo "bug-bash-game/" &gt;&gt; .gitignore</p>
+            <h2 class="narrow-heading">Experience the developer wonderland.</h2>
+            <button class="button button-primary" type="button" data-open-arcade>Open arcade <span>-></span></button>
+          </div>
+        </section>
+      </main>
+
+      <div class="arcade-dialog" role="dialog" aria-modal="true" aria-label="Mona arcade" hidden>
+        <div class="arcade-wrapper">
+          <button class="arcade-close" type="button" aria-label="Close arcade">X</button>
+          <div class="arcade-screen">
+            <p class="mono-label">mona-arcade.exe</p>
+            <div class="pixel-mona" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <strong>Press deploy to start</strong>
+            <button class="button button-primary" type="button">Deploy</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cursor-trails" aria-hidden="true"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

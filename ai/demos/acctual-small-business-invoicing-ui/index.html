@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Acctual Small Business Invoicing UI Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Acctual home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Acctual</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#pricing">Pricing</a>
+        <a href="#payments">Payments</a>
+        <a href="#features">Features</a>
+      </nav>
+      <a class="nav-cta" href="#start">Get started</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="acctual-pill reveal">
+            <span class="pill-dot"></span>
+            Free invoicing for small business
+          </span>
+          <h1 class="reveal">Send professional invoices and get paid same day.</h1>
+          <p class="hero-text reveal">
+            Create polished invoices, accept cards or bank transfers, and keep the monthly subscription at zero.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="#start">Get paid with Acctual</a>
+            <a class="button button-secondary" href="#payments">See payment flow</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Invoice payment dashboard preview">
+          <article class="invoice-card">
+            <div class="invoice-top">
+              <span class="mono">INV-2048</span>
+              <span class="status paid">Paid same day</span>
+            </div>
+            <div>
+              <p class="eyebrow">Invoice to</p>
+              <h2>Northstar Studio</h2>
+            </div>
+            <div class="invoice-lines">
+              <div class="invoice-row"><span>Strategy sprint</span><strong>$1,200</strong></div>
+              <div class="invoice-row"><span>Implementation</span><strong>$2,400</strong></div>
+              <div class="invoice-row muted-row"><span>Processing fee</span><strong>$36</strong></div>
+            </div>
+            <div class="invoice-total">
+              <span>Total paid</span>
+              <strong class="number">$3,636</strong>
+            </div>
+          </article>
+
+          <aside class="floating-card card-rate">
+            <span class="mono">CARD</span>
+            <strong>2.7%</strong>
+            <p>Clear card fees before checkout.</p>
+          </aside>
+
+          <aside class="floating-card bank-rate">
+            <span class="mono">BANK</span>
+            <strong>1%</strong>
+            <p>Lower-cost transfers for bigger invoices.</p>
+          </aside>
+
+          <aside class="floating-card payout-card">
+            <span class="mono">PAYOUT</span>
+            <strong>Today</strong>
+            <p>Same-day payment status.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="pricing-strip" id="pricing" aria-label="Pricing highlights">
+        <article class="fee-card reveal badge-blue">
+          <strong>$0</strong>
+          <span>monthly subscription</span>
+        </article>
+        <article class="fee-card reveal badge-purple">
+          <strong>2.7%</strong>
+          <span>card payments</span>
+        </article>
+        <article class="fee-card reveal badge-green">
+          <strong>1%</strong>
+          <span>bank transfers</span>
+        </article>
+      </section>
+
+      <section class="payments-panel reveal" id="payments">
+        <div class="panel-copy">
+          <span class="mono section-kicker">PAYMENT ROUTING</span>
+          <h2>One invoice, multiple ways to pay.</h2>
+          <p>Use colorful payment chips and mono metadata to make finance actions feel transparent and easy to scan.</p>
+        </div>
+        <div class="payment-methods" role="group" aria-label="Choose a payment method">
+          <button class="method-button is-active" type="button" data-method="card" data-fee="2.7">Card</button>
+          <button class="method-button" type="button" data-method="bank" data-fee="1">Bank</button>
+        </div>
+        <div class="calculator-card">
+          <div class="calc-row"><span>Invoice</span><strong>$3,600.00</strong></div>
+          <div class="calc-row"><span id="fee-label">Card fee</span><strong id="fee-value">$97.20</strong></div>
+          <div class="calc-total"><span>Customer pays</span><strong id="total-value">$3,697.20</strong></div>
+        </div>
+      </section>
+
+      <section class="feature-grid" id="features">
+        <article class="feature-card reveal">
+          <span class="feature-icon blue">IN</span>
+          <h3>Professional invoices</h3>
+          <p>Large clear totals, tidy line items, and a paid-state chip above the fold.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-icon magenta">CC</span>
+          <h3>Card checkout</h3>
+          <p>Surface fee details early with saturated accent cards and compact labels.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-icon green">BK</span>
+          <h3>Bank transfers</h3>
+          <p>Use mono routing hints and green confirmation states for settled payments.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-icon purple">24</span>
+          <h3>Same-day payouts</h3>
+          <p>Make status cards feel immediate with short copy and numeric emphasis.</p>
+        </article>
+      </section>
+
+      <section class="final-cta reveal" id="start">
+        <div>
+          <span class="mono section-kicker">START FREE</span>
+          <h2>Get paid with Acctual</h2>
+        </div>
+        <form class="signup-form">
+          <label class="visually-hidden" for="email">Email</label>
+          <input id="email" type="email" placeholder="studio@example.com">
+          <button class="button button-primary" type="submit">Create invoice</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yoshito Illustration Portfolio UI Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="loading" data-loading>
+      <div class="loading-mark">Yoshito</div>
+      <div class="loading-progress"><span></span></div>
+      <div class="loading-character"></div>
+    </div>
+
+    <div class="scrollbar" aria-hidden="true"><span></span></div>
+
+    <header class="site-header">
+      <a class="brand" href="#">
+        <span class="brand-star">*</span>
+        <span>Yoshito</span>
+      </a>
+      <button class="menu-pill" type="button" aria-expanded="false">
+        <span class="menu-text">
+          <span>Menu</span>
+          <span>Close</span>
+        </span>
+      </button>
+    </header>
+
+    <main id="swup">
+      <section class="kv section-pad" aria-labelledby="kv-title">
+        <div class="gl-bg" aria-hidden="true"></div>
+        <div class="metal metallic-heart" aria-hidden="true"></div>
+        <div class="metal metallic-ring" aria-hidden="true"></div>
+        <div class="metal metallic-logo" aria-hidden="true">Y</div>
+
+        <div class="kv-info">
+          <p class="eyebrow">Illustration / Character / Visual</p>
+          <h1 id="kv-title">Yoshito<br>Illustration<br>Portfolio</h1>
+          <p>Dreamy character-led portfolio language with pale blue UI chrome, floating cards, tiny tags, and oversized display lettering.</p>
+        </div>
+
+        <div class="portfolio-word" aria-hidden="true">Portfolio</div>
+        <div class="main-figure" aria-hidden="true">
+          <span class="face"></span>
+          <span class="body-shape"></span>
+          <span class="spark s1">*</span>
+          <span class="spark s2">+</span>
+        </div>
+
+        <a class="float-card card-profile" href="#">
+          <span class="art art-profile"></span>
+          <span class="tag-link">Profile <span class="tag-arrow">-></span></span>
+        </a>
+
+        <a class="float-card card-works" href="#">
+          <span class="art art-works"></span>
+          <span class="tag-link">Works <span class="tag-arrow">-></span></span>
+        </a>
+
+        <a class="float-card card-gallery" href="#">
+          <span class="art art-gallery"></span>
+          <span class="tag-link">Gallery <span class="tag-arrow">-></span></span>
+        </a>
+
+        <div class="news-marquee" aria-label="News">
+          <span>New works update</span>
+          <span>Commission open</span>
+          <span>Character sheets added</span>
+          <span>New works update</span>
+        </div>
+      </section>
+
+      <section class="content-section section-pad">
+        <div class="star-separator" aria-hidden="true"><span>*</span><i></i><span>*</span></div>
+        <div class="section-grid">
+          <div>
+            <p class="eyebrow">Works</p>
+            <h2 class="lower-title">Works</h2>
+            <p class="section-copy">Feature portfolio entries use a 12-column rhythm, light blue accents, small metadata tags, and image-first cards that feel like collectible illustration tiles.</p>
+            <a class="tag-link" href="#works">View works <span class="tag-arrow">-></span></a>
+          </div>
+          <div class="overlap-media">
+            <div class="work-tile tile-a"></div>
+            <div class="work-tile tile-b"></div>
+            <div class="work-tile tile-c"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section section-pad gallery-section">
+        <div class="star-separator" aria-hidden="true"><span>*</span><i></i><span>*</span></div>
+        <div class="section-grid reversed">
+          <div class="scattered-media" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div>
+            <p class="eyebrow">Gallery</p>
+            <h2 class="lower-title">Gallery</h2>
+            <p class="section-copy">Gallery blocks are placed like stickers, with soft shadows, thick whitespace, and tiny floating stars to keep the interface light.</p>
+            <a class="tag-link" href="#">Open gallery <span class="tag-arrow">-></span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="works-index section-pad" id="works">
+        <div class="works-head">
+          <div>
+            <p class="eyebrow">Index</p>
+            <h2 class="lower-title small">Selected</h2>
+          </div>
+          <div class="filters" aria-label="Work filters">
+            <button class="filter is-active" type="button" data-filter="all">All</button>
+            <button class="filter" type="button" data-filter="personal">Personal</button>
+            <button class="filter" type="button" data-filter="client">Client</button>
+          </div>
+        </div>
+
+        <div class="works-grid">
+          <article class="work-card is-wide" data-kind="personal">
+            <span class="work-tag">#01 / Personal</span>
+            <div class="thumb thumb-blue"></div>
+            <h3>Blue window daydream</h3>
+          </article>
+          <article class="work-card" data-kind="client">
+            <span class="work-tag">#02 / Client</span>
+            <div class="thumb thumb-pink"></div>
+            <h3>Soft mascot study</h3>
+          </article>
+          <article class="work-card" data-kind="personal">
+            <span class="work-tag">#03 / Personal</span>
+            <div class="thumb thumb-green"></div>
+            <h3>Little star runner</h3>
+          </article>
+          <article class="work-card" data-kind="client">
+            <span class="work-tag">#04 / Client</span>
+            <div class="thumb thumb-yellow"></div>
+            <h3>Editorial character set</h3>
+          </article>
+        </div>
+      </section>
+
+      <footer class="site-footer section-pad">
+        <div class="star-separator" aria-hidden="true"><span>*</span><i></i><span>*</span></div>
+        <div class="footer-word">Contact</div>
+        <div class="footer-row">
+          <p>For dreamy illustration portfolios, keep the interface tiny, pale, precise, and image-led.</p>
+          <a class="tag-link" href="#">Mail <span class="tag-arrow">-></span></a>
+        </div>
+        <p class="copyright">(C) Yoshito style study demo</p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

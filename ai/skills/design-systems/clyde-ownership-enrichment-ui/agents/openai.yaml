@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clyde Ownership Enrichment UI"
+  short_description: "Build Clyde-style ecommerce ownership enrichment landing pages."
+  default_prompt: "Create a Clyde-style ownership enrichment ecommerce SaaS page with Oldschool Grotesk and Recoleta inspired typography, 12-column responsive grid, light-grey and dark theme sections, yellow-orange-purple gradient accents, rounded cards, pill CTAs with animated gradient hover, smooth marquee bands, product protection mosaic, hero orb/product cases, benefit chips, stepped card slides with progress, logo/testimonial panels, and a compact prefooter CTA."

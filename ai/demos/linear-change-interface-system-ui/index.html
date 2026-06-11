@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linear Change Interface System UI Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="change_content">
+      <section class="change_intro">
+        <p class="eyebrow">Linear interface system</p>
+        <h1>Last Year You Said Next Year</h1>
+        <p class="intro_copy">A calm, dark product language for teams that want motion without noise.</p>
+      </section>
+
+      <section class="page_layout">
+        <div class="page_wrapper page_gridLayout">
+          <aside class="sidebar">
+            <div class="company-logo"><span>L</span></div>
+            <nav>
+              <a href="#components">Components</a>
+              <a href="#benefits">Benefits</a>
+              <a href="#article">Article shell</a>
+            </nav>
+          </aside>
+
+          <article class="page_content" id="components">
+            <div class="page_contentInner">
+              <h2>Component primitives</h2>
+              <p>Precise UI components built from hairline borders, subtle shadows, fading separators, and stable content geometry.</p>
+
+              <div class="separator separator--fading" data-orientation="horizontal"></div>
+
+              <div class="component_grid">
+                <button class="lightbox_wrapper" type="button" data-lightbox>
+                  <span class="mock-image">
+                    <span class="grid-loader"></span>
+                    <span class="mock-image_caption">Zoomable product image</span>
+                  </span>
+                </button>
+
+                <div class="tweet-theme">
+                  <div class="tweet-card">
+                    <div class="tweet-header">
+                      <strong>Linear</strong>
+                      <span>@linear</span>
+                    </div>
+                    <p>Good interfaces create momentum by making the next step obvious.</p>
+                    <span class="tweet-meta">10:24 AM - Product craft</span>
+                  </div>
+                </div>
+
+                <div class="separator-demo">
+                  <div class="separator separator--glass" data-orientation="horizontal"></div>
+                  <div class="separator separator--skeuo" data-orientation="horizontal"></div>
+                  <div class="separator separator--border" data-orientation="horizontal"></div>
+                  <div class="separator separator--fading" data-orientation="horizontal"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="benefits" id="benefits">
+        <article class="benefit">
+          <figure class="benefit_figure">
+            <div class="dot-matrix"><canvas id="matrixOne"></canvas></div>
+          </figure>
+          <h3>Momentum</h3>
+          <p>Surface the right work at the right time with low-friction product primitives.</p>
+        </article>
+        <article class="benefit">
+          <figure class="benefit_figure figure-ring"></figure>
+          <h3>Context</h3>
+          <p>Keep discussions, issues, updates, and decisions close to the work.</p>
+        </article>
+        <article class="benefit">
+          <figure class="benefit_figure figure-stack"></figure>
+          <h3>Focus</h3>
+          <p>Reduce interface noise with calm hierarchy, precise borders, and predictable spacing.</p>
+        </article>
+      </section>
+
+      <section class="change_sections">
+        <div class="change_section">
+          <div class="change_sectionContent">
+            <p class="eyebrow">Cinematic page</p>
+            <h2>Move from intention to execution.</h2>
+            <p>The change-page pattern uses high-contrast split sections, editorial type, and abstract figure layers.</p>
+          </div>
+          <figure class="change_figure">
+            <div class="glitch-card"></div>
+            <div class="glitch-card glitch-card--offset"></div>
+          </figure>
+        </div>
+      </section>
+
+      <section class="page_layout" id="article">
+        <div class="page_wrapper page_gridLayout">
+          <aside class="sidebar sidebar--quiet">
+            <span>Craft</span>
+            <span>2026</span>
+          </aside>
+          <article class="page_content">
+            <div class="page_contentInner">
+              <h2>A calmer interface for a product in motion</h2>
+              <p>Use this content shell for articles, changelogs, and docs. The layout keeps prose readable while maintaining Linear's dark product atmosphere.</p>
+              <div class="article_cards">
+                <div class="article_card">
+                  <div class="company-logo"><span>A</span></div>
+                  <h3>Agent-ready workflows</h3>
+                  <p>Cards use low contrast surfaces and compact metadata.</p>
+                </div>
+                <div class="article_card">
+                  <div class="company-logo"><span>C</span></div>
+                  <h3>Continuous planning</h3>
+                  <p>Small radii, precise spacing, and stable image frames.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div class="lightbox_overlay hidden" id="lightboxOverlay"></div>
+    <div class="lightbox_lightbox hidden" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+      <div class="lightbox_inner">
+        <div class="mock-image mock-image--large">
+          <span class="grid-loader"></span>
+          <span class="mock-image_caption">Zoomed Linear-style product image</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

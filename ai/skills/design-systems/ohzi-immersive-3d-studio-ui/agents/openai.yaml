@@ -1,0 +1,4 @@
+interface:
+  display_name: "OHZI Immersive 3D Studio UI"
+  short_description: "Build OHZI-style dark immersive 3D studio websites."
+  default_prompt: "Create an OHZI-style immersive 3D interactive studio website with a fullscreen dark WebGL/canvas hero, Montserrat typography, glass UI filter/buttons, custom glass cursor, fixed header with logo/volume/menu controls, animated section title letters, blurred description panels, loader with cube animation and progress bar, internal products modal, newsletter split modal, contact modal with budget pills, case-study iframe overlay, and hidden SEO fallback content."

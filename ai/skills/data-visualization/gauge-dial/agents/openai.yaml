@@ -1,0 +1,3 @@
+display_name: Gauge Dial
+short_description: Hướng dẫn gauge, dial, meter và threshold indicator.
+default_prompt: Dùng gauge-dial để thiết kế và implement gauge này.

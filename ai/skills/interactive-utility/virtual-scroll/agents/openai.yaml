@@ -1,0 +1,3 @@
+display_name: Virtual Scroll
+short_description: Hướng dẫn virtualized list/grid, windowing và large data UI.
+default_prompt: Dùng virtual-scroll để thiết kế và implement danh sách ảo này.

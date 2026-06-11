@@ -1,0 +1,4 @@
+interface:
+  display_name: "Avenue Z WordPress AI Agency UI"
+  short_description: "Build Avenue Z-style WordPress agency pages."
+  default_prompt: "Create an Avenue Z-style WordPress/Astra agency page with Inter/Avenir typography, blue strong highlights, underlined headline emphasis, dark futuristic hero, glass quote cards, Spectra sticky container behavior, Outermost icon transforms, Spectra login form, frosted floating AI summarize pill with rainbow hover ring, narrow dark summary panel, social icon scaling, and WordPress block utilities."

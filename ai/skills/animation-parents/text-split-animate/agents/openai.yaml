@@ -1,0 +1,3 @@
+display_name: Text Split Animate
+short_description: Hướng dẫn split text, line/word/char reveal và kinetic type.
+default_prompt: Dùng text-split-animate để thiết kế animation cho phần chữ này.

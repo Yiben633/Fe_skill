@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Credential Picker Overlay UI Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="site-shell">
+      <nav class="topbar">
+        <strong>Framer-style page</strong>
+        <button id="showPicker" type="button">Show picker</button>
+      </nav>
+
+      <section class="hero">
+        <p class="eyebrow">No-code website builder</p>
+        <h1>Create a professional website, free.</h1>
+        <p>Design freedom, CMS, SEO, collaboration, and a credential picker layered above the page.</p>
+      </section>
+    </main>
+
+    <div id="g_a11y_announcement" aria-live="polite"></div>
+
+    <div id="credential_picker_container">
+      <div class="L5Fo6c-PQbLGe" role="dialog" aria-label="Sign in with Google">
+        <div class="picker-frame">
+          <div class="picker-header">
+            <span class="google-mark">G</span>
+            <button id="closePicker" type="button" aria-label="Close credential picker">x</button>
+          </div>
+          <div class="L5Fo6c-sM5MNb account-option">
+            <button class="L5Fo6c-bF1uUb" type="button" aria-label="Continue as Alex Morgan"></button>
+            <div class="avatar">A</div>
+            <div>
+              <strong>Continue as Alex Morgan</strong>
+              <p>alex@example.com</p>
+            </div>
+          </div>
+          <div class="account-option secondary">
+            <div class="avatar avatar-muted">+</div>
+            <div>
+              <strong>Use another account</strong>
+              <p>Sign in with a different Google account</p>
+            </div>
+          </div>
+          <p class="picker-copy">To continue, Google will share your name, email address, and profile picture.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

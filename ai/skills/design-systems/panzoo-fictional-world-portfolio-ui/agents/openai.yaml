@@ -1,0 +1,4 @@
+interface:
+  display_name: "Panzoo Fictional World Portfolio UI"
+  short_description: "Electric-blue playful portfolio with TT Globs display."
+  default_prompt: "Create a Panzoo-style fictional-world designer portfolio with electric blue background, white text, hot pink accents, TT Globs display headings, Zen Maru Gothic body type, Aoboshi One title accents, fixed header with centered logo/menu, loading dog/progress motif, bold mascot key visual, works cards with slow thumbnail zoom, goods physics collage, long arrow More link, eye/contact footer, mobile overlay menu, and a slim custom scrollbar."

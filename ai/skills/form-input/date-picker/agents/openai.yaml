@@ -1,0 +1,3 @@
+display_name: Date Picker
+short_description: Hướng dẫn date picker, range picker và calendar popover.
+default_prompt: Dùng date-picker để thiết kế và implement picker ngày này.

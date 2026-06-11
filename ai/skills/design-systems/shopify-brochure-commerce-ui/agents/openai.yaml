@@ -1,0 +1,18 @@
+name: shopify-brochure-commerce-ui
+version: 1.0.0
+description: Agent instructions for building Shopify-inspired brochure commerce landing pages and mega navigation systems.
+instructions: |
+  Use the shopify-brochure-commerce-ui skill when building ecommerce SaaS marketing pages, dark sticky brochure headers, commerce mega menus, checkout feature panels, store builder visuals, AI assistant cards, green-on-black product sections, and responsive nav overlays.
+
+  Prioritize:
+    - Sticky 72px header with dark/light color modes.
+    - Full-width desktop mega menu with media cards and a right product aside.
+    - Dark commerce hero with green mono labels and a concrete checkout/storefront visual.
+    - Rounded product cards with borders, glow, hover media zoom, and muted body copy.
+    - Mobile drawer behavior that preserves CTA access and scrolls safely.
+
+  Avoid:
+    - Generic SaaS dashboards without commerce artifacts.
+    - Decorative-only cards.
+    - One-note green pages; use green as an accent on dark or light surfaces.
+    - Mega menus that are mouse-only.

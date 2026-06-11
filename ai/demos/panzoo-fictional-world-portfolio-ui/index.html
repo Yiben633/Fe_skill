@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panzoo Fictional World Portfolio UI</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="loading" data-loading>
+      <div class="loading-orbit">
+        <span class="loading-dot"></span>
+      </div>
+      <div class="loading-runner">DOG-01</div>
+      <p>Loading fictional world...</p>
+    </div>
+
+    <div class="scrollbar" aria-hidden="true">
+      <span class="scrollbar-thumb"></span>
+    </div>
+
+    <header class="pz-header">
+      <a class="pz-logo" href="#top" aria-label="Panzoo home">Panzoo</a>
+      <nav class="pz-nav" aria-label="Primary navigation">
+        <a href="#profile">Profile</a>
+        <a href="#works">Works</a>
+        <a href="#goods">Goods</a>
+        <a href="#contact">Contact</a>
+        <a href="#links">Links</a>
+      </nav>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        Menu
+      </button>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" data-menu>
+      <a href="#profile">Profile</a>
+      <a href="#works">Works</a>
+      <a href="#goods">Goods</a>
+      <a href="#contact">Contact</a>
+      <a href="#links">Links</a>
+    </div>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Fictional World Designer</p>
+          <h1 id="hero-title">Panzoo</h1>
+          <p class="hero-text">
+            A vivid portfolio system for worlds, characters, goods, posters,
+            and tiny stories that feel found in a bright blue archive.
+          </p>
+        </div>
+
+        <div class="hero-stage" aria-hidden="true">
+          <div class="cloth"></div>
+          <div class="mascot">
+            <span class="mascot-eye left"></span>
+            <span class="mascot-eye right"></span>
+            <span class="mascot-mouth"></span>
+          </div>
+          <div class="sticker pink">zoo</div>
+          <div class="sticker white">world 07</div>
+          <div class="orbit-card">goods</div>
+          <div class="dog-chip">DOG</div>
+        </div>
+      </section>
+
+      <section class="section profile" id="profile">
+        <div>
+          <span class="pz-heading">Profile</span>
+        </div>
+        <p>
+          Build the page like a character notebook: simple facts, strange
+          symbols, bright stickers, and oversized words. The background stays
+          blue so every white panel feels like a cutout.
+        </p>
+      </section>
+
+      <section class="section works" id="works">
+        <div class="section-top">
+          <span class="pz-heading">Works</span>
+          <a class="more-link" href="#contact">More <span></span></a>
+        </div>
+
+        <div class="work-grid">
+          <a class="work-card" href="#">
+            <span class="work-thumb theme-a"><span></span></span>
+            <time>2026.04</time>
+            <strong>Sky Cloth Shop</strong>
+            <small>Identity, character goods, poster set</small>
+          </a>
+          <a class="work-card" href="#">
+            <span class="work-thumb theme-b"><span></span></span>
+            <time>2026.02</time>
+            <strong>Blue Parade Archive</strong>
+            <small>Web direction, animation, illustrated UI</small>
+          </a>
+          <a class="work-card" href="#">
+            <span class="work-thumb theme-c"><span></span></span>
+            <time>2025.11</time>
+            <strong>Dog Planet Market</strong>
+            <small>Goods design, campaign page, stickers</small>
+          </a>
+        </div>
+      </section>
+
+      <section class="section goods" id="goods">
+        <div class="section-top">
+          <span class="pz-heading">Goods</span>
+          <p>Floating product cutouts with game-like hover feedback.</p>
+        </div>
+
+        <div class="goods-physics" data-goods>
+          <article class="good" style="--x: 7vw; --y: 8vh; --r: -9deg; --sqrt-aspect: 1.1;">
+            <b>Badge</b>
+            <span>pink metal pin</span>
+          </article>
+          <article class="good tall" style="--x: 35vw; --y: 2vh; --r: 7deg; --sqrt-aspect: .82;">
+            <b>Poster</b>
+            <span>blue room print</span>
+          </article>
+          <article class="good" style="--x: 61vw; --y: 14vh; --r: -14deg; --sqrt-aspect: 1.25;">
+            <b>Sticker</b>
+            <span>dog label pack</span>
+          </article>
+          <article class="good wide" style="--x: 20vw; --y: 43vh; --r: 12deg; --sqrt-aspect: 1.35;">
+            <b>Cloth</b>
+            <span>mascot fabric</span>
+          </article>
+          <article class="good" style="--x: 68vw; --y: 49vh; --r: 6deg; --sqrt-aspect: 1;">
+            <b>Toy</b>
+            <span>fiction pet</span>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer" id="contact">
+        <div class="eyes" aria-hidden="true">
+          <span class="eye"><span class="pupil"></span></span>
+          <span class="eye"><span class="pupil"></span></span>
+        </div>
+        <a class="contact-link" href="mailto:hello@example.com">Contact</a>
+        <div class="footer-links" id="links">
+          <a href="#">Lit.Link</a>
+          <a href="#">X</a>
+          <a href="#">Instagram</a>
+          <a href="#">Online Shop</a>
+          <a href="#">LINE</a>
+        </div>
+        <p class="copyright">(c) Fictional Panzoo demo.</p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

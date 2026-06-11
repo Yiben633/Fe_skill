@@ -1,0 +1,4 @@
+interface:
+  display_name: "TAMURA Ikuho Visual Portfolio UI"
+  short_description: "Build neon art portfolio grids."
+  default_prompt: "Create a TAMURA Ikuho-style visual portfolio with black/neon color themes, Neue Haas Unica typography, Noto Sans JP fallback, PT Serif italic labels, fixed side menu, rotating star marker, category tags, visual/text project index toggle, and experimental artwork cards."

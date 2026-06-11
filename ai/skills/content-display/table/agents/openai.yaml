@@ -1,0 +1,3 @@
+display_name: Table
+short_description: Hướng dẫn table, responsive rows và sortable columns.
+default_prompt: Dùng table để thiết kế và implement bảng dữ liệu này.

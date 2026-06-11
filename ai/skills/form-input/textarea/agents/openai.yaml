@@ -1,0 +1,3 @@
+display_name: Textarea
+short_description: Hướng dẫn multiline input, auto-resize và character count.
+default_prompt: Dùng textarea để thiết kế và implement trường nhập nhiều dòng này.

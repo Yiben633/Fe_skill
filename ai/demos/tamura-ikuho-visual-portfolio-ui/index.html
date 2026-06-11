@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" data-theme="black">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TAMURA Ikuho Visual Portfolio UI Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-title" href="#">tamura-ikuho.com</a>
+      <button class="theme-button" type="button" aria-label="Change color theme" data-theme-button>
+        <span class="theme-canvas"></span>
+      </button>
+    </header>
+
+    <nav class="side-menu" aria-label="Portfolio navigation">
+      <div class="menu-group main-menu">
+        <a href="#" class="menu-button is-current"><span class="tag"><span>Projects</span></span></a>
+        <a href="#"><span class="tag"><span>Writings</span></span></a>
+        <a href="#"><span class="tag"><span>About</span></span></a>
+        <a href="#"><span class="tag"><span>Contact</span></span></a>
+        <span class="star-marker" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 0 13.2 7.8 18 1.6 15 8.9 24 12 15 15.1 18 22.4 13.2 16.2 12 24 10.8 16.2 6 22.4 9 15.1 0 12 9 8.9 6 1.6 10.8 7.8 12 0Z"></path></svg>
+        </span>
+      </div>
+
+      <div class="menu-group filter-menu" data-filter-menu>
+        <button type="button" data-filter="all" class="is-current"><span class="tag" data-color="secondary"><span>All</span></span></button>
+        <button type="button" data-filter="visual"><span class="tag" data-color="secondary"><span>Visual</span></span></button>
+        <button type="button" data-filter="graphic"><span class="tag" data-color="secondary"><span>Graphic</span></span></button>
+        <button type="button" data-filter="artwork"><span class="tag" data-color="secondary"><span>Artwork</span></span></button>
+        <button type="button" data-filter="video"><span class="tag" data-color="secondary"><span>Video</span></span></button>
+      </div>
+
+      <div class="menu-group view-menu">
+        <button type="button" class="is-current" data-view-button="visual"><span class="tag" data-color="secondary"><span>V</span></span></button>
+        <button type="button" data-view-button="text"><span class="tag" data-color="secondary"><span>T</span></span></button>
+      </div>
+    </nav>
+
+    <main class="page-wrapper">
+      <section class="key-header">
+        <h1>Projects</h1>
+      </section>
+
+      <div class="mobile-filter">
+        <button type="button" data-filter="all" class="is-current"><span class="tag" data-color="secondary"><span>All</span></span></button>
+        <button type="button" data-filter="visual"><span class="tag" data-color="secondary"><span>Visual</span></span></button>
+        <button type="button" data-filter="graphic"><span class="tag" data-color="secondary"><span>Graphic</span></span></button>
+        <button type="button" data-filter="artwork"><span class="tag" data-color="secondary"><span>Artwork</span></span></button>
+        <button type="button" data-filter="video"><span class="tag" data-color="secondary"><span>Video</span></span></button>
+        <button type="button" class="is-current" data-view-button="visual"><span class="tag" data-color="secondary"><span>V</span></span></button>
+        <button type="button" data-view-button="text"><span class="tag" data-color="secondary"><span>T</span></span></button>
+      </div>
+
+      <ul class="project-list" data-view="visual">
+        <li data-category="artwork" style="--aspect: .82">
+          <a class="project-card" href="#">
+            <span class="project-media media-a"></span>
+            <span class="project-text">
+              <h2>Music Loves Art 2026 / Groove</h2>
+              <span class="tag" data-color="secondary"><span>Artwork</span></span>
+            </span>
+          </a>
+        </li>
+        <li data-category="graphic" style="--aspect: .86">
+          <a class="project-card" href="#">
+            <span class="project-media media-b"></span>
+            <span class="project-text">
+              <h2>Invisible Contour</h2>
+              <span class="tag" data-color="secondary"><span>Graphic</span></span>
+            </span>
+          </a>
+        </li>
+        <li data-category="visual" style="--aspect: 1">
+          <a class="project-card" href="#">
+            <span class="project-media media-c"></span>
+            <span class="project-text">
+              <h2>Alternative Perspective Reel</h2>
+              <span class="tag" data-color="secondary"><span>Visual</span></span>
+            </span>
+          </a>
+        </li>
+        <li data-category="video" style="--aspect: .75">
+          <a class="project-card" href="#">
+            <span class="project-media media-d"></span>
+            <span class="project-text">
+              <h2>VJ Performance Archive</h2>
+              <span class="tag" data-color="secondary"><span>Video</span></span>
+            </span>
+          </a>
+        </li>
+        <li data-category="graphic" style="--aspect: .9">
+          <a class="project-card" href="#">
+            <span class="project-media media-e"></span>
+            <span class="project-text">
+              <h2>Space Shower Novelty Bottle</h2>
+              <span class="tag" data-color="secondary"><span>Graphic</span></span>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </main>
+
+    <footer class="site-footer">
+      <button class="sound-button" type="button" aria-label="Toggle sound" data-muted="false">SOUND</button>
+      <div class="footer-content">
+        <p><span>Web design</span> <a href="#">boko</a></p>
+        <p><span>Sound</span> <a href="#">SKYTOPIA</a></p>
+        <ul>
+          <li><a href="#"><span class="tag" data-color="secondary"><span>X</span></span></a></li>
+          <li><a href="#"><span class="tag" data-color="secondary"><span>IG</span></span></a></li>
+          <li><a href="#"><span class="tag" data-color="secondary"><span>V</span></span></a></li>
+          <li><a href="#"><span class="tag" data-color="secondary"><span>Be</span></span></a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <div class="custom-scrollbar" aria-hidden="true"><span></span></div>
+    <script src="script.js"></script>
+  </body>
+</html>

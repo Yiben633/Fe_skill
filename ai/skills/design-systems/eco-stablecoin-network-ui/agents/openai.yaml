@@ -1,0 +1,4 @@
+interface:
+  display_name: "Eco Stablecoin Network UI"
+  short_description: "Build Eco-style stablecoin infra pages."
+  default_prompt: "Create an Eco-style stablecoin network landing page with a dark Webflow-like fintech aesthetic, black/navy backgrounds, bright primary accent, smooth-scroll sections, frosted dropdown nav, globe/video hero, huge centered headlines, split-text about copy, Routes/Programmable Addresses/Programmable Transactions product cards, Linear-inspired lightbox media, separator variants, tweet/testimonial embed theme, perspective feature diagrams, dot-matrix canvas texture, benefit columns or mobile carousel cards, company logo tiles, use-case cards for AI agents, DeFi, payments, solvers and wallets, logo marquee, CTA footer, newsletter input with arrow submit, and GSAP/Lenis-inspired motion patterns."

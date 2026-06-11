@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>clau.as.kee Expressive Portfolio UI Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="main-navigation main-navigation-black" aria-label="Main navigation">
+      <ul>
+        <li><a href="#intro">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#playground">Playground</a></li>
+      </ul>
+    </nav>
+
+    <a href="mailto:hello@example.com" class="smiley-wrapper active" aria-label="Email me to request my portfolio">
+      <span>Email me to request my design portfolio</span>
+      <div class="text-container">Portfolio</div>
+      <div class="smiley-container">xx</div>
+    </a>
+
+    <div class="page-loading" id="loader"><div></div></div>
+    <div class="page-transition animate-in" aria-hidden="true">
+      <div></div><div></div><div></div><div></div><div></div><div></div>
+      <div></div><div></div><div></div><div></div><div></div><div></div>
+    </div>
+
+    <main>
+      <section class="intro" id="intro" data-menu-black>
+        <div class="intro-viewport">
+          <div class="animated-titles intro-text" data-animate-title aria-label="Clau.">
+            <h1 class="animated-titles-text">
+              <span><span class="letter">C</span></span>
+              <span><span class="letter">l</span></span>
+              <span><span class="letter">a</span></span>
+              <span><span class="letter">u</span></span>
+              <span><span class="letter">.</span></span>
+            </h1>
+          </div>
+          <div class="intro-media">
+            <div class="intro-media__frame">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="parallel-texts intro-skills">
+          <h2>Art direction - Digital design</h2>
+          <div class="parallel-texts-separator"></div>
+          <h2>Branding - Illustration</h2>
+        </div>
+
+        <div class="intro-bio reveal">
+          <p>Hi there! I am Claudia, an art director, multidisciplinary designer, and illustrator.</p>
+          <p>
+            This demo captures a playful portfolio language: kinetic typography,
+            oversized personal copy, experimental work cards, and direct contact
+            moments that feel human before they feel corporate.
+          </p>
+          <p>
+            I work across art direction, UI, interaction design, branding,
+            identity, illustration, and digital strategy. Send a request for the
+            full portfolio or a good pizza recipe.
+          </p>
+        </div>
+      </section>
+
+      <section class="get-in-touch" id="contact">
+        <div class="dot-cursor dot-cursor-black dot-cursor-mounted" id="dotCursor"><div>Hola!</div></div>
+        <a href="mailto:hello@example.com" class="animated-titles get-in-touch-title no-cursor" data-animate-title>
+          <h2 class="animated-titles-text">
+            <span><span class="letter">G</span></span>
+            <span><span class="letter">e</span></span>
+            <span><span class="letter">t</span></span>
+            <span><span class="letter">&nbsp;</span></span>
+            <span><span class="letter">i</span></span>
+            <span><span class="letter">n</span></span>
+          </h2>
+          <h2 class="animated-titles-text">
+            <span><span class="letter">t</span></span>
+            <span><span class="letter">o</span></span>
+            <span><span class="letter">u</span></span>
+            <span><span class="letter">c</span></span>
+            <span><span class="letter">h</span></span>
+          </h2>
+        </a>
+
+        <div class="get-in-touch-columns">
+          <article class="get-in-touch-column reveal">
+            <h3>Experience</h3>
+            <p>Metalab</p><p>North Kingdom</p><p>Vasava Studio</p><p>Wieden Kennedy</p>
+          </article>
+          <article class="get-in-touch-column reveal">
+            <h3>Selected clients</h3>
+            <p>Nike</p><p>Adobe</p><p>Spotify</p><p>Seat</p><p>Typeform</p>
+          </article>
+          <article class="get-in-touch-column reveal">
+            <h3>Press</h3>
+            <p>Adobe Create</p><p>Aiga Eye on Design</p><p>Fastco Design</p><p>Fubiz</p>
+          </article>
+          <article class="get-in-touch-column reveal">
+            <h3>Expertise</h3>
+            <p>Art Direction</p><p>UI / UX</p><p>Interaction Design</p><p>Illustration</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="playground playground-dark" id="playground">
+        <div class="animated-titles playground-title" data-animate-title>
+          <h2 class="animated-titles-text">
+            <span><span class="letter">P</span></span>
+            <span><span class="letter">l</span></span>
+            <span><span class="letter">a</span></span>
+            <span><span class="letter">y</span></span>
+          </h2>
+          <h2 class="animated-titles-text">
+            <span><span class="letter">g</span></span>
+            <span><span class="letter">r</span></span>
+            <span><span class="letter">o</span></span>
+            <span><span class="letter">u</span></span>
+            <span><span class="letter">n</span></span>
+            <span><span class="letter">d</span></span>
+          </h2>
+        </div>
+
+        <div class="works-list">
+          <div class="works-list-col">
+            <div class="works-list-work">
+              <a href="#" class="work-featured">
+                <div><div class="work-media work-media--one"></div><p>Secret 7</p><p>Design and Illustration</p></div>
+              </a>
+            </div>
+            <div class="works-list-work">
+              <a href="#">
+                <div><div class="work-media work-media--two"></div><p>Eye Peeled</p><p>Illustration and Typography</p></div>
+              </a>
+            </div>
+            <div class="works-list-work">
+              <a href="#" class="work-featured">
+                <div><div class="work-media work-media--three"></div><p>Norte</p><p>Art direction and design</p></div>
+              </a>
+            </div>
+          </div>
+          <div class="works-list-col">
+            <div class="works-list-column-header">
+              A selection of experiments, friends projects, and fun visual studies.
+              To see professional work <a href="mailto:hello@example.com">send an email</a>.
+            </div>
+            <div class="works-list-work">
+              <a href="#">
+                <div><div class="work-media work-media--four"></div><p>I see you</p><p>Illustration</p></div>
+              </a>
+            </div>
+            <div class="works-list-work">
+              <a href="#" class="work-featured">
+                <div><div class="work-media work-media--five"></div><p>Procatinator</p><p>Pure awesomeness</p></div>
+              </a>
+            </div>
+            <div class="works-list-work">
+              <a href="#">
+                <div><div class="work-media work-media--six"></div><p>Animated stamps</p><p>Illustration and motion</p></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="email-me">
+        <a href="mailto:hello@example.com" class="animated-titles email-me-title no-cursor" data-animate-title>
+          <h2 class="animated-titles-text">
+            <span><span class="letter">E</span></span>
+            <span><span class="letter">m</span></span>
+            <span><span class="letter">a</span></span>
+            <span><span class="letter">i</span></span>
+            <span><span class="letter">l</span></span>
+          </h2>
+          <h2 class="animated-titles-text">
+            <span><span class="letter">m</span></span>
+            <span><span class="letter">e</span></span>
+          </h2>
+        </a>
+
+        <div class="email-me-banner">
+          <a href="mailto:hello@example.com" class="email-me-banner-content">
+            <span>Get in touch</span><div>Reach me out for work inquiries and commissions</div><b>:)</b>
+            <span>Get in touch</span><div>Reach me out for work inquiries and commissions</div><b>:)</b>
+            <span>Get in touch</span><div>Reach me out for work inquiries and commissions</div><b>:)</b>
+          </a>
+        </div>
+        <div class="email-me-links">
+          <a href="#">Instagram</a>
+          <a href="#">Behance</a>
+          <p>CM - 2026</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

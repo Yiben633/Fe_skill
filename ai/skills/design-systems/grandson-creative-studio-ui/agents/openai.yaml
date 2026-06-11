@@ -1,0 +1,4 @@
+interface:
+  display_name: "Grandson Creative Studio UI"
+  short_description: "Editorial blue-gray creative studio portfolio."
+  default_prompt: "Create a grandson-style creative studio portfolio with a blue-gray background, white text, Pill Gothic display type, Adobe Garamond body serif, fixed minimal navigation, huge centered wordmark, floating category sections for creation/portrait/beauty, arrow-over-image links, line-reveal text, gallery filters, clipped thumbnail strips, fullscreen image viewer, custom right scrollbar, and mobile full-screen menu."

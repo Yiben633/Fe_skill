@@ -1,0 +1,4 @@
+interface:
+  display_name: "DJ HI-C Discovery Music Portfolio UI"
+  short_description: "Dark DJ portfolio with knobs and marquee."
+  default_prompt: "Create a DJ HI-C Discovery-style music portfolio with black background, translucent white text, Clash Display 500/700 typography, huge fixed marquee text with overlay blend, dimmed hero model/photo treatment, fixed bottom navigation with logo, UNDO/REDO buttons, circular rotating menu button with play slash pause marks, fullscreen menu with knob links, profile and award sections, thin translucent list dividers, social links with small knobs, floating album jacket squares, and a subtle WebGL/canvas audio-reactive background."

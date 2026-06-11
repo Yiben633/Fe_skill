@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en" class="desktop lenis lenis-smooth">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bizarro WebGL Portfolio UI Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <canvas class="webgl-layer" id="webglLayer" aria-hidden="true"></canvas>
+
+    <main class="app" id="content" data-template="home">
+      <div class="home">
+        <div class="home__wrapper">
+          <header class="header">
+            <div class="header__wrapper">
+              <div class="header__column">
+                <p class="header__title" data-gl-text="uppercase" data-gl-text-active>
+                  Mira<br>Voss
+                </p>
+              </div>
+
+              <div class="header__column">
+                <a class="header__location" data-gl-text="uppercase" href="#projects" data-gl-text-active>
+                  Building<br>Realtime Tools
+                </a>
+              </div>
+
+              <div class="header__column">
+                <p class="header__role" data-gl-text="uppercase" data-gl-text-active>
+                  Creative<br>Technologist
+                </p>
+                <p class="header__year" data-gl-text data-gl-text-active>
+                  96<br>26
+                </p>
+              </div>
+
+              <div class="header__column">
+                <p class="header__shape" data-gl-text data-gl-text-active>*</p>
+              </div>
+            </div>
+
+            <h1 class="header__logo" aria-label="Bizarro style portfolio logo">
+              <span class="header__logo__media" data-gl-media="wordmark" data-gl-media-active>BIZARRO</span>
+            </h1>
+          </header>
+
+          <section class="about">
+            <div class="about__introduction">
+              <p data-gl-text data-gl-text-active>
+                Creative Technologist specialized in crafting<br>
+                cutting-edge real-time 3D experiences using<br>
+                WebGL, shaders and JavaScript.
+              </p>
+              <p data-gl-text data-gl-text-active>
+                Over a decade of experiments across websites,<br>
+                games, installations, tools, launch films,<br>
+                product viewers and interactive apps.
+              </p>
+              <p data-gl-text data-gl-text-active>
+                Currently building a compact pipeline<br>
+                for browser-native spatial interfaces.
+              </p>
+            </div>
+
+            <div class="about__content">
+              <div class="about__content__column">
+                <div class="about__information">
+                  <p class="about__information__column" data-gl-text data-gl-text-active>
+                    <a href="#">Business Inquiries</a><br><br>
+                    <a href="#">Awards List</a><br>
+                    <a href="#">Projects List</a>
+                  </p>
+                  <p class="about__information__column" data-gl-text data-gl-text-active>
+                    <a href="#">GitHub</a><br>
+                    <a href="#">Instagram</a><br>
+                    <a href="#">LinkedIn</a><br>
+                    <a href="#">Twitter</a>
+                  </p>
+                  <p class="about__information__column" data-gl-text data-gl-text-active>
+                    18th September, 1996<br>
+                    Sao Paulo<br>
+                    Brazil<br><br>
+                    23.5742 S<br>
+                    46.6388 W
+                  </p>
+                </div>
+                <a class="about__credits" href="#" data-gl-text data-gl-text-active>Design direction / monochrome WebGL system</a>
+              </div>
+
+              <div class="about__content__column">
+                <figure class="about__media">
+                  <div class="about__media__image generated-media generated-media--portrait" data-gl-media="portrait" data-gl-media-active></div>
+                </figure>
+                <div class="about__brands">
+                  <h2 class="about__brands__title" data-gl-text data-gl-text-active>Brands:</h2>
+                  <p class="about__brands__description" data-gl-text data-gl-text-active>
+                    Apple, Airbnb, Nike, Xbox, YouTube, Google, Microsoft,
+                    Samsung, Anduril, Lufthansa, HBO, Shell, Cartoon Network.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="projects" id="projects">
+            <section class="project">
+              <header class="project__header" data-gl-background data-gl-text-active>
+                <div class="project__header__content">
+                  <p class="project__header__information" data-gl-text="uppercase" data-gl-text-active>Apple</p>
+                  <h3 class="project__header__title" data-gl-text="uppercase" data-gl-text-active>Vision<br>Pipeline</h3>
+                  <p class="project__header__description" data-gl-text data-gl-text-active>
+                    Designed custom tooling for real-time product scenes,<br>
+                    shader debugging, media playback, and modal-based<br>
+                    spatial storytelling in the browser.
+                  </p>
+                </div>
+                <a class="project__header__link" href="#">
+                  <span class="project__header__link__text" data-gl-text="uppercase" data-gl-text-active>See *</span>
+                </a>
+              </header>
+              <div class="project__content">
+                <figure class="project__media"><div class="project__media__image generated-media generated-media--one" data-gl-media="media-one" data-gl-media-active></div></figure>
+              </div>
+            </section>
+
+            <section class="project">
+              <header class="project__header" data-gl-background data-gl-text-active>
+                <div class="project__header__content">
+                  <p class="project__header__information" data-gl-text="uppercase" data-gl-text-active>Active Theory</p>
+                  <h3 class="project__header__title" data-gl-text="uppercase" data-gl-text-active>Xbox<br>Museum</h3>
+                  <p class="project__header__description" data-gl-text data-gl-text-active>
+                    Built scene selectors, character customization states,<br>
+                    3D screen transitions, user progress logic, and<br>
+                    interactive spatial UI systems.
+                  </p>
+                </div>
+                <a class="project__header__link" href="#">
+                  <span class="project__header__link__text" data-gl-text="uppercase" data-gl-text-active>See *</span>
+                </a>
+              </header>
+              <div class="project__content">
+                <figure class="project__media"><div class="project__media__image generated-media generated-media--two" data-gl-media="media-two" data-gl-media-active></div></figure>
+                <figure class="project__media project__media--50"><div class="project__media__image generated-media generated-media--three" data-gl-media="media-three" data-gl-media-active></div></figure>
+                <figure class="project__media project__media--50"><div class="project__media__image generated-media generated-media--four" data-gl-media="media-four" data-gl-media-active></div></figure>
+              </div>
+            </section>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

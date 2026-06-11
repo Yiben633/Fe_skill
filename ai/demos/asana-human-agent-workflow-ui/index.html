@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Asana Human-Agent Workflow UI Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a id="q-messenger-frame-skip-link" href="#main">Skip messenger</a>
+
+    <div class="announcement" data-announcement>
+      <span>Asana acquires StackAI to bring human-agent workflows into every team.</span>
+      <a href="#workflow">Read the update</a>
+      <button class="announcement__close" type="button" aria-label="Dismiss announcement">x</button>
+    </div>
+
+    <header class="asana-header" data-header>
+      <a class="asana-logo" href="#" aria-label="Asana demo home">
+        <span class="asana-logo__mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <strong>asana</strong>
+      </a>
+
+      <nav class="asana-nav" aria-label="Primary">
+        <a href="#workflow">Products</a>
+        <a href="#proof">Solutions</a>
+        <a href="#video">Resources</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+
+      <div class="asana-actions">
+        <button class="button button-ghost" type="button">Contact sales</button>
+        <button class="button button-coral" type="button" data-open-messenger>Get started</button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero__copy">
+          <p class="eyebrow">Human-agent work management</p>
+          <h1>Work moves faster when every team has AI in the flow.</h1>
+          <p class="hero__lede">Plan projects, prioritize signals, and let agents take action across the tools your team already uses.</p>
+          <div class="hero__buttons">
+            <button class="button button-coral" type="button" data-open-messenger>Start with AI</button>
+            <a class="button button-ghost" href="#workflow">See the workflow</a>
+          </div>
+        </div>
+
+        <div class="workflow-board" aria-label="Workflow preview">
+          <div class="board-topline">
+            <span>Campaign launch</span>
+            <strong>78%</strong>
+          </div>
+          <div class="task-card is-coral">
+            <span class="status">Agent drafted</span>
+            <h2>Compile launch risks</h2>
+            <p>StackAI agent summarized blockers from docs, tickets, and customer calls.</p>
+          </div>
+          <div class="task-card">
+            <span class="status purple">Needs review</span>
+            <h2>Approve pricing page copy</h2>
+            <p>Owner: Growth team. Due today.</p>
+          </div>
+          <div class="agent-flow">
+            <span>Brief</span>
+            <b></b>
+            <span>Agent</span>
+            <b></b>
+            <span>Approval</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="ai-three-ps" id="workflow">
+        <div class="ai-three-ps__left">
+          <div>
+            <p class="eyebrow">The three P's of AI work</p>
+            <h2>One operating layer for planning, priorities, and performance.</h2>
+          </div>
+
+          <div class="tab-list" role="tablist" aria-label="AI workflow stages">
+            <button class="ai-tab is-active" type="button" role="tab" aria-selected="true" data-stage="plan">
+              <span class="tab-logo">P</span>
+              <span>Plan</span>
+            </button>
+            <button class="ai-tab" type="button" role="tab" aria-selected="false" data-stage="prioritize">
+              <span class="tab-logo purple">P</span>
+              <span>Prioritize</span>
+            </button>
+            <button class="ai-tab" type="button" role="tab" aria-selected="false" data-stage="perform">
+              <span class="tab-logo blue">P</span>
+              <span>Perform</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="ai-three-ps__right" id="proof">
+          <div class="proof-top">
+            <div>
+              <p class="eyebrow" data-stage-eyebrow>Plan with context</p>
+              <h3 data-stage-title>Turn scattered goals into clear project systems.</h3>
+            </div>
+            <div class="metric-card">
+              <span>Time recovered</span>
+              <strong data-stage-metric>12.4h</strong>
+              <small>per manager each week</small>
+            </div>
+          </div>
+
+          <div class="proof-scroll">
+            <div class="productivity-grid">
+              <div class="grid-label">Productivity drain</div>
+              <div class="bar bar-a"><span>Manual status</span></div>
+              <div class="bar bar-b"><span>Search and handoff</span></div>
+              <div class="bar bar-c"><span>Agent resolved</span></div>
+            </div>
+
+            <div class="badge-cluster" aria-label="Connected systems">
+              <span>Docs</span>
+              <span>CRM</span>
+              <span>Tickets</span>
+              <span>Calendar</span>
+              <span>Data warehouse</span>
+              <span>Slack</span>
+            </div>
+
+            <div class="circle-diagram">
+              <div class="circle-diagram__ring">
+                <strong>AI</strong>
+                <span>workflow core</span>
+              </div>
+              <p><b>42%</b> fewer planning meetings</p>
+              <p><b>3.8x</b> faster risk summaries</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-panel" id="video">
+        <div>
+          <p class="eyebrow">Product walkthrough</p>
+          <h2>Show the work system, not a decorative mockup.</h2>
+        </div>
+        <div class="plyr-shell">
+          <button class="play-button" type="button" aria-label="Play video">Play</button>
+          <div class="caption">Workflow demo: AI triage, approval, and automatic status updates.</div>
+        </div>
+      </section>
+    </main>
+
+    <div class="messenger-launcher">
+      <button type="button" data-open-messenger>AI assistant</button>
+      <button type="button" data-sidebar-messenger>Sidebar</button>
+      <button type="button" data-fullscreen-messenger>Fullscreen</button>
+    </div>
+
+    <iframe
+      id="q-messenger-frame"
+      title="Qualified-style AI assistant"
+      srcdoc="<!doctype html><html><head><style>body{margin:0;font-family:Arial,sans-serif;background:#fff;color:#122124}.chat{display:flex;flex-direction:column;height:100vh}.head{padding:18px 20px;background:#0d0e10;color:#fff}.body{padding:18px;display:grid;gap:12px}.bubble{padding:12px 14px;border-radius:14px;background:#f5f4f3}.agent{background:#fee4e2}</style></head><body><div class='chat'><div class='head'>AI workflow assistant</div><div class='body'><div class='bubble agent'>I can help route work to the right team.</div><div class='bubble'>Try: summarize launch risks.</div></div></div></body></html>">
+    </iframe>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en" class="has-scroll-init has-scroll-smooth demo-native" data-scroll-direction="vertical">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dennis Snellenberg Portfolio UI Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="scrollbar" aria-hidden="true"><span class="scrollbar-thumb"></span></div>
+    <div class="c-scrollbar" aria-hidden="true"><div class="c-scrollbar_thumb"></div></div>
+    <div class="cursor-preview" aria-hidden="true">
+      <div class="cursor-preview-inner"></div>
+      <span>View</span>
+    </div>
+    <button class="sound soundtoggler magnetic" type="button" aria-pressed="false" aria-label="Toggle sound">
+      <canvas width="120" height="120"></canvas>
+      <span>Sound</span>
+    </button>
+
+    <header class="nav-bar">
+      <a class="credit-link magnetic" href="#">
+        <span class="credit-mark">C</span>
+        <span class="credit-copy"><span>Code by</span><strong>Dennis</strong></span>
+      </a>
+      <nav class="desktop-links" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="hamburger magnetic" type="button" aria-label="Open menu">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <aside class="fixed-nav" aria-hidden="true">
+      <div class="fixed-nav-blob"><div class="rounded-div"></div></div>
+      <div class="fixed-nav-inner">
+        <div>
+          <h5>Navigation</h5>
+          <div class="stripe"></div>
+          <a href="#top">Home</a>
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="side-socials">
+          <h5>Socials</h5>
+          <a href="#">Awwwards</a>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </aside>
+    <button class="nav-backdrop" type="button" aria-label="Close menu"></button>
+
+    <main id="top" data-scroll-container>
+      <section class="section hero theme-dark" data-scroll-section>
+        <div class="hero-image" aria-hidden="true">
+          <div class="portrait"></div>
+        </div>
+        <div class="location-badge">
+          <span>Located<br>in the<br>Netherlands</span>
+          <div class="digital-ball">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="container hero-copy">
+          <h1 class="big-name" aria-label="Dennis Snellenberg">
+            <span>Dennis</span>
+            <span>Snellenberg</span>
+          </h1>
+          <div class="hero-role span-lines animate">
+            <span class="arrow">&#8600;</span>
+            <span class="span-line"><span class="span-line-inner">Freelance designer</span></span>
+            <span class="span-line"><span class="span-line-inner">and developer</span></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section intro" data-scroll-section>
+        <div class="container intro-grid">
+          <p class="intro-text reveal">Helping brands thrive in the digital world. I design tailor-made digital products and build interactive websites from scratch.</p>
+          <div class="intro-side">
+            <p>Selected work, crafted with motion, clarity, and a practical sense of how people move through a page.</p>
+          </div>
+          <div class="stripe"></div>
+          <div class="btn btn-round">
+            <a href="#contact" class="btn-click magnetic">
+              <span class="btn-fill"></span>
+              <span class="btn-text"><span>About me</span></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section audio-hero" data-scroll-section>
+        <div class="audio-noise-panel" data-cursor-label="Listen">
+          <div class="audio-wave" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="container audio-grid">
+          <p class="kicker">Sound design system</p>
+          <h2>Noise, rhythm and scroll as interface material.</h2>
+          <p>Inspired by audio portfolios that pair Locomotive Scroll, waveform controls, canvas cursors and full-screen media direction.</p>
+        </div>
+      </section>
+
+      <section id="work" class="section work-list" data-scroll-section>
+        <div class="container">
+          <div class="section-label">
+            <h5>Recent work</h5>
+            <p>Hover a row to preview the project.</p>
+          </div>
+          <ul>
+            <li data-preview="linear-gradient(135deg, #e8e1d7, #7d8ca3)">
+              <a href="#">
+                <strong>TWICE</strong>
+                <span>Interaction and Development</span>
+                <em>2024</em>
+              </a>
+            </li>
+            <li data-preview="linear-gradient(135deg, #d9cfbf, #343736)">
+              <a href="#">
+                <strong>The Damai</strong>
+                <span>Design and Development</span>
+                <em>2024</em>
+              </a>
+            </li>
+            <li data-preview="linear-gradient(135deg, #101010, #686a70)">
+              <a href="#">
+                <strong>FABRIC</strong>
+                <span>Design, Development and Interaction</span>
+                <em>2023</em>
+              </a>
+            </li>
+            <li data-preview="linear-gradient(135deg, #e7e9ec, #455ce9)">
+              <a href="#">
+                <strong>Aanstekelijk</strong>
+                <span>Creative Frontend</span>
+                <em>2023</em>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section horizontal-items" aria-label="Media strip" data-scroll-section>
+        <div class="horizontal-row row-one">
+          <div></div><div></div><div></div><div></div>
+        </div>
+        <div class="horizontal-row row-two">
+          <div></div><div></div><div></div><div></div>
+        </div>
+      </section>
+
+      <div class="rounded-div-wrap footer-curve"><div class="rounded-div"></div></div>
+
+      <footer id="contact" class="section footer theme-dark" data-scroll-section>
+        <div class="dots"></div>
+        <div class="container footer-main">
+          <h2><span class="profile-picture"></span> Let's work<br>together</h2>
+          <span class="arrow big">&#8599;</span>
+          <div class="stripe"></div>
+          <div class="footer-actions">
+            <div class="btn btn-normal">
+              <a href="mailto:info@example.com" class="btn-click magnetic">
+                <span class="btn-fill"></span>
+                <span class="btn-text"><span>info@example.com</span></span>
+              </a>
+            </div>
+            <div class="btn btn-normal">
+              <a href="tel:+31000000000" class="btn-click magnetic">
+                <span class="btn-fill"></span>
+                <span class="btn-text"><span>+31 00 00 00 00</span></span>
+              </a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div>
+              <h5>Version</h5>
+              <p>2026 Edition</p>
+            </div>
+            <div>
+              <h5>Local time</h5>
+              <p id="localTime">--:--</p>
+            </div>
+            <div class="socials">
+              <h5>Socials</h5>
+              <a href="#">Awwwards</a>
+              <a href="#">Instagram</a>
+              <a href="#">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

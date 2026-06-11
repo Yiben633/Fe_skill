@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ninja Forms Field Layout System"
+  short_description: "Build reusable Ninja Forms-style field layouts."
+  default_prompt: "Create a Ninja Forms-style form layout with standardized field wrappers, label-above, label-below, label-left, label-right, hidden-label fields, repeater fieldsets, radio and checkbox lists, error and description slots, and nf-scaleout loading spinner."

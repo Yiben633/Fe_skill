@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en" data-scroll="false">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EDH Retro Computer Portfolio Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="webgl-sim" aria-hidden="true">
+      <div class="computer">
+        <div class="screen">
+          <div class="scanline"></div>
+          <p class="terminal-line">edh.dev boot sequence</p>
+          <p class="terminal-line">loading portfolio archive...</p>
+          <p class="terminal-line">render mode: retro webgl fallback</p>
+          <p class="terminal-cursor">_</p>
+        </div>
+        <div class="keyboard">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="hero-backup">
+      <h3>Hi there, I'm</h3>
+      <h1>Ed</h1>
+      <ul>
+        <li>Software Engineer</li>
+        <li>Digital Designer</li>
+      </ul>
+    </div>
+
+    <nav class="site-nav">
+      <div class="menu-btn">
+        <button class="btn icon-btn" type="button" id="menu-toggle" aria-expanded="false" aria-controls="menu-body">
+          MENU
+        </button>
+        <div class="socials" aria-label="Social links">
+          <a class="btn icon-btn" href="#">LI</a>
+          <a class="btn icon-btn" href="#">GH</a>
+          <a class="btn icon-btn" href="#">BS</a>
+        </div>
+      </div>
+      <div class="menu-body" id="menu-body">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div id="tip-scroll">Scroll down</div>
+    </nav>
+
+    <main id="home">
+      <section id="about">
+        <h1>Hi there</h1>
+        <p>
+          My name is Ed, an award-winning web developer, digital designer, and full stack software engineer with a love for software, machine learning, UI, UX, and 3D graphics.
+        </p>
+        <p>
+          This demo captures the retro computer portfolio structure: a playful fixed hero scene, narrow reading columns, pixel labels, dashed dividers, and chunky handmade interface details.
+        </p>
+      </section>
+
+      <section id="projects">
+        <h1>Projects</h1>
+
+        <article class="project">
+          <hr>
+          <h2>Page Buddy</h2>
+          <h3>2023-24</h3>
+          <ul class="skills">
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>AI</li>
+            <li>Web Dev</li>
+          </ul>
+          <p>
+            A writing tool with a drag and drop editor, style engine, accessibility tools, and machine-learning assistance.
+          </p>
+          <div class="image mock-window">
+            <div class="window-bar"><span></span><span></span><span></span></div>
+            <div class="window-body">
+              <div class="doc-line wide"></div>
+              <div class="doc-line"></div>
+              <div class="doc-line short"></div>
+              <div class="prediction">next word prediction: confidence</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <hr>
+          <h2>Folio Website</h2>
+          <h3>2022</h3>
+          <ul class="skills">
+            <li>TypeScript</li>
+            <li>WebGL</li>
+            <li>Shaders</li>
+            <li>3D</li>
+          </ul>
+          <p>
+            A personal website with an interactive retro computer, simple shell, filesystem, markdown renderer, and text layout engine.
+          </p>
+          <button class="collapse-btn btn" data-collapsed="true" type="button">more...</button>
+          <div class="collapse-body">
+            <p>
+              Use this collapsed body pattern when a project needs extra process notes without breaking the long scroll rhythm of the portfolio.
+            </p>
+          </div>
+        </article>
+
+        <article class="project">
+          <hr>
+          <h2>Pavilion</h2>
+          <h3>2019</h3>
+          <ul class="skills">
+            <li>VR</li>
+            <li>Parametric Design</li>
+            <li>Architecture</li>
+            <li>3D Printing</li>
+          </ul>
+          <p>
+            A pavilion study using field lines, parametric modeling, VR presentation, and ray traced renders.
+          </p>
+          <div class="image render-strip">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </article>
+      </section>
+
+      <section id="contact">
+        <h1>Contact</h1>
+        <p class="center">Reach out on <a href="#"><u><b>LinkedIn</b></u></a>.</p>
+      </section>
+    </main>
+
+    <div id="loading">
+      <h2>Booting...</h2>
+      <div id="loading-bar"><div id="loading-bar-progress"></div></div>
+      <div id="loading-items">Nearly there...</div>
+    </div>
+
+    <footer>
+      <div>Developed + designed in a retro computer style.</div>
+      <div>Use cream surfaces, charcoal labels, dashed chips, and offset shadows.</div>
+      <div>COPYRIGHT 2026 Demo Portfolio.</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DJ HI-C Discovery Music Portfolio UI</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <canvas class="webgl-canvas" id="audio-canvas" aria-hidden="true"></canvas>
+
+    <div class="global-menu" id="menu" aria-hidden="true">
+      <div class="menu-inner">
+        <h2>MENU</h2>
+        <ul class="menu-list">
+          <li><a href="#profile"><span class="mini-knob"><span></span></span><strong>profile</strong><small>Origami</small></a></li>
+          <li><a href="#music"><span class="mini-knob"><span></span></span><strong>music</strong><small>Kami Original mix</small></a></li>
+          <li><a href="#works"><span class="mini-knob"><span></span></span><strong>works</strong><small>Yao Remix</small></a></li>
+          <li><a href="#contact"><span class="mini-knob"><span></span></span><strong>contact</strong><small>Kyuhoji Original mix</small></a></li>
+        </ul>
+        <ul class="menu-sns">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Youtube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <main>
+      <div class="marquee" data-visible="true">
+        <div class="marquee-inner">
+          <span>DJ SOUND PRODUCER</span>
+          <span>DJ SOUND PRODUCER</span>
+        </div>
+      </div>
+
+      <div class="model" aria-hidden="true">
+        <div class="model-body"></div>
+      </div>
+
+      <section class="page-body">
+        <div class="page-inner">
+          <div class="page-content">
+            <section class="profile" id="profile">
+              <h1>dj hi-c</h1>
+              <div class="profile-ja">
+                <p>Turntablist, DJ, and producer moving from battle culture into techno, outdoor parties, club floors, and sound production.</p>
+                <p>Built for dark music sites where typography acts like a moving sound system and navigation feels like hardware.</p>
+              </div>
+              <div class="profile-en">
+                <p>As a performer and producer, the page mixes long profile text, giant moving type, floating jacket art, and tactile controls.</p>
+                <p>The interface should feel physical: knobs rotate, buttons imply play and pause, and the black stage keeps the artist in focus.</p>
+              </div>
+            </section>
+
+            <section class="award" id="works">
+              <h2>award history</h2>
+              <div class="award-logos">
+                <span>DMC</span>
+                <span>OUTLOOK</span>
+              </div>
+              <ol class="award-list">
+                <li><span>2007</span><strong>DMC Championship Team World Champion</strong></li>
+                <li><span>2008</span><strong>DMC Championship Team World Champion</strong></li>
+                <li><span>2014</span><strong>DMC Championship Japan Champion</strong></li>
+                <li><span>2016</span><strong>OUTLOOK Festival JP Sound Clash Champion</strong></li>
+              </ol>
+            </section>
+
+            <section class="sns" id="contact">
+              <h2>official account</h2>
+              <ul class="sns-list">
+                <li><a href="#"><span class="mini-knob"><span></span></span><strong>Instagram</strong></a></li>
+                <li><a href="#"><span class="mini-knob"><span></span></span><strong>Twitter</strong></a></li>
+                <li><a href="#"><span class="mini-knob"><span></span></span><strong>Facebook</strong></a></li>
+                <li><a href="#"><span class="mini-knob"><span></span></span><strong>Youtube</strong></a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+
+        <div class="jacket" data-index="0"><span></span></div>
+        <div class="jacket" data-index="1"><span></span></div>
+        <div class="jacket" data-index="2"><span></span></div>
+        <div class="jacket" data-index="3"><span></span></div>
+        <div class="jacket" data-index="4"><span></span></div>
+        <div class="jacket" data-index="5"><span></span></div>
+      </section>
+    </main>
+
+    <nav class="global-nav" aria-label="Global navigation">
+      <a class="logo" href="#">DJ<br>HI-C</a>
+      <div class="nav-paging">
+        <a href="#"><span></span><b>UNDO</b></a>
+        <a href="#music"><span></span><b>REDO</b></a>
+      </div>
+      <button class="global-button" type="button" aria-controls="menu" aria-expanded="false">
+        <span class="button-frame"></span>
+        <span class="button-icon">
+          <span class="play"></span>
+          <span class="slash"></span>
+          <span class="pause"></span>
+        </span>
+      </button>
+    </nav>
+
+    <script src="script.js"></script>
+  </body>
+</html>

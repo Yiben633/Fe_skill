@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bizarro WebGL Portfolio UI"
+  short_description: "Build stark black-and-white WebGL creative portfolio pages."
+  default_prompt: "Create a Bizarro/Luis Bizarro-style creative technologist portfolio with a black background, FK Grotesk-like typography, fixed canvas/WebGL layer, data-gl text/media hooks, four-column uppercase hero header, giant bottom logo, about section with huge introduction copy, contact/social/location columns, square portrait media, large brand list, project case-study modules with tall bordered headers, oversized project titles and See CTA, 16:9 and square media galleries, one-pixel scrollbar, inverted selection, mobile rotated logo panel, and reduced-motion fallbacks."

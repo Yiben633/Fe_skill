@@ -1,0 +1,4 @@
+interface:
+  display_name: "WorkAdventure Virtual Office UI"
+  short_description: "Build WorkAdventure-style virtual office pages."
+  default_prompt: "Create a WorkAdventure-style virtual office landing page with navy glass navigation, Oswald uppercase headings, blue CTAs, illustrated map/world sections, hover-gradient news cards, client carousel, and dark multi-column footer."

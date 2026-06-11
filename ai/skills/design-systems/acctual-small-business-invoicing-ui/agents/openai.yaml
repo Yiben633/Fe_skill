@@ -1,0 +1,4 @@
+interface:
+  display_name: "Acctual Invoicing UI"
+  short_description: "Build Acctual-style invoicing pages."
+  default_prompt: "Create an Acctual-style small business invoicing landing page with bright Framer layout, colorful finance badges, invoice mockups, pricing chips, and payment dashboard cards."

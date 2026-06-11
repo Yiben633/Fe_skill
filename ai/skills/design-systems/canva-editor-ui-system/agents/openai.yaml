@@ -1,0 +1,3 @@
+display_name: Canva Editor UI System
+short_description: Canva-style editor shells, compact panels, chip inputs, modals, snackbars, and selection overlays.
+default_prompt: Create a Canva-style editor interface with Canva Sans-like typography, a top toolbar, left rail, central canvas, 320px inspector panel, rounded icon buttons, chip input states, purple selection outline, modal overlay, and bottom snackbar.

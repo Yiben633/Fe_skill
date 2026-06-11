@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thu vien de thi - Study4 style demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="utility-rail" aria-label="Cong cu nhanh">
+      <button class="rail-button" type="button" aria-label="Tu dien">T</button>
+      <button class="rail-button" type="button" aria-label="Ho tro">?</button>
+      <a class="rail-button" href="#top" aria-label="Len dau trang">^</a>
+    </div>
+
+    <header class="topbar" id="top">
+      <div class="container topbar-inner">
+        <a class="brand" href="#" aria-label="STUDY4">
+          <span class="brand-mark">S4</span>
+          <span class="brand-name">STUDY4</span>
+        </a>
+
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+          Menu
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Dieu huong chinh">
+          <a href="#">Gioi thieu</a>
+          <a href="#">Chuong trinh hoc</a>
+          <a class="active" href="#">De thi online</a>
+          <a href="#">Flashcards</a>
+          <a href="#">Blog</a>
+          <a href="#">Kich hoat tai khoan</a>
+          <a class="login-link" href="#">Dang nhap</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-head">
+      <div class="container">
+        <div class="head-grid">
+          <div>
+            <p class="eyebrow">Online test library</p>
+            <h1>Thu vien de thi</h1>
+            <p class="lead">Luyen IELTS, TOEIC, HSK, TOPIK va cac bai thi ngoai ngu voi de mo phong, dap an va thong ke tien do ro rang.</p>
+          </div>
+          <div class="head-panel" aria-label="Thong ke thu vien">
+            <div>
+              <strong>1,240+</strong>
+              <span>de thi</span>
+            </div>
+            <div>
+              <strong>8.7M</strong>
+              <span>luot lam bai</span>
+            </div>
+          </div>
+        </div>
+
+        <nav class="exam-pills" aria-label="Danh muc de thi">
+          <button class="pill active" type="button" data-filter="all">Tat ca</button>
+          <button class="pill" type="button" data-filter="ielts">IELTS Academic</button>
+          <button class="pill" type="button" data-filter="toeic">TOEIC</button>
+          <button class="pill" type="button" data-filter="hsk">HSK</button>
+          <button class="pill" type="button" data-filter="topik">TOPIK</button>
+          <button class="pill" type="button" data-filter="jlpt">JLPT</button>
+          <button class="pill" type="button" data-filter="sat">Digital SAT</button>
+          <button class="pill" type="button" data-filter="thpt">Tieng Anh THPTQG</button>
+        </nav>
+      </div>
+    </section>
+
+    <main class="container page-body">
+      <section class="content-column" aria-labelledby="latest-tests">
+        <div class="section-head">
+          <div>
+            <h2 id="latest-tests">De thi moi va pho bien</h2>
+            <p>Chon bai thi phu hop, xem chi tiet cau truc va bat dau luyen tap.</p>
+          </div>
+          <label class="sort-control">
+            Sap xep
+            <select>
+              <option>Pho bien nhat</option>
+              <option>Moi nhat</option>
+              <option>Nhieu binh luan</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="test-grid" id="test-grid">
+          <article class="test-card" data-kind="ielts">
+            <a href="#" class="card-link">
+              <h3>IELTS Simulation Listening test 10</h3>
+              <p class="meta">40 phut | 461121 luot lam | 1097 binh luan</p>
+              <p class="structure">4 phan thi | 40 cau hoi</p>
+              <div class="tags">
+                <span>IELTS Academic</span>
+                <span>Listening</span>
+              </div>
+              <span class="outline-action">Chi tiet</span>
+            </a>
+          </article>
+
+          <article class="test-card" data-kind="ielts">
+            <a href="#" class="card-link">
+              <h3>IELTS Simulation Reading test 10</h3>
+              <p class="meta">60 phut | 228810 luot lam | 538 binh luan</p>
+              <p class="structure">3 phan thi | 40 cau hoi</p>
+              <div class="tags">
+                <span>IELTS Academic</span>
+                <span>Reading</span>
+              </div>
+              <span class="outline-action">Chi tiet</span>
+            </a>
+          </article>
+
+          <article class="test-card" data-kind="toeic">
+            <a href="#" class="card-link">
+              <h3>ETS TOEIC 2025 Test 4</h3>
+              <p class="meta">120 phut | 152430 luot lam | 312 binh luan</p>
+              <p class="structure">7 phan thi | 200 cau hoi</p>
+              <div class="tags">
+                <span>TOEIC</span>
+                <span>Full Test</span>
+              </div>
+              <span class="outline-action">Chi tiet</span>
+            </a>
+          </article>
+
+          <article class="test-card" data-kind="hsk">
+            <a href="#" class="card-link">
+              <h3>HSK 4 Mock Test 08</h3>
+              <p class="meta">105 phut | 48320 luot lam | 91 binh luan</p>
+              <p class="structure">3 phan thi | 100 cau hoi</p>
+              <div class="tags">
+                <span>HSK 4</span>
+                <span>Chinese</span>
+              </div>
+              <span class="outline-action">Chi tiet</span>
+            </a>
+          </article>
+
+          <article class="test-card" data-kind="topik">
+            <a href="#" class="card-link">
+              <h3>TOPIK II Practice Test 03</h3>
+              <p class="meta">180 phut | 39210 luot lam | 74 binh luan</p>
+              <p class="structure">3 phan thi | 104 cau hoi</p>
+              <div class="tags">
+                <span>TOPIK II</span>
+                <span>Korean</span>
+              </div>
+              <span class="outline-action">Chi tiet</span>
+            </a>
+          </article>
+
+          <article class="test-card" data-kind="jlpt">
+            <a href="#" class="card-link">
+              <h3>JLPT N3 Vocabulary and Grammar</h3>
+              <p class="meta">70 phut | 28554 luot lam | 63 binh luan</p>
+              <p class="structure">2 phan thi | 75 cau hoi</p>
+              <div class="tags">
+                <span>N3</span>
+                <span>Language Knowledge</span>
+              </div>
+              <span class="outline-action">Chi tiet</span>
+            </a>
+          </article>
+
+          <article class="test-card" data-kind="sat">
+            <a href="#" class="card-link">
+              <h3>Digital SAT Reading and Writing Drill</h3>
+              <p class="meta">64 phut | 19876 luot lam | 44 binh luan</p>
+              <p class="structure">2 modules | 54 cau hoi</p>
+              <div class="tags">
+                <span>Digital SAT</span>
+                <span>Reading</span>
+              </div>
+              <span class="outline-action">Chi tiet</span>
+            </a>
+          </article>
+
+          <article class="test-card" data-kind="thpt">
+            <a href="#" class="card-link">
+              <h3>Tieng Anh THPTQG De minh hoa 2026</h3>
+              <p class="meta">50 phut | 76220 luot lam | 128 binh luan</p>
+              <p class="structure">1 phan thi | 50 cau hoi</p>
+              <div class="tags">
+                <span>THPTQG</span>
+                <span>English</span>
+              </div>
+              <span class="outline-action">Chi tiet</span>
+            </a>
+          </article>
+        </div>
+
+        <nav class="pagination" aria-label="Phan trang">
+          <a class="page current" href="#" aria-current="page">1</a>
+          <a class="page" href="#">2</a>
+          <a class="page" href="#">3</a>
+          <a class="page" href="#">4</a>
+          <a class="page next" href="#" aria-label="Trang tiep theo">&rsaquo;</a>
+        </nav>
+      </section>
+
+      <aside class="sidebar" aria-label="Tai nguyen hoc tap">
+        <a class="promo promo-blue" href="#">
+          <span class="promo-kicker">IELTS Intensive</span>
+          <strong>Lo trinh 8 tuan tang band</strong>
+          <span>Hoc theo skill, cham bai va theo doi tien do hang ngay.</span>
+        </a>
+        <a class="promo promo-green" href="#">
+          <span class="promo-kicker">Band calculator</span>
+          <strong>Tinh diem IELTS nhanh</strong>
+          <span>Nhap Reading va Listening de uoc tinh band score.</span>
+        </a>
+        <a class="promo promo-violet" href="#">
+          <span class="promo-kicker">Extension</span>
+          <strong>Highlight va tao flashcard</strong>
+          <span>Luu tu moi truc tiep khi luyen de online.</span>
+        </a>
+
+        <section class="facebook-box">
+          <h2>Tham gia nhom hoc tap</h2>
+          <a href="#">Cong dong IELTS Study4</a>
+          <a href="#">Cong dong TOEIC Study4</a>
+        </section>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#">
+            <span class="brand-mark">S4</span>
+            <span class="brand-name">STUDY4</span>
+          </a>
+          <p>Demo giao dien hoc tap theo phong cach trang thu vien de thi.</p>
+        </div>
+        <div>
+          <h2>Ve STUDY4</h2>
+          <a href="#">Gioi thieu</a>
+          <a href="#">Lien he</a>
+          <a href="#">Dieu khoan bao mat</a>
+        </div>
+        <div>
+          <h2>Tai nguyen</h2>
+          <a href="#">Thu vien de thi</a>
+          <a href="#">Blog</a>
+          <a href="#">Tong hop tai lieu</a>
+        </div>
+        <div>
+          <h2>Chinh sach</h2>
+          <a href="#">Huong dan su dung</a>
+          <a href="#">Huong dan thanh toan</a>
+          <a href="#">Phan hoi, khieu nai</a>
+        </div>
+      </div>
+      <div class="container legal">STUDY4-style demo. IELTS, TOEIC and related names belong to their owners.</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

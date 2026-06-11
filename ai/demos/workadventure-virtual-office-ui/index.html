@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WorkAdventure Virtual Office UI Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrapper">
+        <nav class="nav-website" aria-label="Main navigation">
+          <a class="nav-logo" href="#">
+            <span class="nav-logo-small">WA</span>
+            <span class="nav-logo-full">WorkAdventure</span>
+          </a>
+          <span class="menu-tracker"></span>
+          <ul class="nav-menu">
+            <li class="nav-menu-item"><a class="nav-menu-item-link" href="#product">Product</a></li>
+            <li class="nav-menu-item nav-menu-item-dd">
+              <a class="nav-menu-item-link" href="#use-cases">Use cases</a>
+              <div class="nav-submenu">
+                <div class="nav-submenu-wrapper">
+                  <a class="nav-menu-item-link" href="#use-cases">
+                    <span class="submenu-icon office"></span>
+                    <span><strong>Virtual office</strong><em>Remote teams that feel present.</em></span>
+                  </a>
+                  <a class="nav-menu-item-link" href="#use-cases">
+                    <span class="submenu-icon event"></span>
+                    <span><strong>Virtual event</strong><em>Conferences and networking maps.</em></span>
+                  </a>
+                  <a class="nav-menu-item-link" href="#use-cases">
+                    <span class="submenu-icon class"></span>
+                    <span><strong>Virtual classroom</strong><em>Learning spaces with movement.</em></span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-menu-item"><a class="nav-menu-item-link" href="#blog">Blog</a></li>
+            <li class="nav-menu-item-btn"><a class="btn btn-light" href="#demo">Book a demo</a></li>
+            <li class="nav-menu-item-burger"><button class="burger" type="button" aria-label="Open menu"><span></span><span></span><span></span></button></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="homep">
+      <section class="hero-section">
+        <div class="wrapper hero">
+          <div class="hero-text">
+            <p class="hero-overtitle">Virtual Office App / Metaverse</p>
+            <h1 class="hero-title">
+              <span class="hero-title-top splited-text">Your workplace</span>
+              <span class="hero-title-bottom splited-text">better</span>
+            </h1>
+            <p class="hero-desc">A virtual world where teams meet, talk, and collaborate naturally, just like in real life.</p>
+            <a class="hero-btn" href="#demo">
+              <span class="hero-btn-text">
+                <span class="hero-btn-text-small">Start now</span>
+                <span>Enter the village</span>
+              </span>
+              <span class="hero-arrow">-></span>
+            </a>
+          </div>
+
+          <div class="world-map" id="product" aria-label="Virtual office map preview">
+            <div class="room room-blue"><span>HQ</span></div>
+            <div class="room room-green"><span>Meet</span></div>
+            <div class="room room-purple"><span>Dev</span></div>
+            <div class="room room-yellow"><span>Cafe</span></div>
+            <div class="avatar a1"></div>
+            <div class="avatar a2"></div>
+            <div class="avatar a3"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper use-cases" id="use-cases">
+        <div class="section-heading">
+          <p class="hero-overtitle">Spaces for every team</p>
+          <h2>Move through work like a real place.</h2>
+        </div>
+        <div class="brick-grid">
+          <article class="brick">
+            <h3>Office</h3>
+            <p>Daily presence, quick talks, and project rooms.</p>
+          </article>
+          <article class="brick">
+            <h3>Event</h3>
+            <p>Networking zones, stages, and sponsor booths.</p>
+          </article>
+          <article class="brick">
+            <h3>Classroom</h3>
+            <p>Training maps with group activities and help desks.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="clients" aria-label="Client carousel">
+        <div class="client-track">
+          <span>Startup Lab</span>
+          <span>Remote Guild</span>
+          <span>Pixel School</span>
+          <span>Open Campus</span>
+          <span>Team Cloud</span>
+          <span>Startup Lab</span>
+          <span>Remote Guild</span>
+          <span>Pixel School</span>
+        </div>
+      </section>
+
+      <section class="wrapper posts" id="blog">
+        <div class="section-heading">
+          <p class="hero-overtitle">News and releases</p>
+          <h2>Updates from the virtual world.</h2>
+        </div>
+        <div class="post-grid">
+          <article class="post-card">
+            <div class="post-image image-office"></div>
+            <span class="post-badge">Blog</span>
+            <time class="post-meta">2026</time>
+            <div class="post-copy">
+              <h3>Designing a better virtual workplace</h3>
+              <p>How maps, rooms, and presence reshape remote collaboration.</p>
+            </div>
+          </article>
+          <article class="post-card release">
+            <div class="post-image image-release"></div>
+            <span class="post-badge">Release</span>
+            <time class="post-meta">v4.2</time>
+            <div class="post-copy">
+              <h3>New room permissions and guest access</h3>
+              <p>Release notes for admins building large team spaces.</p>
+            </div>
+          </article>
+          <article class="post-card">
+            <div class="post-image image-event"></div>
+            <span class="post-badge">Guide</span>
+            <time class="post-meta">Read</time>
+            <div class="post-copy">
+              <h3>Run an online event that feels alive</h3>
+              <p>Practical layouts for booths, stages, and attendee flow.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-2025">
+      <div class="wrapper foot-wrapper">
+        <div class="foot-company">
+          <strong>WorkAdventure</strong>
+          <p>Your workplace better. Meet, talk, and collaborate naturally.</p>
+        </div>
+        <div class="footer-menu-wrapper">
+          <nav class="footer-menu">
+            <span>Product</span>
+            <a href="#">Virtual office</a>
+            <a href="#">Virtual event</a>
+            <a href="#">Virtual classroom</a>
+          </nav>
+          <nav class="footer-menu">
+            <span>Resources</span>
+            <a href="#">Blog</a>
+            <a href="#">Documentation</a>
+            <a href="#">Playground</a>
+          </nav>
+          <nav class="footer-menu">
+            <span>Company</span>
+            <a href="#">About us</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

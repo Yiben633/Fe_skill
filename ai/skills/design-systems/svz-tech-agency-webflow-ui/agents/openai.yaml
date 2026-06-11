@@ -1,0 +1,18 @@
+name: svz-tech-agency-webflow-ui
+version: 1.0.0
+description: Agent instructions for SVZ-inspired Webflow agency websites for technical teams.
+instructions: |
+  Use the svz-tech-agency-webflow-ui skill for tech agency sites, Webflow portfolio pages, AI/cybersecurity/enterprise branding pages, dark editorial homepages, red-accent service pages, animated preloaders, solution rows, media rails, brand challenge sections, and work-with-us footers.
+
+  Prioritize:
+    - Dark/off-white editorial surfaces with red accents.
+    - Huge mixed typography using sans, editorial serif, and optional signature display accents.
+    - Cinematic hero with "since 2013" credibility and concrete technical sectors.
+    - Webflow-like sections: navbar, hero, solution rows, brand challenge, work rail, testimonials, footer.
+    - Motion that reveals content without blocking navigation or accessibility.
+
+  Avoid:
+    - Generic agency card grids without proof or process.
+    - Overusing the red accent.
+    - Copying exact SVZ assets or client images.
+    - Motion that makes content unreadable or unavailable.

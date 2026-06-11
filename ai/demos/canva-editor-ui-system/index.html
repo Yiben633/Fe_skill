@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canva Editor UI System Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="editor-shell">
+      <header class="toolbar">
+        <div class="logo">Canva UI</div>
+        <button class="icon-button" type="button" aria-label="Undo">U</button>
+        <button class="icon-button" type="button" aria-label="Redo">R</button>
+        <div class="field toolbar-search">
+          <input type="search" placeholder="Search templates">
+        </div>
+        <button class="primary-action" type="button" data-modal-open>Share</button>
+      </header>
+
+      <div class="editor-body">
+        <aside class="rail" aria-label="Tools">
+          <button class="rail-button is-active" type="button">T</button>
+          <button class="rail-button" type="button">P</button>
+          <button class="rail-button" type="button">E</button>
+          <button class="rail-button" type="button">A</button>
+        </aside>
+
+        <section class="canvas-stage" aria-label="Design canvas">
+          <div class="artboard">
+            <h1 class="gradient-title"><span>Design faster</span></h1>
+            <p>Compact controls, soft surfaces, purple focus rings, and editor overlays.</p>
+            <div class="color-row">
+              <span style="--swatch:#8b3dff"></span>
+              <span style="--swatch:#3d8bff"></span>
+              <span style="--swatch:#abeeee"></span>
+              <span style="--swatch:#fdbd68"></span>
+            </div>
+          </div>
+          <div class="selection-layer" aria-hidden="true">
+            <div class="selection-box"></div>
+          </div>
+          <div class="snackbar-wrap">
+            <div class="snackbar is-visible">
+              <div>
+                <strong>Template ready</strong>
+                <p>Your brand kit styles were applied.</p>
+              </div>
+              <button class="secondary-action" type="button">Review</button>
+            </div>
+          </div>
+        </section>
+
+        <aside class="inspector" aria-label="Inspector">
+          <section class="panel-section">
+            <h2>Magic panel</h2>
+            <div class="preview-card">
+              <div class="media-thumb"></div>
+              <h3>Social post</h3>
+              <p>320px preview card with compact text and rounded media.</p>
+            </div>
+          </section>
+
+          <section class="panel-section">
+            <label class="label" for="title">Title</label>
+            <div class="field">
+              <input id="title" value="Design faster">
+            </div>
+          </section>
+
+          <section class="panel-section">
+            <label class="label" for="tags">Tags</label>
+            <div class="field chip-field">
+              <span class="chip">Brand</span>
+              <span class="chip">Social</span>
+              <input id="tags" placeholder="Add tag">
+            </div>
+          </section>
+
+          <section class="panel-section">
+            <div class="helper-card">
+              <span class="helper-icon">!</span>
+              <strong>Export warning</strong>
+              <p>Some animated elements will flatten when exported.</p>
+            </div>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <div class="modal-overlay" role="dialog" aria-modal="true" aria-label="Share design">
+      <div class="modal">
+        <button class="modal-close icon-button" type="button" aria-label="Close">X</button>
+        <h2>Share design</h2>
+        <p>Invite teammates or generate a public preview link.</p>
+        <div class="field">
+          <input value="team@example.com">
+        </div>
+        <div class="modal-actions">
+          <button class="secondary-action" type="button" data-modal-close>Cancel</button>
+          <button class="primary-action" type="button" data-modal-close>Send invite</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

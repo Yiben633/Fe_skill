@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SuperHi Learning Platform UI Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <aside class="SiteBanner" id="site-banner">
+      <div class="SiteBanner_container">
+        <a href="#"><span>Birthday sale: save on creative courses</span></a>
+        <button class="SiteBanner_close" type="button" aria-label="Close banner">
+          <span class="SiteBanner_inner">x</span>
+        </button>
+      </div>
+    </aside>
+
+    <header class="site-header">
+      <a class="logo" href="#">SuperHi</a>
+      <nav>
+        <a href="#courses">Courses</a>
+        <a href="#business">Business</a>
+        <a href="#faqs">FAQs</a>
+      </nav>
+      <button class="button button--small" type="button" data-modal-open>Preview</button>
+    </header>
+
+    <main>
+      <section class="Hero_default">
+        <div class="HeroSizer_default">
+          <div class="Hero_frame" aria-hidden="true"></div>
+          <div class="Hero_group container">
+            <div class="Hero_textGroup">
+              <span class="NumberIndicator_default">8</span>
+              <h1>Online courses for creative careers.</h1>
+              <p>Learn code, design, and project management with friendly lessons, pastel panels, and a community built for momentum.</p>
+            </div>
+            <div class="Hero_buttons">
+              <a class="button button--primary" href="#courses">Explore courses</a>
+              <button class="button" type="button" data-modal-open>Open modal</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Steps_steps container" aria-label="Course steps">
+        <span class="Steps_step Steps_isHighlighted"><span class="Steps_number">1</span> Pick a path</span>
+        <span class="Steps_step"><span class="Steps_number">2</span> Learn weekly</span>
+        <span class="Steps_step"><span class="Steps_number">3</span> Ship a project</span>
+      </section>
+
+      <section id="courses" class="section container course-grid">
+        <article class="panel panel--elevated panel--yellow">
+          <h2>Design for the web</h2>
+          <p>Visual systems, creative direction, and practical patterns for modern websites.</p>
+          <strong class="NumberCounter_default"><span class="NumberCounter_original">12400</span><span class="NumberCounter_counter">0</span></strong>
+        </article>
+        <article class="panel panel--elevated panel--green">
+          <h2>Code creative interfaces</h2>
+          <p>HTML, CSS, JavaScript, and expressive front-end workflows.</p>
+          <strong class="NumberCounter_default"><span class="NumberCounter_original">8700</span><span class="NumberCounter_counter">0</span></strong>
+        </article>
+      </section>
+
+      <section id="business" class="section container">
+        <article class="panel panel--blue BusinessCTA_panel">
+          <div class="BusinessCTA_split">
+            <div class="BusinessCTA_textGroup">
+              <span class="NumberIndicator_default">B</span>
+              <h2>Creative training for teams.</h2>
+              <p>Build team confidence with practical learning paths, project prompts, and progress rituals.</p>
+              <a href="#" class="button button--primary">Start a team plan</a>
+            </div>
+            <div class="BusinessCTA_illustration">
+              <div class="soft-illustration">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+              </div>
+              <span>Panel variables keep every module reusable.</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="AboutPress_default">
+        <div class="container">
+          <div class="AboutPress_title panel panel--yellow">
+            <span class="NumberIndicator_default">P</span>
+            <h2>In the press</h2>
+          </div>
+          <div class="press-row">
+            <article class="panel AboutPress_article">
+              <figure><div class="media media-a"></div></figure>
+              <div class="AboutPress_articleGroup">
+                <span>Interview</span>
+                <h3>How creative learning became more playful.</h3>
+              </div>
+            </article>
+            <article class="panel AboutPress_article">
+              <figure><div class="media media-b"></div></figure>
+              <div class="AboutPress_articleGroup">
+                <span>Feature</span>
+                <h3>Pastel panels and practical lessons.</h3>
+              </div>
+            </article>
+            <article class="panel AboutPress_article">
+              <figure><div class="media media-c"></div></figure>
+              <div class="AboutPress_articleGroup">
+                <span>News</span>
+                <h3>Design education for flexible careers.</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="faqs" class="section container BusinessFaqs_wrapper">
+        <h2>FAQs</h2>
+        <div class="Accordion_default">
+          <details open>
+            <summary>
+              <span class="Accordion_summaryGroup">How long are the courses?</span>
+              <span class="Accordion_summaryCross"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14" stroke="currentColor" stroke-width="2"/></svg></span>
+            </summary>
+            <div class="Accordion_reveal">Most courses are flexible and can be completed alongside work.</div>
+          </details>
+          <details>
+            <summary>
+              <span class="Accordion_summaryGroup">Can teams use this?</span>
+              <span class="Accordion_summaryCross"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14" stroke="currentColor" stroke-width="2"/></svg></span>
+            </summary>
+            <div class="Accordion_reveal">Yes. Use split CTA panels and step indicators for business learning flows.</div>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="SiteFooter_wrapper">
+      <div class="container">
+        <div class="SiteFooter_siteFooter">
+          <div class="SiteFooter_logo">SuperHi</div>
+          <nav class="SiteFooter_nav">
+            <h4>Learn</h4>
+            <a href="#">Courses</a>
+            <a href="#">Workshops</a>
+            <a href="#">Community</a>
+          </nav>
+          <nav class="SiteFooter_nav">
+            <h4>Company</h4>
+            <a href="#">About</a>
+            <a href="#">Business</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <div class="Modal_dialogWrapper" id="demo-modal" hidden>
+      <div class="Modal_dialogBackground" data-modal-close></div>
+      <div class="Modal_dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="Modal_dialogContents panel">
+          <button class="Modal_dialogClose" type="button" data-modal-close>
+            <span aria-hidden="true">x</span>
+            <span class="VisuallyHidden_hidden">Close modal</span>
+          </button>
+          <div class="modal-card">
+            <span class="NumberIndicator_default">M</span>
+            <h2 id="modal-title">Glass modal pattern</h2>
+            <p>On mobile this fills the viewport. Above 40rem it becomes a centered fit-content dialog.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

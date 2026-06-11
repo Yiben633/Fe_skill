@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shopify Brochure Commerce UI Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to Content</a>
+
+    <header class="bk-header" data-header data-color-mode="dark">
+      <nav class="bk-nav" aria-label="Primary navigation">
+        <a class="brand" href="#" aria-label="Shopframe home">
+          <span class="brand-mark" aria-hidden="true">S</span>
+          <span>shopframe</span>
+        </a>
+
+        <button class="mobile-toggle" type="button" aria-expanded="false" data-menu-toggle>Menu</button>
+
+        <ul class="level1" data-menu>
+          <li class="level1-item">
+            <button type="button" data-mega-trigger>Why commerce</button>
+            <div class="mega-panel">
+              <div class="mega-grid">
+                <a class="mega-card" href="#">
+                  <span class="media media-green"></span>
+                  <strong>Get started fast</strong>
+                  <p>You could be selling by tomorrow with guided setup and ready storefront blocks.</p>
+                </a>
+                <a class="mega-card" href="#">
+                  <span class="media media-blue"></span>
+                  <strong>Switch with confidence</strong>
+                  <p>Move products, customers, and checkout data into one commerce operating layer.</p>
+                </a>
+                <a class="mega-card" href="#">
+                  <span class="media media-purple"></span>
+                  <strong>Scale globally</strong>
+                  <p>Launch markets, currencies, tax rules, and local payment methods from one place.</p>
+                </a>
+              </div>
+
+              <aside class="mega-aside">
+                <p class="section-label">Built into every store</p>
+                <a class="aside-card" href="#">
+                  <span class="mini-video checkout"></span>
+                  <strong>World's best checkout</strong>
+                  <small>Proven to convert better.</small>
+                </a>
+                <a class="aside-card" href="#">
+                  <span class="mini-video sidekick"></span>
+                  <strong>Sidekick assistant</strong>
+                  <small>Get commerce answers and next actions.</small>
+                </a>
+              </aside>
+            </div>
+          </li>
+          <li class="level1-item"><a href="#features">Solutions</a></li>
+          <li class="level1-item"><a href="#markets">Resources</a></li>
+          <li class="level1-item"><a href="#pricing">Pricing</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="#">Log in</a>
+          <a class="trial-button" href="#pricing">Start free trial</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="section-label">Commerce operating system</p>
+          <h1>Sell everywhere from one powerful store.</h1>
+          <p class="lede">Build a storefront, convert with checkout, and let AI help move the next best action forward.</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#pricing">Start free trial</a>
+            <a class="button button-dark" href="#features">Explore features</a>
+          </div>
+        </div>
+
+        <div class="checkout-window" aria-label="Checkout preview">
+          <div class="window-bar">
+            <span></span><span></span><span></span>
+            <strong>Checkout</strong>
+          </div>
+          <div class="express-row">
+            <button type="button">Shop Pay</button>
+            <button type="button">Wallet</button>
+          </div>
+          <div class="field-row">Email address</div>
+          <div class="field-row split"><span>Card number</span><span>MM/YY</span></div>
+          <div class="total-row"><span>Total</span><strong>$128.00</strong></div>
+          <div class="trust-row">Fast, secure, conversion-optimized checkout</div>
+        </div>
+      </section>
+
+      <section class="feature-band" id="features">
+        <div class="feature-heading">
+          <p class="section-label">Launch, sell, grow</p>
+          <h2>Everything a store needs, arranged like a product shelf.</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card large">
+            <div class="store-builder">
+              <div class="product-tile">Sneaker<br><b>$84</b></div>
+              <div class="product-tile">Bottle<br><b>$28</b></div>
+              <div class="product-tile">Pack<br><b>$42</b></div>
+            </div>
+            <h3>Design a store without starting from a blank page.</h3>
+            <p>Drag product sections into a fast storefront and publish across channels.</p>
+          </article>
+
+          <article class="feature-card ai-card">
+            <p class="section-label">Sidekick</p>
+            <h3>Ask your store what to do next.</h3>
+            <div class="prompt">Which products should I discount this week?</div>
+            <div class="response">Recommend a bundle for returning customers and protect margin on best sellers.</div>
+          </article>
+
+          <article class="feature-card stat-card">
+            <span>18%</span>
+            <h3>More conversion signal</h3>
+            <p>Checkout and order behavior feed back into smarter merchandising decisions.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="markets" id="markets">
+        <div>
+          <p class="section-label">Global selling</p>
+          <h2>Market-ready controls without a tangle of tools.</h2>
+        </div>
+        <div class="market-chips" aria-label="Market chips">
+          <span>US / USD</span>
+          <span>VN / VND</span>
+          <span>JP / JPY</span>
+          <span>BR / BRL</span>
+          <span>AU / AUD</span>
+          <span>DE / EUR</span>
+          <span>SG / SGD</span>
+          <span>CA / CAD</span>
+        </div>
+      </section>
+
+      <section class="pricing" id="pricing">
+        <p class="section-label">Trial</p>
+        <h2>Build the first version, then tune the system.</h2>
+        <a class="button button-light" href="#">Start free trial</a>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

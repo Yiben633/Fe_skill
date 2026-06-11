@@ -1,0 +1,4 @@
+interface:
+  display_name: "Study4 Test Library"
+  short_description: "Build STUDY4-style exam library interfaces."
+  default_prompt: "Create a STUDY4-style exam library page with filters, cards, sidebar banners, pagination, and footer."

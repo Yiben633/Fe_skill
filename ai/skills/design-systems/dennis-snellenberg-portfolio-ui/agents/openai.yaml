@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dennis Snellenberg Portfolio UI"
+  short_description: "Build Dennis/Locomotive-style kinetic portfolios with sound and smooth-scroll patterns."
+  default_prompt: "Create a Dennis Snellenberg-style portfolio page with Locomotive-style smooth scroll, magnetic buttons, sound toggler canvas, rounded transitions, dark footer, and animated work list."

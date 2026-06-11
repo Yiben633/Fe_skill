@@ -1,0 +1,4 @@
+interface:
+  display_name: "NEW Creators Club Index UI"
+  short_description: "Minimal creator-club index with filters and work/member cards."
+  default_prompt: "Create a NEW Creators Club-style index UI with light/dark theme tokens, Monument Grotesk-like typography, Tazugane/Kana fallback feel, top news ticker, oval NEW logo, monitor strip, theme toggle, all/works/member filter header, collapsible Search System, capsule tags, square character filters, work cards with 1400/933 media, member cards with top borders, responsive 2-3 column card grids, and precise gray border systems."

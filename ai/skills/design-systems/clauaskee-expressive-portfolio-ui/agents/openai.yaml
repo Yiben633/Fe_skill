@@ -1,0 +1,4 @@
+interface:
+  display_name: "clau.as.kee Expressive Portfolio UI"
+  short_description: "Build clau.as.kee-style expressive creative portfolio pages."
+  default_prompt: "Create a clau.as.kee-style expressive creative portfolio with Beastly display typography, Suisse-style body text, split-letter animated titles, intro media/video block, parallel scrolling skills text, large personal bio copy, playful dot cursor, fixed smiley email badge, compact fixed nav, get-in-touch columns, playground masonry work list with featured cards, huge email CTA, scrolling contact banner, and page transition/loading strips."

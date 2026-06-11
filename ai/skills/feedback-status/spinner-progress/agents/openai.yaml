@@ -1,0 +1,3 @@
+display_name: Spinner Progress
+short_description: Hướng dẫn spinner, inline loading và pending state.
+default_prompt: Dùng spinner-progress để thiết kế và implement loading indicator này.

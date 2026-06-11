@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grandson Creative Studio UI Demo</title>
+    <link rel="stylesheet" href="https://use.typekit.net/hvo1cpv.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="studio-header">
+      <a class="logo" href="#home">grandson</a>
+      <nav class="desktop-nav" aria-label="Primary">
+        <a href="#creation">creation</a>
+        <a href="#portrait">portrait</a>
+        <a href="#beauty">beauty</a>
+        <a href="#about">about</a>
+      </nav>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <a href="#home">home</a>
+        <a href="#creation">creation</a>
+        <a href="#portrait">portrait</a>
+        <a href="#beauty">beauty</a>
+        <a href="#about">about</a>
+        <p>(c) grandson</p>
+      </nav>
+    </header>
+
+    <div class="canvas-layer" aria-hidden="true"></div>
+
+    <main id="swup">
+      <section class="home" id="home">
+        <h1 class="wordmark">grandson</h1>
+        <p class="statement">
+          <span><span>Preserve what flows away.</span></span>
+          <span><span>Connect what drifts apart.</span></span>
+          <span><span>Give shape to moments that vanish.</span></span>
+        </p>
+
+        <div class="portal-wrap">
+          <section class="portal portal-creation" id="creation">
+            <h2><span>creation</span></h2>
+            <span class="portal-small">(creation)</span>
+            <p>art,<br>advertising</p>
+            <a class="portal-link" href="#gallery">
+              <span class="portal-arrow">-></span>
+              <span class="portal-image img-a"></span>
+            </a>
+          </section>
+
+          <section class="portal portal-portrait" id="portrait">
+            <h2><span>portrait</span></h2>
+            <span class="portal-small">(portrait)</span>
+            <p>personal<br>portraiture</p>
+            <a class="portal-link" href="#gallery">
+              <span class="portal-arrow">-></span>
+              <span class="portal-image img-b"></span>
+            </a>
+          </section>
+
+          <section class="portal portal-beauty" id="beauty">
+            <h2><span>beauty</span></h2>
+            <span class="portal-small">(beauty)</span>
+            <p>facial salon,<br>hair and makeup</p>
+            <a class="portal-link" href="#gallery">
+              <span class="portal-arrow">-></span>
+              <span class="portal-image img-c"></span>
+            </a>
+          </section>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <p class="about-story">
+          <span><span>Expressions that touch the roots of people and the world will continue to bring us fresh discoveries.</span></span>
+          <span><span>No matter how much times and technology advance, the essential charm hidden in every moment remains.</span></span>
+          <span><span>Grandson explores that quiet charm and gives it a form that will last beyond time.</span></span>
+        </p>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="page-title">
+          <h2>creation</h2>
+          <p class="desc">A gallery system for art, advertising, portrait, and beauty work.</p>
+        </div>
+
+        <section class="gallery-section">
+          <h3>(gallery)</h3>
+          <div class="gallery-body">
+            <div class="category-filter" aria-label="Gallery filter">
+              <button class="filter is-active" type="button" data-filter="all">all</button>
+              <button class="filter" type="button" data-filter="art">art</button>
+              <button class="filter" type="button" data-filter="advertising">advertising</button>
+            </div>
+
+            <ul class="article-list">
+              <li class="article-item" data-category="advertising">
+                <button class="article-link" type="button" data-open-viewer>
+                  <span class="article-title">NAIA <span class="article-arrow">-></span></span>
+                  <span class="thumbs">
+                    <span class="thumb-item thumb-a"></span>
+                    <span class="thumb-item thumb-b"></span>
+                  </span>
+                </button>
+              </li>
+              <li class="article-item" data-category="art">
+                <button class="article-link" type="button" data-open-viewer>
+                  <span class="article-title">crystal clear <span class="article-arrow">-></span></span>
+                  <span class="thumbs">
+                    <span class="thumb-item thumb-c"></span>
+                    <span class="thumb-item thumb-d"></span>
+                    <span class="thumb-item thumb-e"></span>
+                  </span>
+                </button>
+              </li>
+              <li class="article-item" data-category="advertising">
+                <button class="article-link" type="button" data-open-viewer>
+                  <span class="article-title">THE NORTH FACE 2025SS <span class="article-arrow">-></span></span>
+                  <span class="thumbs">
+                    <span class="thumb-item thumb-f"></span>
+                  </span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="pager">
+      <a href="#home"><span class="pager-arrow"><-</span> home</a>
+      <p>(c) grandson</p>
+    </footer>
+
+    <div class="viewer" data-viewer aria-hidden="true">
+      <button class="viewer-close" type="button" data-close-viewer aria-label="close"></button>
+      <div class="viewer-overlay"></div>
+      <div class="viewer-slide viewer-a"></div>
+      <div class="viewer-slide viewer-b"></div>
+    </div>
+
+    <div class="custom-scrollbar" aria-hidden="true"><span></span></div>
+    <script src="script.js"></script>
+  </body>
+</html>

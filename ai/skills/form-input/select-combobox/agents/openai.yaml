@@ -1,0 +1,3 @@
+display_name: Select Combobox
+short_description: Hướng dẫn select, combobox, autocomplete và async options.
+default_prompt: Dùng select-combobox để thiết kế và implement control chọn này.

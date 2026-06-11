@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OpenAI Business UI Patterns Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand-island" href="#">
+        <span class="brand-blossom" aria-hidden="true"></span>
+        <span class="brand-wordmark">OpenAI Patterns</span>
+      </a>
+      <nav class="nav-links" aria-label="Demo sections">
+        <a href="#charts">Charts</a>
+        <a href="#hotspots">Hotspots</a>
+        <a href="#technical">Technical</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-pressed="false">Dark</button>
+    </header>
+
+    <main>
+      <section class="business-hero">
+        <div class="hero-surface">
+          <p class="eyebrow">Business systems</p>
+          <h1>Design quiet interfaces for <span class="headline-accent">technical clarity</span></h1>
+          <p class="hero-copy">A compact pattern library for soft gradient surfaces, precise chart text, inline highlights, responsive image hotspots, and code-oriented product storytelling.</p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#patterns">Explore patterns</a>
+            <a class="secondary-action" href="#technical">View technical UI</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="pattern-section" id="patterns">
+        <div class="section-copy">
+          <p class="eyebrow">Inline language</p>
+          <h2>Use highlights as small semantic signals.</h2>
+          <p>Short spans can call attention to <span class="highlight highlight-blue">insight</span>, <span class="highlight highlight-green">success</span>, <span class="highlight highlight-red">risk</span>, or <span class="highlight highlight-pink">creative emphasis</span> without turning the whole page into decoration.</p>
+        </div>
+
+        <div class="scroll-strip hide-scrollbar" aria-label="Horizontal token examples">
+          <span>OpenAI Sans</span>
+          <span>Noise gradient</span>
+          <span>Container hotspot</span>
+          <span>Thin scrollbar</span>
+          <span>Chart labels</span>
+          <span>CRT screen</span>
+          <span>Diff viewer</span>
+        </div>
+      </section>
+
+      <section class="pattern-grid" id="charts">
+        <article class="chart-card">
+          <div class="chart-head">
+            <h2 class="text-chart-title">Weekly model routing</h2>
+            <span class="text-chart-legend-detail">Updated 09:24</span>
+          </div>
+          <div class="bars" aria-label="Bar chart demo">
+            <div class="bar-row">
+              <span class="text-chart-label">Reasoning</span>
+              <div class="bar-track"><span style="width: 82%"></span></div>
+              <span class="text-chart-bar-label">82</span>
+            </div>
+            <div class="bar-row">
+              <span class="text-chart-label">Vision</span>
+              <div class="bar-track"><span style="width: 54%"></span></div>
+              <span class="text-chart-bar-label">54</span>
+            </div>
+            <div class="bar-row">
+              <span class="text-chart-label">Realtime</span>
+              <div class="bar-track"><span style="width: 37%"></span></div>
+              <span class="text-chart-bar-label">37</span>
+            </div>
+          </div>
+          <div class="legend">
+            <span class="legend-dot"></span>
+            <span class="text-chart-legend">Production traffic</span>
+          </div>
+        </article>
+
+        <article class="tweet-card">
+          <div class="tweet-header">
+            <span class="avatar"></span>
+            <div>
+              <strong>Product lead</strong>
+              <span>@systems</span>
+            </div>
+          </div>
+          <p class="tweet-body">The best UI pattern here is restraint: one accent hue, useful labels, and motion that disappears when the work starts.</p>
+          <div class="tweet-actions">
+            <span>Reply</span>
+            <span>Repost</span>
+            <span>Copy</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="pattern-section" id="hotspots">
+        <div class="section-copy">
+          <p class="eyebrow">Image hotspot</p>
+          <h2>Anchor explanations to the visual, then collapse gracefully on narrow containers.</h2>
+        </div>
+
+        <div class="hotspot-container">
+          <div class="product-frame">
+            <div class="frame-sidebar"></div>
+            <div class="frame-main">
+              <div class="frame-line wide"></div>
+              <div class="frame-line"></div>
+              <div class="frame-chart"></div>
+            </div>
+            <button class="hotspot hotspot-a" type="button" aria-describedby="tip-a">1</button>
+            <button class="hotspot hotspot-b" type="button" aria-describedby="tip-b">2</button>
+          </div>
+          <div class="hotspot-popover popover-a" id="tip-a">
+            <strong>Scoped popover</strong>
+            <span>Use absolute content on wide containers.</span>
+          </div>
+          <div class="hotspot-popover popover-b" id="tip-b">
+            <strong>Mobile fallback</strong>
+            <span>Convert into a bottom sheet with side gutters.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="technical-grid" id="technical">
+        <article class="crt-screen">
+          <div class="crt-content">
+            <p class="text-codex-sm">Terminal</p>
+            <p><span class="typewriter">codex run --task "ship polished UI"</span><span class="terminal-cursor">_</span></p>
+            <button class="crt-button" type="button">Watch Video</button>
+          </div>
+        </article>
+
+        <article class="diff-view thin-scrollbar" data-theme="light">
+          <div class="diff-line diff-del"><span>-</span><code>background: flat;</code></div>
+          <div class="diff-line diff-add"><span>+</span><code>background: noise + gradient;</code></div>
+          <div class="diff-line"><span> </span><code>border-radius: 13px;</code></div>
+          <div class="diff-line diff-add"><span>+</span><code>respect prefers-reduced-motion;</code></div>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

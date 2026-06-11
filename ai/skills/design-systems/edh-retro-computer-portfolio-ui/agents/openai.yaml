@@ -1,0 +1,4 @@
+interface:
+  display_name: "EDH Retro Computer Portfolio UI"
+  short_description: "Build retro computer portfolio pages."
+  default_prompt: "Create an Ed Hinrichsen-style retro computer portfolio with cream background, pixel headings, fixed WebGL hero fallback, boxed menu buttons, project sections, dashed skill tags, and chunky offset shadows."

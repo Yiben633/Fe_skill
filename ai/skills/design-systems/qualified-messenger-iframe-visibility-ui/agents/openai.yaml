@@ -1,0 +1,4 @@
+interface:
+  display_name: "Qualified Messenger Iframe Visibility UI"
+  short_description: "Build accessible fixed messenger iframe widgets."
+  default_prompt: "Create a Qualified-style messenger iframe UI with an accessible skip link, fixed zero-size launcher frame, maximized desktop state, mobile full-screen state, full-height sidebar mode, embedded mode, pointer-events disable mode, :has() stacking-context fixes, and a demo control panel for toggling states."

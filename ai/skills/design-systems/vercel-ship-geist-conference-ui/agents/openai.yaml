@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vercel Ship Geist Conference UI"
+  short_description: "Build Geist pixel conference pages."
+  default_prompt: "Create a Vercel Ship-style dark conference landing page with Geist typography, Geist Pixel Square/Circle headlines, oversized city/date lists, sponsor grid, ticket CTA, rounded Geist buttons, badges, modal drawer, and precise monochrome token styling."

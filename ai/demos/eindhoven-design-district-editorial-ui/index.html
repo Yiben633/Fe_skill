@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eindhoven Design District Editorial UI Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="nav js-nav" id="site-nav">
+        <div class="nav-overlay" aria-hidden="true">
+          <div class="nav-overlay__backdrop"></div>
+          <div class="nav-overlay__inner">
+            <div class="nav-overlay__layer overlay-nav container" id="overlay-nav">
+              <nav>
+                <ul class="nav-items nav-items--main">
+                  <li class="nav-item"><a class="nav-link" href="#about">Over EDD</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#projects">Projecten</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#articles">Artikelen</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#routes">Routes</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+              <section class="nav-overlay__partners">
+                <h4>Een initiatief van</h4>
+                <ul>
+                  <li>Dutch Design Foundation</li>
+                  <li>Gemeente Eindhoven</li>
+                  <li>Eindhoven365</li>
+                </ul>
+              </section>
+            </div>
+
+            <div class="nav-overlay__layer overlay-search container is-hidden" id="overlay-search">
+              <form class="overlay-search__form">
+                <div class="overlay-search__input">
+                  <input type="text" placeholder="Start typing to search" enterkeyhint="search">
+                  <figure class="overlay-search__loader"></figure>
+                </div>
+                <button type="button">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-bar">
+          <div class="nav-bar__inner container">
+            <a href="#" class="nav-bar__logo">EDD</a>
+            <div class="nav-bar__tools">
+              <button class="nav-language" type="button">nl</button>
+              <button class="nav-button nav-button--search" type="button" aria-expanded="false">search</button>
+              <button class="nav-button nav-button--burger" type="button" aria-expanded="false">
+                <span>Menu</span>
+                <i class="burger"><span></span><span></span><span></span></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="home-header">
+        <div class="home-header__inner container grid">
+          <div class="home-header__body">
+            <figure class="home-header-image home-header-image--left reveal-image">
+              <div class="reveal-image__inner visual visual-a"></div>
+            </figure>
+            <div class="home-header__text">
+              <h1>Ontdek design in Eindhoven</h1>
+              <p class="home-header__payoff">Design District</p>
+            </div>
+            <figure class="home-header-image home-header-image--right reveal-image">
+              <div class="reveal-image__inner visual visual-b"></div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="page-section page-section--home-intro grid container">
+        <div class="home-intro">
+          <h2>Eindhoven Design District geeft ontwerp, technologie en publieke ruimte een groter podium.</h2>
+          <a href="#projects" class="button">Meer over Eindhoven Design District</a>
+        </div>
+      </section>
+
+      <section id="projects" class="page-section u-no-padding-top">
+        <div class="home-projects">
+          <div class="home-projects__header container">
+            <h2>Projecten</h2>
+          </div>
+          <div class="home-projects__list">
+            <article class="home-projects__project home-project-item" data-theme="pink">
+              <div class="home-project-item__body color-area">
+                <div class="home-project-item__text">
+                  <h2>Toolbox bewegingsvrijheid</h2>
+                  <p>Design research for future mobility in dense neighborhoods, with practical tools for residents and cities.</p>
+                  <a href="#" class="link"><span class="link__text">Lees meer</span></a>
+                </div>
+                <a href="#" class="button button--filled">Alle projecten</a>
+              </div>
+              <div class="home-project-item__image visual visual-project-a">
+                <a href="#"><span>Lees meer</span></a>
+              </div>
+            </article>
+
+            <article class="home-projects__project home-project-item" data-theme="red">
+              <div class="home-project-item__body color-area">
+                <div class="home-project-item__text">
+                  <h2>Infomarkers Design District</h2>
+                  <p>A family of public markers makes design visible in the city all year round.</p>
+                  <a href="#" class="link"><span class="link__text">Lees meer</span></a>
+                </div>
+                <a href="#" class="button">Alle projecten</a>
+              </div>
+              <div class="home-project-item__image visual visual-project-b">
+                <a href="#"><span>Lees meer</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="articles" class="page-section container">
+        <div class="section-heading">
+          <h2>Artikelen</h2>
+          <a class="link" href="#">Alles bekijken</a>
+        </div>
+        <div class="type-row">
+          <article class="type-row__section type-row-section">
+            <div class="type-row-section__inner">
+              <a href="#" class="type-row-section__image reveal-image"><span class="visual visual-row-a"></span></a>
+              <div class="type-row-section__body">
+                <h3><a class="nav-link" href="#">Wat is speculatief ontwerp en wat heb je eraan?</a></h3>
+              </div>
+              <span class="type-row-section__meta">Article</span>
+            </div>
+          </article>
+          <article class="type-row__section type-row-section">
+            <div class="type-row-section__inner">
+              <a href="#" class="type-row-section__image reveal-image"><span class="visual visual-row-b"></span></a>
+              <div class="type-row-section__body">
+                <h3><a class="nav-link" href="#">Seven design areas and creative breeding grounds.</a></h3>
+              </div>
+              <span class="type-row-section__meta">Route</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="routes" class="page-section route-band">
+        <div class="container grid">
+          <div class="route-copy">
+            <h2>Routes</h2>
+            <p>Map cultural stops with compact facts, icons, and walking-friendly metadata.</p>
+          </div>
+          <div class="route-card">
+            <span>12 stops</span>
+            <strong>Design in public space</strong>
+            <a class="link" href="#">Open route</a>
+          </div>
+          <div class="route-card">
+            <span>45 min</span>
+            <strong>Tech and maker district</strong>
+            <a class="link" href="#">Open route</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="footer-cta footer-cta--text-only" data-theme="pink">
+        <div class="footer-cta__inner">
+          <div class="footer-cta__body">
+            <h2>Wil je weten hoe jij ontwerpkracht inzet voor jouw project?</h2>
+            <a href="#" class="button">Neem contact op</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner container">
+        <div class="footer__menu">
+          <a class="nav-link" href="#about">Over EDD</a>
+          <a class="nav-link" href="#projects">Projecten</a>
+          <a class="nav-link" href="#articles">Artikelen</a>
+          <a class="nav-link" href="#routes">Routes</a>
+        </div>
+        <div class="footer__text">
+          <section>
+            <h4>Een initiatief van</h4>
+            <p>Dutch Design Foundation, Gemeente Eindhoven, Eindhoven365</p>
+          </section>
+        </div>
+        <button class="footer__logo" type="button">EDD</button>
+      </div>
+    </footer>
+
+    <div class="cursor js-cursor is-hidden"><div class="cursor__inner"></div></div>
+    <div class="overlay-loader"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

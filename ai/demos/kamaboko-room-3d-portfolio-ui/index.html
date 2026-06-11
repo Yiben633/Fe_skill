@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kamaboko Room 3D Portfolio UI</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="loading" data-loading>
+      <div class="progress"><span></span></div>
+    </div>
+
+    <button class="theme-toggle" type="button" aria-label="Toggle theme">
+      <span class="theme-icon">L</span>
+      <span class="theme-body"><span class="theme-handle"><span></span></span></span>
+      <span class="theme-icon">D</span>
+    </button>
+
+    <canvas class="room-canvas" id="room-canvas" aria-hidden="true"></canvas>
+
+    <div class="section-bg" data-panel="about" data-side="left">
+      <span class="panel-scroll"></span>
+    </div>
+    <div class="section-bg" data-panel="works" data-side="right">
+      <span class="panel-scroll"></span>
+    </div>
+    <div class="section-bg" data-panel="contact" data-side="left">
+      <span class="panel-scroll"></span>
+    </div>
+
+    <main>
+      <section class="opening is-visible">
+        <p class="greeting split-line" data-split="hello, i am kamaboko."></p>
+        <div class="opening-inner">
+          <div class="opening-main">
+            <h1 class="title-ja split-line" data-split="kamaboko room"></h1>
+            <p class="desc split-line" data-split="personal portfolio site"></p>
+          </div>
+          <div class="opening-sub">
+            <p class="title-en">
+              <span class="title-en-line split-line" data-split="kamaboko"></span>
+              <span class="title-en-line split-line" data-split="portfolio"></span>
+            </p>
+          </div>
+        </div>
+        <div class="scroll-down" aria-hidden="true">v</div>
+      </section>
+
+      <div class="scroll-margin"></div>
+
+      <section class="section" data-color="about" data-side="left">
+        <div class="section-hero">
+          <h2>about me<span class="dot dot-a"></span><span class="dot dot-b"></span><span class="dot dot-c"></span></h2>
+          <span class="number">01</span>
+        </div>
+        <div class="section-content">
+          <h3>Hello, I am Kamaboko</h3>
+          <p>I build websites with a soft personal atmosphere, careful motion, and small moments that respond to the visitor.</p>
+          <h3>I like design and implementation together</h3>
+          <p>The page is paced like a room tour: a quiet 3D space behind, long scrolling, and panels that arrive from either side.</p>
+        </div>
+      </section>
+
+      <div class="scroll-margin"></div>
+
+      <section class="section" data-color="works" data-side="right">
+        <div class="section-hero">
+          <h2>my works<span class="dot dot-a"></span><span class="dot dot-b"></span><span class="dot dot-c"></span></h2>
+          <span class="number">02</span>
+        </div>
+        <div class="section-content">
+          <h3>Website production</h3>
+          <p>Use pastel panels, large lowercase headings, and a long scroll rhythm to make each work category feel like its own stop.</p>
+          <a class="clone-link" href="#">
+            <span class="clone-link-inner">
+              <span class="base">view works ^</span>
+              <span class="clone">view works ^</span>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <div class="scroll-margin"></div>
+
+      <section class="section" data-color="contact" data-side="left">
+        <div class="section-hero">
+          <h2>contact<span class="dot dot-a"></span><span class="dot dot-b"></span><span class="dot dot-c"></span></h2>
+          <span class="number">03</span>
+        </div>
+        <div class="section-content">
+          <h3>Find me online</h3>
+          <p>For a soft creator portfolio, use short direct contact copy and a tactile clone-text link.</p>
+          <a class="clone-link" href="#">
+            <span class="clone-link-inner">
+              <span class="base">open profile ^</span>
+              <span class="clone">open profile ^</span>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <div class="scroll-margin"></div>
+
+      <section class="finally">
+        <div class="section-hero">
+          <h2>finally<span class="dot dot-a"></span><span class="dot dot-b"></span><span class="dot dot-c"></span></h2>
+          <span class="number">04</span>
+        </div>
+        <div class="finally-content">
+          <p>Thank you for visiting this little room.</p>
+          <small>(c) 2026 Kamaboko demo</small>
+        </div>
+      </section>
+    </main>
+
+    <div class="custom-scrollbar" aria-hidden="true">
+      <span></span>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

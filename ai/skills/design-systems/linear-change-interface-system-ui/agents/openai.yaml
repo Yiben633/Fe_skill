@@ -1,0 +1,4 @@
+interface:
+  display_name: "Linear Change Interface System UI"
+  short_description: "Build Linear-style dark product pages."
+  default_prompt: "Create a Linear-style dark product or editorial page with tokenized colors, Inter/iA Quattro/Redaction-inspired typography, skeuomorphic and glass separators, lightbox image zoom, tweet/embed cards, benefit columns, dot-matrix canvas illustrations, 3D grid loader accents, company logo blocks, rounded article/content shells, cinematic change-page hero sections, and subtle high-precision motion."

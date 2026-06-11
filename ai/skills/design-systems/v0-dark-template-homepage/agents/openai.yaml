@@ -1,0 +1,4 @@
+interface:
+  display_name: "v0 Dark Template Homepage"
+  short_description: "Build v0-style dark template pages."
+  default_prompt: "Create a dark v0-style template marketplace homepage with hero, integration icons, template cards, theme strips, mobile mockups, and hover overlays."

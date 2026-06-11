@@ -1,0 +1,4 @@
+interface:
+  display_name: "Wise Design Figma Portfolio UI"
+  short_description: "Build Wise Design-style Figma portfolio microsites."
+  default_prompt: "Create a Wise Design/Figma-site-style portfolio microsite with layered reset guidance, Inter/Wise Sans typography, green glass pill navigation, fixed/sticky top controls, rounded asset carousel tiles, active asset metadata, bottom progress scrubber, pause/play control, safe-area-aware social links, vertical text rotator, bypass accessibility link, object-cover media blocks, reduced-motion marquee handling, and crisp white/green brand palette."

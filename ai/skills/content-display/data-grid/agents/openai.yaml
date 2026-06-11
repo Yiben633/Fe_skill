@@ -1,0 +1,3 @@
+display_name: Data Grid
+short_description: Hướng dẫn data grid nâng cao, selection và virtualization.
+default_prompt: Dùng data-grid để thiết kế và implement data grid này.

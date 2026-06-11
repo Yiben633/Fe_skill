@@ -1,0 +1,3 @@
+display_name: Line Chart
+short_description: Hướng dẫn line chart, trend và time series.
+default_prompt: Dùng line-chart để thiết kế và implement chart xu hướng này.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Duchy Nursery Garden Centre UI"
+  short_description: "Build warm garden centre and nursery pages."
+  default_prompt: "Create a Duchy of Cornwall Nursery-style garden centre page with earthy green branding, botanical hero imagery, plant shop categories, cafe and visit cards, seasonal inspiration sections, refined serif headings, soft cream backgrounds, product tiles, newsletter signup, footer links, and a Cookiebot-style consent dialog."

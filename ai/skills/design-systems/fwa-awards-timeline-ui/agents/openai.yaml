@@ -1,0 +1,4 @@
+interface:
+  display_name: "FWA Awards Timeline UI"
+  short_description: "Build The FWA-style awards timelines."
+  default_prompt: "Create a The FWA-style awards timeline page with a compact black-and-white header, editorial navigation, pixel-pattern media cards, FOTD ribbons, date blocks, scorecards for points and days, See Case and Launch project buttons, slider dots, load-more trigger, sponsor/footer strip, and cookie notice."

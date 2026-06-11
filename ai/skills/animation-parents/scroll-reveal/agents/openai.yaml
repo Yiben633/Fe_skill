@@ -1,0 +1,3 @@
+display_name: Scroll Reveal
+short_description: Pattern fade, slide và stagger khi element vào viewport.
+default_prompt: Dùng scroll-reveal để thêm reveal animation cho phần này.

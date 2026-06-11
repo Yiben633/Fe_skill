@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en" class="dark-theme conference-site">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vercel Ship Geist Conference UI Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Conference home">
+        <span class="triangle-mark"></span>
+        <span>Ship</span>
+      </a>
+      <nav class="header-nav" aria-label="Primary navigation">
+        <a href="#agenda">Agenda</a>
+        <a href="#sponsors">Sponsors</a>
+        <a href="#cities">Cities</a>
+      </nav>
+      <button class="geist-button primary" type="button" data-open-drawer>Get a ticket</button>
+    </header>
+
+    <main id="content">
+      <section class="hero">
+        <div class="pixel-orbit" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <div class="hero-inner">
+          <span class="ship-badge">Ship 26 / New York City / 06.30</span>
+          <h1>Build, deploy, and scale agents.</h1>
+          <p>
+            A dark Geist conference interface for product launches, technical demos, sponsor grids, and oversized city schedules.
+          </p>
+          <div class="hero-actions">
+            <button class="geist-button primary large" type="button" data-open-drawer>Get a ticket</button>
+            <a class="geist-button secondary large" href="#agenda">View agenda</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-bar" aria-label="Event stats">
+        <article>
+          <span class="mono-label">SPEAKERS</span>
+          <strong>32</strong>
+        </article>
+        <article>
+          <span class="mono-label">SESSIONS</span>
+          <strong>18</strong>
+        </article>
+        <article>
+          <span class="mono-label">DEMOS</span>
+          <strong>09</strong>
+        </article>
+      </section>
+
+      <section class="agenda" id="agenda">
+        <div class="section-heading">
+          <span class="mono-label">AGENDA</span>
+          <h2>Launch day schedule</h2>
+        </div>
+        <div class="agenda-grid">
+          <article class="agenda-card">
+            <span class="mono-label">09:00</span>
+            <h3>Keynote</h3>
+            <p>Platform announcements, AI workflows, and live product reveals.</p>
+          </article>
+          <article class="agenda-card">
+            <span class="mono-label">11:30</span>
+            <h3>Agent infrastructure</h3>
+            <p>Build reliable agent systems with observability, queues, and safe deploys.</p>
+          </article>
+          <article class="agenda-card">
+            <span class="mono-label">14:00</span>
+            <h3>Frontend systems</h3>
+            <p>Design exact, fast interfaces with tokenized components and server-first UI.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="sponsors" id="sponsors">
+        <div class="section-heading">
+          <span class="mono-label">SPONSORS</span>
+          <h2>Built with the ecosystem</h2>
+        </div>
+        <div class="sponsor-grid">
+          <a href="#">RESEND</a>
+          <a href="#">SENTRY</a>
+          <a href="#">SUPABASE</a>
+          <a href="#">EDGE</a>
+          <a href="#">TURBO</a>
+          <a href="#">STORAGE</a>
+        </div>
+      </section>
+
+      <section class="next-stops" id="cities">
+        <p class="next-title">Next stops:</p>
+        <nav class="city-list" aria-label="Conference cities">
+          <a class="city-row" href="#"><span>London, <em>06.17</em></span></a>
+          <a class="city-row" href="#"><span>Berlin, <em>06.25</em></span></a>
+          <a class="city-row" href="#"><span>Sydney, <em>07.30</em></span></a>
+          <a class="city-row" href="#"><span>San Francisco, <em>10.15</em></span></a>
+        </nav>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span class="triangle-mark"></span>
+      <nav aria-label="Footer navigation">
+        <a href="#">Enterprise</a>
+        <a href="#">Get a demo</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Event terms</a>
+      </nav>
+      <p>2026 Demo Conference. All rights reserved.</p>
+    </footer>
+
+    <div class="cookie-banner" id="cookie-banner">
+      <p>We use essential cookies and anonymous analytics to improve this demo.</p>
+      <div>
+        <button class="geist-button secondary small" type="button" data-cookie-settings>Settings</button>
+        <button class="geist-button primary small" type="button" data-cookie-accept>Accept</button>
+      </div>
+    </div>
+
+    <div class="overlay" data-overlay hidden></div>
+    <dialog class="ticket-drawer" data-drawer>
+      <div class="drawer-handle"></div>
+      <button class="drawer-close" type="button" data-close-drawer aria-label="Close ticket drawer">Close</button>
+      <span class="ship-badge">Ticket request</span>
+      <h2>Reserve your seat</h2>
+      <form>
+        <label>
+          <span>Email</span>
+          <input type="email" placeholder="you@example.com">
+        </label>
+        <label>
+          <span>Role</span>
+          <select>
+            <option>Developer</option>
+            <option>Founder</option>
+            <option>Designer</option>
+          </select>
+        </label>
+        <button class="geist-button primary large" type="submit">Submit request</button>
+      </form>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>

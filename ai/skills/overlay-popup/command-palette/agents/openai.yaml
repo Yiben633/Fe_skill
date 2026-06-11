@@ -1,0 +1,3 @@
+display_name: Command Palette
+short_description: Hướng dẫn command palette, global search và action launcher.
+default_prompt: Dùng command-palette để thiết kế và implement command launcher này.

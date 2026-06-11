@@ -1,0 +1,4 @@
+interface:
+  display_name: "1:09 Barcode Portfolio UI"
+  short_description: "Monochrome IBM Plex Mono portfolio with barcode headings."
+  default_prompt: "Create a 1:09-style illustrator portfolio with IBM Plex Mono text, Libre Barcode 128 decorative labels, dark and light theme tokens, an inset rounded viewport frame, top navigation with an active indicator, a right-top clock and theme dots, OS-like dialog windows, dashed cross/grid decorations, filterable works cards, profile/contact sections, and a slim custom scrollbar."

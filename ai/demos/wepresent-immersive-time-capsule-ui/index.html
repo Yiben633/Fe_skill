@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WePresent Immersive Time Capsule UI Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <we-wallpaper class="wallpaper" aria-label="Immersive time capsule demo">
+      <div class="wrapper-3d" aria-hidden="true">
+        <canvas id="trace-canvas"></canvas>
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+        <div class="orb orb-c"></div>
+      </div>
+
+      <header class="edge-ui" aria-label="Site controls">
+        <a class="site-logo" href="#" aria-label="WePresent demo home">
+          <span>WePresent</span>
+          <small>Time Capsule</small>
+        </a>
+
+        <button class="open-menu" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </header>
+
+      <button class="read-more" type="button">Read Foreword</button>
+
+      <button class="mute-button" type="button" aria-label="Toggle sound" aria-pressed="false">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <aside class="pain-menu" aria-label="Object information">
+        <button class="info-button" type="button" aria-expanded="false">Info</button>
+        <div class="panel">
+          <button class="panel-close" type="button" aria-label="Close information">Close</button>
+          <p class="quote">I wanted to leave something for a future audience that cannot meet us in this moment.</p>
+          <p class="quote-author">Marina Abramovic, imagined archival note</p>
+          <div class="overview">
+            <span>Title</span>
+            <strong>Traces Capsule</strong>
+            <span>Artist</span>
+            <strong>Marina Abramovic</strong>
+            <span>Location</span>
+            <strong>Digital Archive</strong>
+            <span>Format</span>
+            <strong>Sound, image, memory</strong>
+          </div>
+        </div>
+      </aside>
+
+      <div class="intro-text-panel-3d" role="dialog" aria-modal="true" aria-label="Intro">
+        <div class="intro-copy">
+          <p class="eyebrow">A digital time capsule</p>
+          <p class="body">
+            Enter an archive of gestures, objects, and memory with
+            <span class="alpina">Marina Abramovic</span>.
+          </p>
+          <button class="enter-button" type="button">Enter Experience</button>
+          <p class="sound-note">Use headphones for best experience</p>
+        </div>
+      </div>
+
+      <div class="video-splash" role="dialog" aria-modal="true" aria-label="Opening film">
+        <div class="video-frame">
+          <p>Opening signal</p>
+          <div class="scan-line"></div>
+        </div>
+        <button class="skip-button" type="button">Skip</button>
+      </div>
+
+      <div class="site-dimmer" aria-hidden="true"></div>
+
+      <nav class="main-menu" aria-label="Main menu">
+        <div class="menu-meta">
+          <span>Archive index</span>
+          <span>WePresent study</span>
+        </div>
+        <div class="menu-grid">
+          <a href="#">Objects</a>
+          <a href="#">Foreword</a>
+          <a href="#">Artist</a>
+          <a href="#">Credits</a>
+        </div>
+      </nav>
+
+      <div class="cursor" aria-hidden="true">
+        <div class="circle"></div>
+      </div>
+    </we-wallpaper>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SVZ Tech Agency Webflow UI Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="preloader" data-preloader aria-hidden="true">
+      <div class="preloader__mark">SVZ</div>
+      <div class="preloader__line"><span></span></div>
+    </div>
+
+    <header class="navbar" data-navbar>
+      <a class="navbar__brand" href="#">SVZ</a>
+      <nav class="navbar__links" data-menu>
+        <a href="#services">Services</a>
+        <a href="#challenge">Challenge</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="navbar__toggle" type="button" aria-expanded="false" data-menu-toggle>Menu</button>
+      <a class="navbar__cta" href="#contact">Work with us</a>
+    </header>
+
+    <main>
+      <section class="section_hero">
+        <div class="hero__meta">
+          <span>Since 2013</span>
+          <span>Los Angeles / Remote</span>
+        </div>
+        <h1 class="hero_heading reveal">
+          Branding, Webflow <span>& AI systems</span> for technical teams.
+        </h1>
+        <div class="hero__bottom">
+          <p>Embedded design and development for AI, cybersecurity, defense-tech, government, and enterprise teams.</p>
+          <div class="hero_pills" aria-label="Sectors">
+            <span>AI</span>
+            <span>Cybersecurity</span>
+            <span>Defense-tech</span>
+            <span>Enterprise</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section_services" id="services">
+        <p class="eyebrow">What we build</p>
+        <div class="solution-row reveal">
+          <span>01</span>
+          <h2>Brand systems</h2>
+          <p>Positioning, identity, messaging, and launch-ready art direction for complex products.</p>
+        </div>
+        <div class="solution-row reveal">
+          <span>02</span>
+          <h2>Webflow sites</h2>
+          <p>Scalable marketing infrastructure with clean CMS structure and editorial motion.</p>
+        </div>
+        <div class="solution-row reveal">
+          <span>03</span>
+          <h2>AI systems</h2>
+          <p>Prototype interfaces, internal copilots, and workflows that make strategy operational.</p>
+        </div>
+      </section>
+
+      <section class="section_challenge" id="challenge">
+        <div class="challenge__intro">
+          <p class="eyebrow dark">Brand challenge</p>
+          <h2>Bridge the gap between technology and artistry.</h2>
+        </div>
+        <div class="challenge_grid">
+          <article>
+            <span>01</span>
+            <h3>Translate technical depth.</h3>
+            <p>Turn complex product language into a story buyers, partners, and teams can rally around.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Make the backend usable.</h3>
+            <p>Design Webflow systems that marketing teams can update without breaking the visual system.</p>
+          </article>
+          <article class="red">
+            <span>03</span>
+            <h3>Ship with momentum.</h3>
+            <p>Pair strategy, design, build, and launch support in one focused production loop.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section_work" id="work">
+        <div class="work__heading">
+          <p class="eyebrow">Selected proof</p>
+          <h2>Work that feels technical, precise, and alive.</h2>
+        </div>
+        <div class="media-rail" aria-label="Case study rail">
+          <article class="work-card reveal">
+            <div class="media media-a"></div>
+            <h3>Autonomous systems brand</h3>
+            <p>Identity, Webflow, launch narrative</p>
+          </article>
+          <article class="work-card reveal">
+            <div class="media media-b"></div>
+            <h3>Cybersecurity platform</h3>
+            <p>Messaging, product pages, CMS</p>
+          </article>
+          <article class="work-card reveal">
+            <div class="media media-c"></div>
+            <h3>AI workflow startup</h3>
+            <p>Prototype, homepage, visual system</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section_testimonials">
+        <p class="quote">"Structured, detail-oriented, and able to turn complex teams into a brand people understand."</p>
+        <div class="quote__byline">Head of Marketing / Enterprise AI</div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <p class="eyebrow">Work with us</p>
+      <a href="mailto:hello@svz.io">hello@svz.io</a>
+      <div class="footer__links">
+        <span>LinkedIn</span>
+        <span>Instagram</span>
+        <span>Los Angeles</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

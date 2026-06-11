@@ -1,0 +1,3 @@
+display_name: Timeline
+short_description: Hướng dẫn timeline, milestone và event history.
+default_prompt: Dùng timeline để thiết kế và implement timeline này.

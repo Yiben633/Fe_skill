@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ninja Forms Field Layout System Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="demo-shell">
+    <section class="intro">
+      <p class="eyebrow">Ninja Forms structure</p>
+      <h1>Reusable field layouts with flexible label positions.</h1>
+      <p>Standardized wrappers, descriptions, field elements, errors, repeaters, rich text controls, and loading states.</p>
+    </section>
+
+    <form class="nf-form-wrap ninja-forms-form-wrap" id="demoForm">
+      <section class="form-panel label-above">
+        <div class="panel-heading">
+          <h2>Label above</h2>
+          <span>Default stacked layout</span>
+        </div>
+        <div class="nf-field-container textbox-container">
+          <div class="field-wrap textbox-wrap">
+            <div class="nf-field-label">
+              <label for="fullName">Full name</label>
+            </div>
+            <div class="nf-field-description">
+              <p>Use the exact name that should appear on the project brief.</p>
+            </div>
+            <div class="nf-field-element">
+              <input id="fullName" type="text" placeholder="Jane Doe">
+            </div>
+          </div>
+        </div>
+        <div class="nf-field-container email-container has-error">
+          <div class="field-wrap email-wrap">
+            <div class="nf-field-label">
+              <label for="email">Email address</label>
+            </div>
+            <div class="nf-field-element">
+              <input id="email" type="email" placeholder="jane@example.com" aria-describedby="email-error">
+            </div>
+            <div class="nf-after-field">
+              <span class="nf-error-msg" id="email-error">Please enter a valid email address.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-panel label-left">
+        <div class="panel-heading">
+          <h2>Label left</h2>
+          <span>Horizontal form layout</span>
+        </div>
+        <div class="nf-field-container select-container">
+          <div class="field-wrap select-wrap">
+            <div class="nf-field-label">
+              <label for="budget">Budget range</label>
+            </div>
+            <div class="nf-field-element">
+              <select id="budget">
+                <option>Select a range</option>
+                <option>Under 2,500</option>
+                <option>2,500 to 7,500</option>
+                <option>7,500 plus</option>
+              </select>
+            </div>
+            <div class="nf-field-description">
+              <p>This helper text remains aligned with the field column.</p>
+            </div>
+          </div>
+        </div>
+        <div class="nf-field-container textarea-container">
+          <div class="field-wrap textarea-wrap">
+            <div class="nf-field-label">
+              <label for="summary">Project summary</label>
+            </div>
+            <div class="nf-field-element">
+              <textarea id="summary" placeholder="Tell us what needs to be built."></textarea>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-panel label-right">
+        <div class="panel-heading">
+          <h2>Label right</h2>
+          <span>Element first, label second</span>
+        </div>
+        <div class="nf-field-container list-radio-container">
+          <div class="field-wrap listradio-wrap list-radio-wrap">
+            <div class="nf-field-label">
+              <label>Project type</label>
+            </div>
+            <div class="nf-field-element">
+              <ul>
+                <li><input id="type-site" name="type" type="radio"><label for="type-site">Website</label></li>
+                <li><input id="type-brand" name="type" type="radio"><label for="type-brand">Branding</label></li>
+                <li><input id="type-store" name="type" type="radio"><label for="type-store">Online store</label></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="nf-field-container list-checkbox-container">
+          <div class="field-wrap listcheckbox-wrap list-checkbox-wrap">
+            <div class="nf-field-label">
+              <label>Needed features</label>
+            </div>
+            <div class="nf-field-element">
+              <ul>
+                <li><input id="feature-blog" type="checkbox"><label for="feature-blog">Blog</label></li>
+                <li><input id="feature-forms" type="checkbox"><label for="feature-forms">Contact forms</label></li>
+                <li><input id="feature-booking" type="checkbox"><label for="feature-booking">Booking flow</label></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-panel label-hidden">
+        <div class="panel-heading">
+          <h2>Hidden label and rich text</h2>
+          <span>Accessible hidden label with editor controls</span>
+        </div>
+        <div class="nf-field-container html-container">
+          <div class="field-wrap html-wrap">
+            <div class="nf-field-label">
+              <label for="notes">Additional notes</label>
+            </div>
+            <div class="nf-field-element">
+              <div class="ql-toolbar ql-snow" aria-label="Editor toolbar">
+                <button type="button" class="ql-active">B</button>
+                <button type="button">I</button>
+                <button type="button">U</button>
+                <button type="button">List</button>
+              </div>
+              <div class="ql-container ql-snow">
+                <div class="ql-editor" id="notes" contenteditable="true" role="textbox" aria-multiline="true">
+                  <p>Write notes for the form submission.</p>
+                </div>
+              </div>
+            </div>
+            <div class="nf-field-description">
+              <p>The label is hidden visually but the field remains described.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-panel repeater-container label-above">
+        <div class="panel-heading">
+          <h2>Repeater fieldset</h2>
+          <span>Repeatable groups with remove action</span>
+        </div>
+        <div class="nf-repeater-fieldsets" id="repeaters">
+          <fieldset>
+            <legend>Reference contact</legend>
+            <button class="nf-remove-fieldset" type="button" aria-label="Remove fieldset">x</button>
+            <div class="nf-field-container textbox-container">
+              <div class="field-wrap textbox-wrap">
+                <div class="nf-field-label">
+                  <label for="refName">Contact name</label>
+                </div>
+                <div class="nf-field-element">
+                  <input id="refName" type="text" placeholder="Alex Rivera">
+                </div>
+              </div>
+            </div>
+            <div class="nf-field-container textbox-container">
+              <div class="field-wrap textbox-wrap">
+                <div class="nf-field-label">
+                  <label for="refRole">Relationship</label>
+                </div>
+                <div class="nf-field-element">
+                  <input id="refRole" type="text" placeholder="Past client">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </section>
+
+      <section class="form-actions">
+        <button class="submit-button" type="submit">Submit form</button>
+        <button class="ghost-button" type="button" id="showSpinner">Show spinner</button>
+        <div class="spinner-slot" id="spinnerSlot" hidden>
+          <span class="nf-loading-spinner" aria-label="Loading"></span>
+        </div>
+      </section>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

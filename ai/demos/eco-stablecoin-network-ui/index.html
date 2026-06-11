@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco Stablecoin Network UI Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scrim" id="scrim"></div>
+
+    <header class="nav">
+      <a class="brand" href="#">eco</a>
+      <nav class="nav_middle" id="navMiddle" data-nav="closed" aria-label="Main navigation">
+        <a class="nav_link" href="#products">Products</a>
+        <a class="nav_link" href="#solutions">Solutions</a>
+        <a class="nav_link" href="#docs">Docs</a>
+        <a class="nav_link nav_link--mobile" href="#build">Start Building</a>
+      </nav>
+      <a class="btn nav_cta" href="#build">
+        <span>Start Building</span>
+        <span class="btn_right"><span class="arrow">-></span><span class="btn_gradient"></span></span>
+      </a>
+      <button class="nav_menu" id="menuToggle" type="button" aria-label="Toggle menu">
+        <span class="nav_menu-line cc-top"></span>
+        <span class="nav_menu-line cc-bottom"></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero_globe" aria-hidden="true">
+          <div class="globe">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="dark-layer"></div>
+        <div class="hero_social">
+          <a href="#">X</a>
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+        </div>
+        <div class="container hero_content">
+          <p class="eyebrow">Stablecoin network</p>
+          <h1 class="h1-xl">Move Money Smarter</h1>
+          <p class="hero_p">
+            Leading stablecoin companies use Eco to make money movement more
+            programmable than ever before.
+          </p>
+          <div class="hero_actions">
+            <a class="btn" href="#build"><span>Bridge with Portal</span><span class="btn_right"><span class="arrow">-></span><span class="btn_gradient"></span></span></a>
+            <a class="btn btn_secondary" href="#products"><span>Read docs</span><span class="btn_right"><span class="arrow">-></span><span class="btn_gradient"></span></span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section white-bg">
+        <div class="container about_sticky">
+          <p class="h1 split-text">
+            Build stablecoin products without building stablecoin infrastructure.
+          </p>
+        </div>
+      </section>
+
+      <section class="section products" id="products">
+        <div class="container">
+          <div class="section_head">
+            <p class="eyebrow">Products</p>
+            <h2 class="h2">Infrastructure primitives for programmable money.</h2>
+          </div>
+          <div class="product_grid">
+            <article class="product_card">
+              <div class="product_icon">R</div>
+              <h3>Routes</h3>
+              <p>Real-time stablecoin sends and swaps through competitive solver execution.</p>
+            </article>
+            <article class="product_card">
+              <div class="product_icon">A</div>
+              <h3>Programmable Addresses</h3>
+              <p>Wallet addresses that settle on your terms across chains and assets.</p>
+            </article>
+            <article class="product_card">
+              <div class="product_icon">T</div>
+              <h3>Programmable Transactions</h3>
+              <p>All-or-nothing execution for complex onchain flows and settlement logic.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section build" id="solutions">
+        <div class="container">
+          <div class="content_box reveal">
+            <div class="bwe_content">
+              <p class="eyebrow">Any asset, any chain</p>
+              <h3 class="card_h3">Exchange stablecoins without bridging friction</h3>
+              <p class="card_p">Route deposits, withdrawals, and swaps across 50+ chains with best-in-class execution.</p>
+              <a class="btn grey-blue" href="#"><span>Learn more</span><span class="btn_right"><span class="arrow">-></span><span class="btn_gradient blue-v"></span></span></a>
+            </div>
+            <div class="bwe_img bwe_img--one"></div>
+          </div>
+
+          <div class="content_box content_box--flip reveal">
+            <div class="bwe_img bwe_img--two"></div>
+            <div class="bwe_content">
+              <p class="eyebrow">Onchain UX</p>
+              <h3 class="card_h3">Give users global stablecoin balances</h3>
+              <p class="card_p">Deposit addresses, single-click gasless transactions, and invisible cross-chain UX.</p>
+              <a class="btn grey-blue" href="#"><span>Learn more</span><span class="btn_right"><span class="arrow">-></span><span class="btn_gradient blue-v"></span></span></a>
+            </div>
+          </div>
+
+          <div class="content_box reveal">
+            <div class="bwe_content">
+              <p class="eyebrow">Execution</p>
+              <h3 class="card_h3">Program perfect settlement flows</h3>
+              <p class="card_p">Set risk limits, routing rules, and fallback conditions. Eco handles execution on your terms.</p>
+              <a class="btn grey-blue" href="#"><span>Learn more</span><span class="btn_right"><span class="arrow">-></span><span class="btn_gradient blue-v"></span></span></a>
+            </div>
+            <div class="bwe_img bwe_img--three"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section usecases">
+        <div class="container">
+          <div class="section_head">
+            <p class="eyebrow">Solutions</p>
+            <h2 class="h2">Built for teams moving stablecoins at scale.</h2>
+          </div>
+          <div class="usecase_grid">
+            <article>AI Agents</article>
+            <article>DeFi Protocols</article>
+            <article>Payment Platforms</article>
+            <article>Solvers</article>
+            <article>Stablecoin Issuers</article>
+            <article>Wallets</article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section pattern_lab" id="docs">
+        <div class="container">
+          <div class="section_head">
+            <p class="eyebrow">Reusable product patterns</p>
+            <h2 class="h2">Linear-inspired details for technical finance pages.</h2>
+          </div>
+
+          <div class="separator separator-fading" data-orientation="horizontal"></div>
+
+          <div class="pattern_grid">
+            <article class="feature_panel dot-matrix-tool">
+              <canvas class="dot-matrix-canvas" id="dotMatrix" aria-hidden="true"></canvas>
+              <div class="feature-agents-wrapper">
+                <div class="grid-loader grid-loader-main"></div>
+                <div class="grid-loader grid-loader-pong"></div>
+                <div class="grid-loader grid-loader-agent"></div>
+                <div class="agent-stack" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="panel_copy">
+                <p class="eyebrow">Feature illustration</p>
+                <h3>Perspective loaders and agent rails</h3>
+                <p>Use rotated grid loaders over a canvas dot field for precise infrastructure diagrams.</p>
+              </div>
+            </article>
+
+            <article class="tweet-theme">
+              <div class="tweet-card">
+                <div class="tweet-header">
+                  <div class="company-logo-container"><span class="company-logo">E</span></div>
+                  <div>
+                    <strong>Eco Ops</strong>
+                    <span>@eco_network</span>
+                  </div>
+                </div>
+                <p>Programmable settlement should feel instant, reversible when policy requires it, and invisible when users just need money to move.</p>
+                <small>9:41 AM - Product network note</small>
+              </div>
+            </article>
+          </div>
+
+          <div class="separator_row" aria-label="Separator variants">
+            <span class="separator separator-glass" data-orientation="horizontal"></span>
+            <span class="separator separator-skeuo" data-orientation="horizontal"></span>
+            <span class="separator separator-border" data-orientation="horizontal"></span>
+          </div>
+
+          <div class="benefits">
+            <article class="benefit">
+              <figure class="benefit_figure lightbox_wrapper" data-lightbox-src="radial-green">
+                <span class="benefit_orb green"></span>
+              </figure>
+              <h3>Fast settlement</h3>
+              <p>Bottom-aligned copy, tall cards, and translucent dividers make feature rows easy to scan.</p>
+            </article>
+            <article class="benefit">
+              <figure class="benefit_figure lightbox_wrapper" data-lightbox-src="radial-blue">
+                <span class="benefit_orb blue"></span>
+              </figure>
+              <h3>Programmable policy</h3>
+              <p>Open a lightbox from any media wrapper without changing the original page rhythm.</p>
+            </article>
+            <article class="benefit">
+              <figure class="benefit_figure lightbox_wrapper" data-lightbox-src="radial-cyan">
+                <span class="benefit_orb cyan"></span>
+              </figure>
+              <h3>Network clarity</h3>
+              <p>Use logo tiles, separators, and tweet cards as quiet trust signals around the product.</p>
+            </article>
+          </div>
+
+          <div class="company_logo_grid">
+            <div class="company-logo-container"><span class="company-logo">A</span></div>
+            <div class="company-logo-container"><span class="company-logo">B</span></div>
+            <div class="company-logo-container"><span class="company-logo">C</span></div>
+            <div class="company-logo-container"><span class="company-logo">D</span></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="lightbox_overlay" id="lightboxOverlay" hidden></div>
+      <div class="lightbox_lightbox" id="lightbox" hidden>
+        <div class="lightbox_art" id="lightboxArt"></div>
+      </div>
+
+      <section class="logo_strip">
+        <div class="logo_track">
+          <span>a16z crypto</span>
+          <span>Founders Fund</span>
+          <span>Coinbase Ventures</span>
+          <span>Pantera</span>
+          <span>Lightspeed</span>
+          <span>and 50+ more</span>
+          <span>a16z crypto</span>
+          <span>Founders Fund</span>
+          <span>Coinbase Ventures</span>
+          <span>Pantera</span>
+          <span>Lightspeed</span>
+          <span>and 50+ more</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="build">
+      <div class="footer_orb"></div>
+      <section class="section">
+        <div class="container footer_cta">
+          <p class="eyebrow">Unlock truly programmable money movement</p>
+          <h2 class="h2 scale-up">One Click, Full Send</h2>
+          <div class="btn_wrap">
+            <a class="btn" href="#"><span>Book a call</span><span class="btn_right"><span class="arrow">-></span><span class="btn_gradient"></span></span></a>
+            <a class="btn btn_secondary" href="#"><span>Read our docs</span><span class="btn_right"><span class="arrow">-></span><span class="btn_gradient"></span></span></a>
+          </div>
+        </div>
+      </section>
+      <div class="container cta_wrap">
+        <div>
+          <h3>Stay updated with Eco</h3>
+          <form class="email_form">
+            <label for="email">Email address</label>
+            <input id="email" type="email" placeholder="Email address" />
+            <button class="btn_right" type="button" aria-label="Submit email"><span class="arrow">-></span><span class="btn_gradient blue-v"></span></button>
+          </form>
+        </div>
+      </div>
+      <div class="container footer_bottom">
+        <a class="brand brand_footer" href="#">eco</a>
+        <nav>
+          <a href="#">Jobs</a>
+          <a href="#">X</a>
+          <a href="#">YouTube</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Privacy</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

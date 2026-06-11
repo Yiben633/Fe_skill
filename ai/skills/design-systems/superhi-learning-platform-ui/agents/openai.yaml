@@ -1,0 +1,4 @@
+interface:
+  display_name: "SuperHi Learning Platform UI"
+  short_description: "Build SuperHi-style pastel learning platform pages."
+  default_prompt: "Create a SuperHi-style learning platform page with pastel panels, pale-blue gradient hero, rounded glass modal, business CTA split panel, details/summary accordion with rotating plus, site banner with close action, step indicators, press article carousel cards, mono number indicators, counters, glass footer, and reusable CSS tokens for spacing, color, typography, radius, elevation, timing, and panel variables."

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Google Antigravity Product UI Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="ag-header">
+      <div class="ag-container nav-inner">
+        <a class="brand" href="#" aria-label="Antigravity home">
+          <span class="brand-mark"></span>
+          <span>Antigravity</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#product">Product</a>
+          <a href="#docs">Docs</a>
+          <a href="#download">Download</a>
+          <a href="#releases">Releases</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="ag-button secondary compact" href="#docs">Docs</a>
+          <a class="ag-button primary compact" href="#download">Download</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="welcome">
+        <div class="ag-container welcome-inner">
+          <p class="eyebrow">Google Antigravity</p>
+          <h1 class="landing-main typed-title" aria-label="Build the new way">
+            <span style="--i:0">Build</span>
+            <span style="--i:1">the</span>
+            <span style="--i:2">new</span>
+            <span style="--i:3">way</span>
+          </h1>
+          <p class="hero-copy">A product landing pattern for AI-assisted coding, agents, editor workflows, downloads, docs, and releases.</p>
+          <div class="hero-actions">
+            <a class="ag-button primary" href="#download">Download</a>
+            <a class="ag-button secondary" href="#product">Explore product</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-section" id="product">
+        <div class="ag-container">
+          <div class="section-heading">
+            <p class="eyebrow">Agentic workspace</p>
+            <h2>Editor, terminal, and agents in one calm surface.</h2>
+          </div>
+
+          <div class="workspace-shell">
+            <div class="workspace-toolbar">
+              <div class="traffic">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="toolbar-tabs">
+                <span class="active">workspace</span>
+                <span>agent plan</span>
+                <span>preview</span>
+              </div>
+            </div>
+            <div class="workspace-grid">
+              <aside class="file-tree">
+                <strong>project</strong>
+                <span class="selected">app</span>
+                <span>components</span>
+                <span>routes</span>
+                <span>tests</span>
+              </aside>
+              <section class="editor code-face" aria-label="Code editor mockup">
+                <p><span class="muted">01</span> export function Workspace() {</p>
+                <p><span class="muted">02</span>   const agent = useAgent("build");</p>
+                <p class="active-line"><span class="muted">03</span>   return &lt;Preview task={agent.task} /&gt;;</p>
+                <p><span class="muted">04</span> }</p>
+                <div class="terminal">
+                  <span>antigravity run --verify</span>
+                  <span class="ok">3 checks passed</span>
+                </div>
+              </section>
+              <aside class="agent-panel">
+                <div class="agent-status">
+                  <span class="status-dot"></span>
+                  <strong>Agent online</strong>
+                </div>
+                <div class="agent-card">
+                  <p>Plan</p>
+                  <strong>Refactor navigation and update tests</strong>
+                </div>
+                <div class="agent-card">
+                  <p>Next step</p>
+                  <strong>Open preview and compare layout</strong>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section" id="docs">
+        <div class="ag-container card-grid">
+          <article class="info-card">
+            <span class="card-icon blue"></span>
+            <h3>Product</h3>
+            <p>Show the actual editor surface before listing features.</p>
+          </article>
+          <article class="info-card">
+            <span class="card-icon"></span>
+            <h3>Docs</h3>
+            <p>Use compact cards for task guides, integrations, and setup paths.</p>
+          </article>
+          <article class="info-card" id="releases">
+            <span class="card-icon dark"></span>
+            <h3>Changelog</h3>
+            <p>Keep release notes plain, scannable, and close to the download CTA.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="download inverse" id="download">
+        <div class="ag-container download-inner">
+          <div>
+            <p class="eyebrow inverse-text">Download</p>
+            <h2 class="typed-download">
+              <span style="--i:0">Download</span>
+              <span style="--i:1">Google</span>
+              <span style="--i:2">Antigravity</span>
+              <span style="--i:3">for</span>
+              <span style="--i:4">Windows</span>
+            </h2>
+          </div>
+          <div class="download-actions">
+            <a class="ag-button primary" href="#">Download for x64</a>
+            <a class="ag-button secondary" href="#">Download for ARM64</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="ag-container footer-inner">
+        <p class="footer-title">Experience liftoff</p>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#download">Download</a>
+          <a href="#product">Product</a>
+          <a href="#docs">Docs</a>
+          <a href="#releases">Releases</a>
+        </nav>
+      </div>
+      <div class="footer-wordmark" aria-hidden="true">ANTIGRAVITY</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

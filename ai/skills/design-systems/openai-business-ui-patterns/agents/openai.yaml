@@ -1,0 +1,4 @@
+interface:
+  display_name: "OpenAI Business UI Patterns"
+  short_description: "Build OpenAI-style technical UI."
+  default_prompt: "Create an OpenAI-style business or developer UI section with soft hero gradients, chart labels, highlights, hotspots, and technical panels."

@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>v0 Dark Template Homepage Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="v0-nav">
+      <a class="brand" href="#" aria-label="v0 demo home">
+        <span class="brand-mark">v0</span>
+        <span>Templates</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#templates">Templates</a>
+        <a href="#showcase">Design</a>
+        <a href="#features">Features</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="ghost-button" type="button">Sign in</button>
+        <button class="solid-button" type="button">Build</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <p class="eyebrow">AI app builder marketplace</p>
+          <h1>Prompt. Build. Publish.</h1>
+          <p class="hero-copy">Start from production-ready templates, connect integrations, adjust themes, and ship polished interfaces from one focused dark workspace.</p>
+
+          <form class="prompt-bar" role="search">
+            <label class="sr-only" for="template-search">Search templates</label>
+            <input id="template-search" type="search" placeholder="Search AI tools, landing pages, dashboards...">
+            <button type="submit">Browse</button>
+          </form>
+
+          <div class="integration-strip" aria-label="Supported integrations">
+            <span class="integration-icon icon-blue">AI</span>
+            <span class="integration-icon">NX</span>
+            <span class="integration-icon icon-green">DB</span>
+            <span class="integration-icon">PG</span>
+            <span class="integration-icon icon-pink">UI</span>
+            <span class="integration-icon">GH</span>
+            <span class="integration-icon icon-yellow">KV</span>
+            <span class="integration-icon">MD</span>
+            <span class="integration-icon">AP</span>
+            <span class="integration-icon icon-blue">3D</span>
+            <span class="integration-icon">ST</span>
+            <span class="integration-icon icon-green">FN</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="showcase section-wrap" id="showcase" aria-label="Design showcase">
+        <div class="showcase-panel design-mode">
+          <div class="panel-heading">
+            <p>Design mode</p>
+            <h2>Edit visually, keep code close.</h2>
+          </div>
+          <div class="design-board">
+            <div class="toolbar">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="mock-window">
+              <div class="mock-sidebar"></div>
+              <div class="mock-content">
+                <span class="mock-line wide"></span>
+                <span class="mock-line"></span>
+                <span class="mock-line short"></span>
+                <div class="mock-grid">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="showcase-panel theme-panel">
+          <div class="panel-heading">
+            <p>Themes</p>
+            <h2>Swap palettes without losing structure.</h2>
+          </div>
+          <div class="theme-list">
+            <span class="theme-swatch theme-a"><i></i><i></i><i></i><i></i></span>
+            <span class="theme-swatch theme-b"><i></i><i></i><i></i><i></i></span>
+            <span class="theme-swatch theme-c"><i></i><i></i><i></i><i></i></span>
+            <span class="theme-swatch theme-d"><i></i><i></i><i></i><i></i></span>
+            <span class="theme-swatch theme-e"><i></i><i></i><i></i><i></i></span>
+            <span class="theme-swatch theme-f"><i></i><i></i><i></i><i></i></span>
+          </div>
+        </div>
+
+        <div class="showcase-panel phone-panel">
+          <div class="panel-heading">
+            <p>iOS preview</p>
+            <h2>Check mobile surfaces early.</h2>
+          </div>
+          <div class="phone-mock" aria-hidden="true">
+            <span class="phone-speaker"></span>
+            <div class="phone-screen">
+              <span class="phone-pill"></span>
+              <span class="phone-title"></span>
+              <span class="phone-card"></span>
+              <span class="phone-card small"></span>
+              <span class="phone-nav"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="templates section-wrap" id="templates">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Community templates</p>
+            <h2>Fork a starting point.</h2>
+          </div>
+          <div class="filter-row" aria-label="Template filters">
+            <button class="filter-chip active" type="button" data-filter="all">All</button>
+            <button class="filter-chip" type="button" data-filter="ai">AI</button>
+            <button class="filter-chip" type="button" data-filter="landing">Landing</button>
+            <button class="filter-chip" type="button" data-filter="dashboard">Dashboard</button>
+            <button class="filter-chip" type="button" data-filter="media">Media</button>
+          </div>
+        </div>
+
+        <div class="template-grid" id="template-grid">
+          <article class="template-card" data-category="ai" data-title="Image Generation Playground">
+            <a class="template-preview" href="#" aria-label="View Image Generation Playground">
+              <div class="preview-art preview-ai"></div>
+              <span class="preview-overlay"><span class="view-button">View Details</span></span>
+            </a>
+            <div class="template-meta">
+              <span class="avatar avatar-blue">AI</span>
+              <div class="template-copy">
+                <h3>Image Generation Playground</h3>
+                <p>5.9k uses &middot; 666 likes</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="template-card" data-category="landing" data-title="Brillance SaaS Landing Page">
+            <a class="template-preview" href="#" aria-label="View Brillance SaaS Landing Page">
+              <div class="preview-art preview-saas"></div>
+              <span class="preview-overlay"><span class="view-button">View Details</span></span>
+            </a>
+            <div class="template-meta">
+              <span class="avatar avatar-green">BR</span>
+              <div class="template-copy">
+                <h3>Brillance SaaS Landing Page</h3>
+                <p>13.2k uses &middot; 1.9k likes</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="template-card" data-category="media" data-title="3D Gallery Photography Template">
+            <a class="template-preview" href="#" aria-label="View 3D Gallery Photography Template">
+              <div class="preview-art preview-gallery"></div>
+              <span class="preview-overlay"><span class="view-button">View Details</span></span>
+            </a>
+            <div class="template-meta">
+              <span class="avatar avatar-pink">3D</span>
+              <div class="template-copy">
+                <h3>3D Gallery Photography Template</h3>
+                <p>3.1k uses &middot; 797 likes</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="template-card" data-category="landing" data-title="Optimus AI Platform">
+            <a class="template-preview" href="#" aria-label="View Optimus AI Platform">
+              <div class="preview-art preview-optimus"></div>
+              <span class="preview-overlay"><span class="view-button">View Details</span></span>
+            </a>
+            <div class="template-meta">
+              <span class="avatar avatar-yellow">OP</span>
+              <div class="template-copy">
+                <h3>Optimus AI Platform</h3>
+                <p>4.7k uses &middot; 876 likes</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="template-card" data-category="dashboard" data-title="File Manager">
+            <a class="template-preview" href="#" aria-label="View File Manager">
+              <div class="preview-art preview-files"></div>
+              <span class="preview-overlay"><span class="view-button">View Details</span></span>
+            </a>
+            <div class="template-meta">
+              <span class="avatar avatar-gray">FM</span>
+              <div class="template-copy">
+                <h3>File Manager</h3>
+                <p>2.8k uses &middot; 412 likes</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="template-card" data-category="media" data-title="Next.js Conf 2024">
+            <a class="template-preview" href="#" aria-label="View Next.js Conf 2024">
+              <div class="preview-art preview-conf"></div>
+              <span class="preview-overlay"><span class="view-button">View Details</span></span>
+            </a>
+            <div class="template-meta">
+              <span class="avatar avatar-blue">NC</span>
+              <div class="template-copy">
+                <h3>Next.js Conf 2024</h3>
+                <p>8.4k uses &middot; 1.1k likes</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="more-band section-wrap" aria-label="More templates preview">
+        <div class="skeleton-mask" aria-hidden="true">
+          <span class="skeleton-card"></span>
+          <span class="skeleton-card"></span>
+          <span class="skeleton-card"></span>
+        </div>
+        <button class="browse-all" type="button">Browse all templates</button>
+      </section>
+
+      <section class="features section-wrap" id="features">
+        <article class="feature-card">
+          <h2>Prompt. Build. Publish.</h2>
+          <p>Keep the main action close to the hero and let galleries prove the product.</p>
+        </article>
+        <article class="feature-card sync-card">
+          <h2>Sync with a repo.</h2>
+          <p>Use a gooey motion cue for deploy, sync, or branch activity.</p>
+          <svg class="gooey-filter" aria-hidden="true">
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur"></feGaussianBlur>
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"></feColorMatrix>
+            </filter>
+          </svg>
+          <div class="gooey-dots" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

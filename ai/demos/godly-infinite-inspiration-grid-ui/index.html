@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Godly Infinite Inspiration Grid UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="chrome chrome-left" aria-label="Primary navigation">
+      <a class="brand-button" href="#" aria-label="Godly demo home">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M13.2 2 4.5 13.1h6.4L9.7 22l9.8-12.5h-6.6L13.2 2Z" fill="currentColor"/>
+        </svg>
+      </a>
+      <nav class="nav-pill" aria-label="Sections">
+        <a href="#" aria-current="page">Index</a>
+        <a href="#">Info</a>
+      </nav>
+    </div>
+
+    <div class="chrome chrome-right">
+      <button class="subscribe-button" type="button">
+        Subscribe
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <main class="inspiration-app">
+      <section class="pan-surface" role="application" aria-label="Draggable web design inspiration grid" data-pan-surface>
+        <div class="world" data-world></div>
+      </section>
+    </main>
+
+    <button class="filter-pill" type="button" data-filter>
+      <span data-filter-label>All websites</span>
+      <kbd>F</kbd>
+    </button>
+
+    <button class="reset-button" type="button" data-reset aria-label="Reset canvas position">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M5 12a7 7 0 1 1 2.05 4.95M5 17v-5h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <div class="info-toast" role="status" data-toast>Drag the canvas to explore.</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

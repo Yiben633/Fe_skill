@@ -1,0 +1,3 @@
+display_name: OTP Input
+short_description: Hướng dẫn OTP, PIN, verification code và paste behavior.
+default_prompt: Dùng otp-input để thiết kế và implement nhập mã xác thực này.

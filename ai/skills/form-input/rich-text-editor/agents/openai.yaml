@@ -1,0 +1,3 @@
+display_name: Rich Text Editor
+short_description: Hướng dẫn editor, toolbar, formatting và content states.
+default_prompt: Dùng rich-text-editor để thiết kế và implement editor này.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Google Credential Picker Overlay UI"
+  short_description: "Build fixed credential picker overlays."
+  default_prompt: "Create a Google credential picker / One Tap style overlay with a fixed 391 by 330 container in the top-right corner, borderless iframe-like child frame, responsive full-width mobile behavior below 410px, offscreen accessibility announcement region, absolute click target overlay, focus reset rules, high z-index layering, and a small demo page showing how it sits above a marketing website."

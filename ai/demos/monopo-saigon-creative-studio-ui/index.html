@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en" class="has-scroll-init has-scroll-smooth notouch" data-scroll-direction="vertical">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Monopo Saigon Creative Studio UI Demo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main data-scroll-container>
+      <header class="site-header container">
+        <a class="logo" href="#">monopo saigon</a>
+        <nav>
+          <a href="#manifesto">Manifesto</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <section class="hero container" data-scroll data-scroll-repeat="true">
+        <span class="title rotated">Home</span>
+        <h1>Tokyo-born, Saigon-driven creative studio for borderless ideas.</h1>
+        <p>We integrate, collaborate, and challenge. Digital natives embracing creative freedom to connect, communicate, and inspire.</p>
+        <a class="button--link" href="#manifesto">Discover the studio</a>
+      </section>
+
+      <section class="manifesto container" id="manifesto" data-scroll data-scroll-call="SET_CURRENT_SECTION">
+        <span class="title">Manifesto</span>
+        <div class="intro">
+          <span class="line"><span class="content">We build culture with</span></span>
+          <span class="line"><span class="content">pe<i>o</i>ple fr<i>o</i>m T<i>o</i>ky<i>o</i></span></span>
+          <span class="line"><span class="content">t<i>o</i> Saig<i>o</i>n and bey<i>o</i>nd.</span></span>
+        </div>
+      </section>
+
+      <section class="video-banner" data-scroll>
+        <div class="poster">
+          <div class="play-cursor"><span>Play</span></div>
+          <div class="video-container" aria-label="Showreel placeholder">
+            <span>Showreel / 01:10</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-cta container" data-scroll>
+        <span class="title">Saigon Souls</span>
+        <div class="content">
+          <p>We come from all over the world, then translate local rhythm into global brand systems, films, spaces, campaigns, and digital experiences.</p>
+          <a class="button--arrow" href="#team"><span class="arrow-mark">-></span>Meet the team</a>
+        </div>
+      </section>
+
+      <section class="tiles tiles--rotated" id="tilesGrid">
+        <div class="tiles__wrap">
+          <div class="tiles__line tiles__line--right" data-scroll data-scroll-speed="1" data-scroll-direction="horizontal">
+            <div class="tiles__line-img media a"></div>
+            <div class="tiles__line-img media b"></div>
+            <div class="tiles__line-img media c"></div>
+          </div>
+          <div class="tiles__line tiles__line--left" data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal">
+            <div class="tiles__line-img media d"></div>
+            <div class="tiles__line-img media e"></div>
+            <div class="tiles__line-img media f"></div>
+          </div>
+          <div class="tiles__line tiles__line--right" data-scroll data-scroll-speed="1" data-scroll-direction="horizontal">
+            <div class="tiles__line-img media g"></div>
+            <div class="tiles__line-img media h"></div>
+            <div class="tiles__line-img media i"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team container" id="team" data-scroll data-scroll-call="SET_CURRENT_SECTION">
+        <span class="title">Team</span>
+        <p class="team-intro">Fr<i>o</i>m T<i>o</i>ky<i>o</i> to Sa<i>i</i>gon,<br>we c<i>o</i>me fr<i>o</i>m all <i>o</i>ver the w<i>o</i>rld</p>
+        <ul class="members">
+          <li class="member">
+            <article class="team-member">
+              <span class="role">Branch Director, Creative Director</span>
+              <div class="picture-container media portrait-one"></div>
+              <div class="row">
+                <span class="name">Vicki<br>Dang</span>
+                <button class="more" type="button" aria-expanded="false"><span class="sign"></span></button>
+              </div>
+              <p class="details">Self-taught 3D motion designer and director creating unconventional visual dimensions for digital spaces.</p>
+              <span class="number">( 1 )</span>
+            </article>
+          </li>
+          <li class="member">
+            <article class="team-member">
+              <span class="role">Film Director</span>
+              <div class="picture-container media portrait-two"></div>
+              <div class="row">
+                <span class="name">Robin<br>Mahieux</span>
+                <button class="more" type="button" aria-expanded="false"><span class="sign"></span></button>
+              </div>
+              <p class="details">Multidisciplinary director focused on storytelling, youth culture, and immersive moving-image campaigns.</p>
+              <span class="number">( 2 )</span>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="contact-footer" id="contact" data-scroll data-scroll-call="SET_BACKGROUND">
+        <section class="container no-margin lg">
+          <span class="title black">Contact</span>
+          <div class="footer-grid">
+            <div>
+              <div class="contact-intro"><span>Keep in touch</span><span class="rings"></span></div>
+              <div class="contact"><span>Start a conversation</span><a href="mailto:contact@monopo.vn">contact@monopo.vn</a></div>
+              <hr class="separator">
+              <ul class="offices">
+                <li class="office"><strong>Saigon</strong><p>Vietnam Business Center, District 1, HCM</p><a class="black text-link" href="#">View on map -></a></li>
+                <li class="office"><strong>Tokyo HQ</strong><p>Path Omotesando, Shibuya-ku, Tokyo</p><a class="black text-link" href="#">Visit the site -></a></li>
+              </ul>
+            </div>
+            <ul class="socials">
+              <span class="sentence">Follow us</span>
+              <li><a class="black" href="#">Facebook -></a></li>
+              <li><a class="black" href="#">Instagram -></a></li>
+              <li><a class="black" href="#">LinkedIn -></a></li>
+              <li><a class="black" href="#">Vimeo -></a></li>
+            </ul>
+          </div>
+        </section>
+        <button class="btn-to-top" type="button" aria-label="Back to top">^</button>
+      </footer>
+    </main>
+
+    <div class="modalContainer" aria-hidden="true" id="modal">
+      <div class="modalDialog">
+        <div class="modalContent">
+          <button class="modalClose" type="button" data-close-modal>Close</button>
+          <p class="flashMessage">Connect a provider to receive studio updates.</p>
+          <form class="form">
+            <label class="formLabel" for="email">Email</label>
+            <input class="formControl" id="email" type="email" placeholder="name@studio.com">
+            <button class="providerGoogle" type="button">Continue with Google</button>
+            <button class="providerGitHub" type="button">Continue with GitHub</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <button class="open-modal" type="button" data-open-modal>Open modal</button>
+    <script src="script.js"></script>
+  </body>
+</html>

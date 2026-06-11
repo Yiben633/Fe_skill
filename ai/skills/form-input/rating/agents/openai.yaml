@@ -1,0 +1,3 @@
+display_name: Rating
+short_description: Hướng dẫn star rating, score picker và feedback rating.
+default_prompt: Dùng rating để thiết kế và implement control đánh giá này.

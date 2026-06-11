@@ -1,0 +1,4 @@
+interface:
+  display_name: "Google Antigravity UI"
+  short_description: "Build Antigravity-style product pages."
+  default_prompt: "Create a Google Antigravity-style product landing page with huge kinetic typography, neutral gray tokens, blurred sticky header, editor/agent workspace mockups, inverse download section, pill buttons, and oversized wordmark footer."
