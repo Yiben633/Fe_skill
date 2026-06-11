@@ -1,3 +1,0 @@
-display_name: Search UI
-short_description: Hướng dẫn search box, results, suggestions và query state.
-default_prompt: Dùng search-ui để thiết kế và implement trải nghiệm tìm kiếm này.

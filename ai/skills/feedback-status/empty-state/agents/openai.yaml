@@ -1,3 +1,0 @@
-display_name: Empty State
-short_description: Hướng dẫn empty state, no data và no results.
-default_prompt: Dùng empty-state để thiết kế và implement trạng thái trống này.

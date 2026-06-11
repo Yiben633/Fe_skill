@@ -1,3 +1,0 @@
-display_name: Pagination
-short_description: Hướng dẫn phân trang, page size và cursor pagination.
-default_prompt: Dùng pagination để thiết kế và implement phân trang này.

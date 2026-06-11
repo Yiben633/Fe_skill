@@ -1,3 +1,0 @@
-display_name: Copy To Clipboard
-short_description: Hướng dẫn copy action, feedback và clipboard fallback.
-default_prompt: Dùng copy-to-clipboard để thiết kế và implement copy action này.

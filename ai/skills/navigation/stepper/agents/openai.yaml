@@ -1,3 +1,0 @@
-display_name: Stepper
-short_description: Hướng dẫn wizard, multi-step form và progress theo bước.
-default_prompt: Dùng stepper để thiết kế và implement flow nhiều bước này.

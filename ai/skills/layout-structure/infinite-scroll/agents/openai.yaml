@@ -1,3 +1,0 @@
-display_name: Infinite Scroll
-short_description: Hướng dẫn infinite scroll, sentinel và load more fallback.
-default_prompt: Dùng infinite-scroll để thiết kế danh sách tải thêm này.

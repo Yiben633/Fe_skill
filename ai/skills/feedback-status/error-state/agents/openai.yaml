@@ -1,3 +1,0 @@
-display_name: Error State
-short_description: Hướng dẫn lỗi, retry, unavailable và degraded state.
-default_prompt: Dùng error-state để thiết kế và implement trạng thái lỗi này.
